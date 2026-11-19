@@ -1,0 +1,176 @@
+# Wall Street, il rialzo cambia struttura: meno sostegno dai riacquisti, più concorrenza dai bond
+
+<style>
+.articolo-testo figure.grafico{margin:2.4rem 0;padding:1.4rem 1.5rem 1.2rem;border:1px solid rgba(23,20,15,.18);background:#f1ebdd}
+.articolo-testo figure.grafico .gt{font-family:var(--sans);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#a23a24;font-weight:700;margin:0 0 1rem}
+.articolo-testo figure.grafico svg{width:100%;height:auto;display:block}
+.articolo-testo figure.grafico svg text{font-family:var(--sans)}
+.articolo-testo figure.grafico figcaption{font-family:var(--sans);font-size:.82rem;line-height:1.55;color:#6d6457;margin-top:1rem}
+</style>
+
+Il mercato rialzista può perdere uno dei suoi sostegni anche senza un peggioramento dell’economia. È la tesi di Martin Cobb, senior vice president per le azioni di Lorne Steinberg Wealth Management, intervenuto il 17 novembre a Market Call. Per anni le società americane sono state compratrici costanti delle proprie azioni, mentre le nuove quotazioni erano relativamente poche e le obbligazioni offrivano rendimenti poco competitivi. Ora, osserva il gestore, più operazioni chiedono capitale agli investitori proprio mentre questi hanno un’alternativa più credibile alle azioni.
+
+Cobb non ne ricava una previsione ribassista per le prossime sedute. Ne ricava una domanda per il portafoglio: se il capitale ha più alternative, quali utili vale ancora la pena pagare ai prezzi di oggi? Le sue risposte su Nvidia, Alphabet, Cameco e Canadian National mostrano come applica quel criterio a imprese molto diverse.
+
+## L’equilibrio cambia: più azioni da assorbire, più alternative per chi investe
+
+Cobb stima che nell’ultimo decennio le società abbiano riacquistato azioni per 700-800 miliardi di dollari l’anno su base lorda. Il dato netto è inferiore: le azioni emesse per remunerare i dipendenti, per esempio attraverso piani di stock option, compensano parte delle ricompre. La distinzione è decisiva. Un programma di buyback può mobilitare molto denaro senza ridurre nella stessa misura il numero di azioni in circolazione.
+
+Il punto, quindi, non è che i buyback siano scomparsi, né che l’intervista ne quantifichi un calo netto. È che i riacquisti non operano più nello stesso contesto. Da un lato tornano le grandi IPO: «Una volta una grande IPO era da un miliardo», ricorda Cobb; ora la scala può essere di dieci o cinquanta miliardi, e in casi eccezionali anche di più. Dall’altro, il gestore cita Alphabet e Meta come esempi di grandi compratori di azioni proprie che ora figurano anche dal lato delle emissioni. In entrambi i casi, agli investitori viene chiesto di assorbire nuova offerta.
+
+Il terzo cambiamento riguarda il reddito fisso. Se un’obbligazione torna a offrire un rendimento che l’investitore considera adeguato, detenere azioni a multipli elevati ha un costo-opportunità più visibile: bisogna rinunciare a quel rendimento in cambio di utili futuri incerti. Questo non impedisce alle azioni di salire, ma rende più importante capire quanta crescita sia già incorporata nel prezzo.
+
+<figure class="grafico">
+<p class="gt">Il sostegno si indebolisce su tre lati</p>
+<svg viewBox="0 0 720 250" role="img" aria-label="Tre cambiamenti: riacquisti per 700-800 miliardi lordi l'anno con netto inferiore, nuova offerta di IPO da uno a dieci-cinquanta miliardi, bond con rendimenti credibili come alternativa alle azioni">
+<g fill="#f7f3ea" stroke="#17140f" stroke-width="1.2">
+<rect x="20" y="30" width="220" height="150" rx="3"/>
+<rect x="250" y="30" width="220" height="150" rx="3"/>
+<rect x="480" y="30" width="220" height="150" rx="3"/>
+</g>
+<text x="36" y="56" fill="#a23a24" font-size="12.5" letter-spacing="1">RIACQUISTI</text>
+<text x="36" y="90" fill="#17140f" font-size="24" font-weight="700">700-800</text>
+<text x="36" y="110" fill="#6d6457" font-size="13">mld$/anno lordi</text>
+<text x="36" y="134" fill="#6d6457" font-size="11.5">netto inferiore: le stock</text>
+<text x="36" y="150" fill="#6d6457" font-size="11.5">option compensano parte</text>
+<text x="36" y="166" fill="#6d6457" font-size="11.5">delle ricompre.</text>
+<text x="266" y="56" fill="#a23a24" font-size="12.5" letter-spacing="1">NUOVA OFFERTA</text>
+<text x="266" y="90" fill="#17140f" font-size="24" font-weight="700">1 → 10-50</text>
+<text x="266" y="110" fill="#6d6457" font-size="13">mld$ per IPO</text>
+<text x="266" y="134" fill="#6d6457" font-size="11.5">Alphabet e Meta ora anche</text>
+<text x="266" y="150" fill="#6d6457" font-size="11.5">dal lato delle emissioni.</text>
+<text x="496" y="56" fill="#a23a24" font-size="12.5" letter-spacing="1">BOND</text>
+<text x="496" y="90" fill="#17140f" font-size="22" font-weight="700">alternativa</text>
+<text x="496" y="110" fill="#6d6457" font-size="13">credibile alle azioni</text>
+<text x="496" y="134" fill="#6d6457" font-size="11.5">costo-opportunità più</text>
+<text x="496" y="150" fill="#6d6457" font-size="11.5">visibile per le azioni a</text>
+<text x="496" y="166" fill="#6d6457" font-size="11.5">multipli elevati.</text>
+<text x="20" y="210" fill="#17140f" font-size="13.5">Più capitale richiesto agli investitori, mentre il reddito fisso torna competitivo.</text>
+<text x="20" y="232" fill="#6d6457" font-size="12.5">Non è una previsione ribassista: è una domanda su quali utili vale la pena pagare oggi.</text>
+</svg>
+<figcaption>I riacquisti non sono scomparsi e l’intervista non ne quantifica un calo netto: cambia il contesto in cui operano, con più offerta da assorbire e un’alternativa più credibile.</figcaption>
+</figure>
+
+## Il paradosso canadese: meno società in Borsa, più concentrazione
+
+In Canada il quadro non è identico a quello statunitense. Negli Stati Uniti Cobb mette l’accento sul ritorno dell’offerta di azioni; a Toronto la trasmissione si sofferma invece sulla riduzione del numero di società nei listini. Il conduttore cita circa 215 componenti dell’S&P/TSX Composite, contro un riferimento storico di 300, e tre operazioni annunciate nello stesso giorno che potrebbero sottrarre al mercato società di rilievo. Il dato riguarda i componenti dell’indice, non il numero complessivo delle società quotate alla Borsa di Toronto.
+
+<figure class="grafico">
+<p class="gt">Canada: meno componenti nell’indice</p>
+<svg viewBox="0 0 720 230" role="img" aria-label="Barre: riferimento storico 300 componenti contro circa 215 componenti attuali dello S&P/TSX Composite; il dato riguarda i componenti dell'indice non le società quotate totali">
+<text x="200" y="70" fill="#17140f" font-size="13.5" text-anchor="end">Riferimento storico</text>
+<rect x="200" y="50" width="480" height="30" fill="#6d6457"/>
+<text x="687" y="71" fill="#17140f" font-size="15" font-weight="700">300</text>
+<text x="200" y="130" fill="#17140f" font-size="13.5" text-anchor="end">S&amp;P/TSX Composite oggi</text>
+<rect x="200" y="110" width="344" height="30" fill="#17140f"/>
+<text x="551" y="131" fill="#17140f" font-size="15" font-weight="700">215</text>
+<text x="200" y="170" fill="#17140f" font-size="13.5">Circa 215 componenti contro un riferimento storico di 300.</text>
+<text x="200" y="192" fill="#6d6457" font-size="12.5">Il dato riguarda i componenti dell’indice, non le società quotate totali a Toronto.</text>
+<text x="200" y="210" fill="#6d6457" font-size="12.5">Tre operazioni annunciate nello stesso giorno potrebbero sottrarre società di rilievo.</text>
+</svg>
+<figcaption>La concentrazione dell’indice è un dato distinto dal numero complessivo delle società quotate: il paragone va letto sul perimetro dei componenti.</figcaption>
+</figure>
+
+## Nvidia a 15 volte gli utili: quanto vale il denominatore?
+
+L’intervista è andata in onda prima dei risultati di Nvidia. Cobb si aspettava un buon trimestre, ma collocava il problema oltre i conti in arrivo: come valutare la strategia di lungo periodo dopo l’uscita di Jensen Huang? Il gestore non ha ancora una risposta definitiva. Nei portafogli della società ci sono TSMC e Cisco; Nvidia resta oggetto di studio.
+
+Il multiplo discusso in trasmissione, circa 15 volte gli utili, può apparire contenuto per una società al centro della spesa per l’intelligenza artificiale. Ma il rapporto prezzo/utili scende anche quando gli utili salgono molto rapidamente. La domanda, allora, non è soltanto se il titolo sia meno caro di prima: è se i profitti di oggi siano una base ragionevole per stimare quelli di domani. L’esempio dei margini chiarisce il rischio. Su 40 dollari di ricavi, un margine lordo del 75% lascia 30 dollari di profitto lordo; al 90% ne lascia 36. Se il margine torna dal 90% al 75%, a ricavi invariati, il profitto lordo scende da 36 a 30 dollari. Il 90% è un’ipotesi illustrativa, non il margine riportato da Nvidia. Serve a mostrare perché un titolo possa sembrare economico proprio quando la redditività è più difficile da replicare.
+
+<figure class="grafico">
+<p class="gt">Nvidia: quanto vale il denominatore?</p>
+<svg viewBox="0 0 720 265" role="img" aria-label="Su 40 dollari di ricavi: margine 75 per cento lascia 30 dollari di profitto lordo, margine 90 per cento ipotesi illustrativa ne lascia 36; tornando al 75 il profitto scende da 36 a 30; il multiplo di circa 15 volte gli utili dipende dalla durata di quegli utili">
+<line x1="60" y1="190" x2="280" y2="190" stroke="#17140f" stroke-width="1.5"/>
+<rect x="80" y="70" width="70" height="120" fill="#17140f"/>
+<rect x="190" y="46" width="70" height="144" fill="none" stroke="#a23a24" stroke-width="1.6" stroke-dasharray="5 4"/>
+<text x="115" y="60" fill="#17140f" font-size="16" font-weight="700" text-anchor="middle">30 $</text>
+<text x="225" y="36" fill="#a23a24" font-size="16" font-weight="700" text-anchor="middle">36 $</text>
+<text x="115" y="210" fill="#17140f" font-size="13" text-anchor="middle">margine 75%</text>
+<text x="225" y="210" fill="#a23a24" font-size="13" text-anchor="middle">margine 90%*</text>
+<text x="60" y="228" fill="#6d6457" font-size="12.5">profitto lordo su 40 $ di ricavi</text>
+<text x="320" y="60" fill="#17140f" font-size="20" font-weight="700">≈15 volte gli utili</text>
+<text x="320" y="84" fill="#6d6457" font-size="13.5">può sembrare a buon mercato.</text>
+<text x="320" y="112" fill="#17140f" font-size="13.5">Ma il P/E scende anche quando</text>
+<text x="320" y="130" fill="#17140f" font-size="13.5">gli utili salgono molto in fretta:</text>
+<text x="320" y="148" fill="#17140f" font-size="13.5">il denominatore può non durare.</text>
+<text x="320" y="176" fill="#6d6457" font-size="13">Se il margine torna 90% → 75%,</text>
+<text x="320" y="194" fill="#6d6457" font-size="13">a ricavi invariati il profitto lordo</text>
+<text x="320" y="212" fill="#a23a24" font-size="13" font-weight="700">scende da 36 a 30 dollari.</text>
+<text x="60" y="250" fill="#6d6457" font-size="12.5">*Il 90% è un’ipotesi illustrativa, non il margine riportato da Nvidia.</text>
+</svg>
+<figcaption>Un multiplo contenuto non basta: conta se i profitti di oggi sono una base ragionevole per stimare quelli di domani, quando la redditività è più difficile da replicare.</figcaption>
+</figure>
+
+Cobb distingue anche tra addestramento e inferenza, cioè l’uso dei modelli dopo che sono stati addestrati. Stima per Nvidia una quota dell’80-90% nelle GPU per l’addestramento, ma vede più concorrenza nell’inferenza. A questo aggiunge le incognite sugli accordi con i nuovi operatori cloud specializzati e sulla durata del ciclo dei semiconduttori. La domanda di chip può restare forte e, allo stesso tempo, diventare più difficile difendere quote e margini. È questa incertezza, più del prossimo trimestre, a impedirgli di fissare un valore convincente per il titolo.
+
+<figure class="grafico">
+<p class="gt">Addestramento e inferenza: due mercati diversi</p>
+<svg viewBox="0 0 720 200" role="img" aria-label="Barra della quota Nvidia nelle GPU: addestramento 80-90 per cento secondo la stima di Cobb, inferenza 10-20 per cento con più concorrenza">
+<text x="315" y="60" fill="#17140f" font-size="14" font-weight="700" text-anchor="middle">Addestramento · 80-90%</text>
+<text x="615" y="60" fill="#a23a24" font-size="13" font-weight="700" text-anchor="middle">Inferenza · 10-20%</text>
+<rect x="60" y="80" width="510" height="40" fill="#17140f"/>
+<rect x="570" y="80" width="90" height="40" fill="#a23a24"/>
+<line x1="540" y1="100" x2="600" y2="100" stroke="#f7f3ea" stroke-width="2"/>
+<line x1="540" y1="90" x2="540" y2="110" stroke="#f7f3ea" stroke-width="2"/>
+<line x1="600" y1="90" x2="600" y2="110" stroke="#f7f3ea" stroke-width="2"/>
+<text x="300" y="105" fill="#f7f3ea" font-size="13" text-anchor="middle">GPU per il training</text>
+<text x="60" y="150" fill="#17140f" font-size="13.5">Stima Cobb: quota Nvidia nelle GPU per l’addestramento.</text>
+<text x="60" y="172" fill="#6d6457" font-size="12.5">Nell’inferenza vede più concorrenza: la domanda può restare forte</text>
+<text x="60" y="190" fill="#6d6457" font-size="12.5">e insieme diventare più difficile difendere quote e margini.</text>
+</svg>
+<figcaption>La barra usa il punto medio della stima (85%) con l’intervallo 80-90%: è una stima di Cobb, non una quota riportata da Nvidia.</figcaption>
+</figure>
+
+## Da Alphabet a Cameco: una buona azienda non è sempre un buon acquisto
+
+Il metodo di Cobb parte da tre caratteristiche: un’impresa ben posizionata, una gestione credibile e un bilancio solido. Il prezzo viene dopo, ma è ciò che decide se acquistare, mantenere o aspettare. Nella puntata la distinzione emerge soprattutto da questi casi.
+
+- Alphabet e Uber. Alphabet torna interessante, nella lettura di Cobb, a meno di 20 volte gli utili a fronte di una crescita dell’utile per azione che stima nell’ordine del 15-20%. A sostegno della tesi cita la tenuta della ricerca, l’espansione del cloud e il peso di YouTube. Su Uber contesta invece l’idea che i veicoli autonomi debbano necessariamente rendere superflua la piattaforma: Uber può aggregare corse anche senza possedere la flotta. A suo giudizio, la valutazione riflette più il timore di essere scavalcata che i progressi delle attività di consegna e trasporto merci.
+- Starbucks e Canadian National. Per Starbucks, 100 dollari per azione equivalgono a 20 volte gli utili *se* la società torna a generare i 5 dollari per azione ipotizzati da Cobb. È una tesi sul recupero dei margini, non un multiplo calcolato su un risultato già acquisito. Per Canadian National il ragionamento è opposto: a 16 volte gli utili la ferrovia gli sembrava troppo a buon mercato; a 20-21 volte continua a detenerla, ma non aumenta la posizione. È cambiato il prezzo rispetto agli utili, non il giudizio sull’impresa.
+- Fairfax e Couche-Tard. Di Fairfax apprezza il miglioramento nell’allocazione del capitale, visibile anche nei riacquisti. Considera circa 1,5 volte il valore contabile atteso una valutazione piena, non un obiettivo di prezzo immutabile. È invece tornato su Couche-Tard dopo l’abbandono della grande operazione su Seven & i: preferisce che il gruppo replichi il modello di Circle K con acquisizioni più piccole, piuttosto che assumersi il rischio finanziario e operativo di una sola operazione trasformativa.
+- Cameco, WSP Global e PepsiCo. La qualità non basta a convincerlo. Cameco è ben posizionata nell’uranio, ma a circa 100 volte gli utili, nella lettura di Cobb, il prezzo lascia poco spazio a una normalizzazione dell’offerta. Di WSP apprezza la crescita, ma non il multiplo di circa 25 volte, anche alla luce dell’incertezza su come l’IA cambierà il lavoro di ingegneria. PepsiCo offre stabilità e dividendo; a circa 17 volte gli utili attesi, però, Cobb non vede uno sconto sufficiente rispetto a una crescita delle vendite del 3% e dell’utile per azione del 5%.
+
+<figure class="grafico">
+<p class="gt">Multipli a confronto (volte gli utili)</p>
+<svg viewBox="0 0 720 400" role="img" aria-label="Barre dei multipli citati da Cobb: Cameco circa 100, SOXX circa 37, WSP circa 25, Canadian National 20-21, Starbucks 20 condizionale, Alphabet sotto 20, PepsiCo circa 17, Nvidia circa 15">
+<text x="200" y="57" fill="#17140f" font-size="13.5" text-anchor="end">Cameco</text>
+<rect x="200" y="40" width="480" height="24" fill="#17140f"/>
+<text x="688" y="57" fill="#17140f" font-size="13.5" font-weight="700">≈100</text>
+<text x="200" y="97" fill="#17140f" font-size="13.5" text-anchor="end">SOXX (ETF chip)</text>
+<rect x="200" y="80" width="178" height="24" fill="#17140f"/>
+<text x="386" y="97" fill="#17140f" font-size="13.5">≈37</text>
+<text x="200" y="137" fill="#17140f" font-size="13.5" text-anchor="end">WSP Global</text>
+<rect x="200" y="120" width="120" height="24" fill="#17140f"/>
+<text x="328" y="137" fill="#17140f" font-size="13.5">≈25</text>
+<text x="200" y="177" fill="#17140f" font-size="13.5" text-anchor="end">Canadian National</text>
+<rect x="200" y="160" width="101" height="24" fill="#17140f"/>
+<text x="309" y="177" fill="#17140f" font-size="13.5">20-21</text>
+<text x="200" y="217" fill="#17140f" font-size="13.5" text-anchor="end">Starbucks*</text>
+<rect x="200" y="200" width="96" height="24" fill="none" stroke="#6d6457" stroke-width="1.3" stroke-dasharray="5 4"/>
+<text x="304" y="217" fill="#6d6457" font-size="13.5">20*</text>
+<text x="200" y="257" fill="#17140f" font-size="13.5" text-anchor="end">Alphabet (&lt;20)</text>
+<rect x="200" y="240" width="96" height="24" fill="none" stroke="#6d6457" stroke-width="1.3" stroke-dasharray="5 4"/>
+<text x="304" y="257" fill="#6d6457" font-size="13.5">&lt;20</text>
+<text x="200" y="297" fill="#17140f" font-size="13.5" text-anchor="end">PepsiCo</text>
+<rect x="200" y="280" width="82" height="24" fill="#17140f"/>
+<text x="290" y="297" fill="#17140f" font-size="13.5">≈17</text>
+<text x="200" y="337" fill="#a23a24" font-size="13.5" font-weight="700" text-anchor="end">Nvidia</text>
+<rect x="200" y="320" width="72" height="24" fill="#a23a24"/>
+<text x="280" y="337" fill="#a23a24" font-size="13.5" font-weight="700">≈15</text>
+<text x="60" y="362" fill="#6d6457" font-size="12.5">*Starbucks: 20x solo se torna a 5 $ di utile per azione; Alphabet: soglia &lt;20x.</text>
+<text x="60" y="382" fill="#6d6457" font-size="12.5">Multipli citati da Cobb; Fairfax è valutata ~1,5x il valore contabile, non gli utili.</text>
+</svg>
+<figcaption>Una buona impresa non è sempre un buon acquisto: il multiplo decide se comprare, mantenere o aspettare. Il confronto SOXX (~37x, oltre 8x il valore contabile) con Nvidia (~15x) richiede cautela: l’ETF diversifica l’emittente, non il ciclo.</figcaption>
+</figure>
+
+La differenza tra prezzo e qualità emerge anche nel confronto fra Kimberly-Clark e i concorrenti. Dopo l’operazione con Kenvue, Cobb vede nel gruppo combinato marchi forti come Listerine, Band-Aid e Tylenol, oltre a un maggiore potere negoziale con la grande distribuzione. Non si aspetta grandi sinergie industriali: gli interessa soprattutto che il titolo scambi a un multiplo inferiore a quello di concorrenti come Procter & Gamble e Colgate-Palmolive. La tesi non richiede una crescita eccezionale; richiede che il prezzo lasci spazio a risultati ordinari.
+
+## Petrolio e semiconduttori: la convinzione non sostituisce la diversificazione
+
+Per orientarsi sul petrolio, l’ex analista preferisce la curva forward, ossia la sequenza dei prezzi per consegne a scadenze diverse. Confrontare il WTI a poche settimane, due mesi e sei mesi permette di vedere se il mercato assegna un premio alla disponibilità immediata o se quota più in alto le consegne successive. Cobb la usa come riferimento, non come promessa sul prezzo futuro. E distingue il petrolio dal gas dell’Alberta, per il quale la disponibilità di gasdotti e l’accesso ai terminali di gas naturale liquefatto possono cambiare le prospettive commerciali.
+
+Lo stesso ragionamento vale per SOXX, l’ETF dei semiconduttori. Un fondo con più società riduce il rischio legato a un singolo emittente, ma non elimina quello condiviso da imprese esposte allo stesso ciclo. In trasmissione il conduttore cita un rapporto prezzo/utili di portafoglio di circa 37 volte e un prezzo superiore a otto volte il valore contabile. È anche per questo che il confronto diretto con le circa 15 volte di Nvidia richiede cautela. Cobb non esclude che il ribasso apra un’opportunità di lungo periodo; avverte che comprare dopo una discesa non significa avere comprato vicino al minimo.
+
+Il filo che unisce petrolio, chip e beni di consumo è il margine d’errore. Un investitore può avere ragione sulla diffusione dell’IA, sulla solidità di una ferrovia o sulla domanda di energia e ottenere comunque un cattivo risultato se paga troppo o concentra troppo capitale nella stessa scommessa. Per Cobb, il cambiamento a Wall Street non è ancora la fine del rialzo. È la fine della facilità con cui si poteva dare per scontato che le azioni avrebbero trovato compratori alle stesse condizioni di prima.
+
+*Fonti: intervista a Martin Cobb (Lorne Steinberg Wealth Management) a Market Call, BNN Bloomberg, 17 novembre 2026; multipli, stime e dati citati nel testo come riferiti da Cobb o dal conduttore.*
