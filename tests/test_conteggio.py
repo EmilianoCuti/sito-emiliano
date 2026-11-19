@@ -52,6 +52,23 @@ class ConteggioSezione(unittest.TestCase):
         html = self.indice(0)
         self.assertIn('archivio-conteggio">0 articoli<', html)
 
+    def test_home_con_un_articolo_usa_il_singolare(self):
+        inchieste = json.loads((ROOT / "content" / "inchieste.json").read_text(encoding="utf-8"))["inchieste"]
+        atlante = json.loads((ROOT / "content" / "atlante.json").read_text(encoding="utf-8"))
+        articoli = [articolo(0, "ai")] + [articolo(i, "finanza") for i in range(3)]
+        html = B.home(self.site, inchieste, articoli, atlante)
+        self.assertIn('sezione-conteggio">1 articolo<', html)
+        self.assertIn('sezione-conteggio">3 articoli<', html)
+        self.assertIn('sezione-conteggio">%d inchieste<' % len(inchieste), html)
+        self.assertNotIn("1 articoli", html)
+
+    def test_home_con_un_inchiesta_usa_il_singolare(self):
+        inchieste = json.loads((ROOT / "content" / "inchieste.json").read_text(encoding="utf-8"))["inchieste"][:1]
+        atlante = json.loads((ROOT / "content" / "atlante.json").read_text(encoding="utf-8"))
+        html = B.home(self.site, inchieste, [articolo(0, "ai")], atlante)
+        self.assertIn('sezione-conteggio">1 inchiesta<', html)
+        self.assertIn('sezione-conteggio">1 articolo<', html)
+
 
 if __name__ == "__main__":
     unittest.main()

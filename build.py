@@ -205,6 +205,11 @@ def home(site, inchieste, articoli, atlante):
 
     cards = []
     for n, s in enumerate(site["sezioni"], 1):
+        q = conta(s["id"])
+        if s["id"] == "inchieste":
+            unita = "inchiesta" if q == 1 else "inchieste"
+        else:
+            unita = "articolo" if q == 1 else "articoli"
         cards.append(
             '<section class="sezione">\n'
             '<div class="sezione-testa"><span class="sezione-num">%02d</span>'
@@ -212,8 +217,7 @@ def home(site, inchieste, articoli, atlante):
             '<span class="sezione-conteggio">%d %s</span></div>\n'
             '<p class="sezione-nota">%s</p>\n%s\n'
             '<a class="rimando" href="%s">Apri %s <span aria-hidden="true">→</span></a>\n</section>'
-            % (n, s["url"], esc(s["titolo"]), conta(s["id"]),
-               "inchieste" if s["id"] == "inchieste" else "articoli",
+            % (n, s["url"], esc(s["titolo"]), q, unita,
                esc(s["descrizione"]), ultime(s["id"]), s["url"], esc(s["titolo"].lower())))
     cards.append(
         '<section class="sezione">\n<div class="sezione-testa"><span class="sezione-num">%02d</span>'
