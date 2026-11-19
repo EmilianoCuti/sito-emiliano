@@ -1,0 +1,61 @@
+sezione;strada;direzione;km;limite;matricole;stato
+Velocità media;S.P. ex S.S. 412 della Val Tidone (dismesso);direzione Landriano;2+470;70 km/h;AN0112K, AN0121K;dismesso
+Velocità media;S.P. ex S.S. 412 della Val Tidone (dismesso);direzione Milano;1+450;70 km/h;AN0127K, AN0123K;dismesso
+Velocità media;S.P. ex S.S. 412 della Val Tidone;direzione Landriano;2+630;70 km/h;;attivo (21/09/2026)
+Velocità media;S.P. ex S.S. 412 della Val Tidone;direzione Milano;1+450;70 km/h;;attivo (21/09/2026)
+Velocità media;S.P. ex S.S. 11 Padana Superiore (dismesso);direzione Milano;132+110;90 km/h;AK0658H, AK0754H;dismesso
+Velocità media;S.P. ex S.S. 11 Padana Superiore (dismesso);direzione Bareggio;131+140;90 km/h;AL0995H, AL0998H;dismesso
+Velocità media;S.P. 14 Rivoltana;Direzione Milano;4+690;110 km/h;;attivo (21/09/2026)
+Velocità media;S.P. 14 Rivoltana;Direzione Milano;6+930;110 km/h;;attivo (21/09/2026)
+Velocità media;S.P. 14 Rivoltana;Direzione Brescia;5+840;110 km/h;;attivo (21/09/2026)
+Velocità media;S.P. 14 Rivoltana;Direzione Brescia;8+080;110 km/h;;attivo (21/09/2026)
+Velocità media;S.P. ex S.S. 415 Paullese;Direzione Milano;4+800;90 km/h;;attivo (21/09/2026)
+Velocità media;S.P. ex S.S. 415 Paullese;Direzione Milano;7+010;90 km/h;;attivo (21/09/2026)
+Velocità media;S.P. ex S.S. 415 Paullese;Direzione Paullo;7+620;90 km/h;;attivo (21/09/2026)
+Velocità media;S.P. 103 Cassanese Moderna (dismesso);Direzione Milano;6+210;70 km/h;;dismesso
+Velocità media;S.P. 103 Cassanese Moderna (dismesso);Direzione Brescia;6+300;90 km/h;;dismesso
+Velocità media;S.P. 103 Cassanese Moderna;Direzione Milano;9+610;110 km/h;;attivo (21/09/2026)
+Velocità media;S.P. 103 Cassanese Moderna;Direzione Milano;6+200;70 km/h;;attivo (21/09/2026)
+Velocità media;S.P. 103 Cassanese Moderna;Storico Direzione Milano;12+410;110 km/h;;attivo (21/09/2026)
+Velocità media;S.P. 103 Cassanese Moderna;Direzione Brescia;9+540;110 km/h;;attivo (21/09/2026)
+Velocità media;S.P. 103 Cassanese Moderna;Direzione Brescia;6+360;90 km/h;;attivo (21/09/2026)
+Velocità media;S.P. 103 Cassanese Moderna;Storico Direzione Brescia;12+480;110 km/h;;attivo (21/09/2026)
+Velocità media;S.P. 15 bis Paullese – Circonvallazione Idroscalo;Direzione Pioltello;1+700;70 km/h;;attivo (21/09/2026)
+Velocità istantanea;S.S. 336 dir diramazione per Aeroporto della Malpensa;Cardano al Campo;14+260;110 km/h;;attivo (21/09/2026)
+Velocità istantanea;S.S. 336 dir diramazione per Aeroporto della Malpensa;Magenta;14+610;110 km/h;;attivo (21/09/2026)
+Velocità istantanea;S.P. 46 Rho-Monza (dismesso);Rho;2+814;90 km/h;593-072, 593-072;dismesso
+Velocità istantanea;S.P. 46 Rho-Monza (dismesso);Monza;4+343;90 km/h;593-072, 593-072;dismesso
+Velocità istantanea;S.P. ex S.S. 35 Milano-Meda;Milano;133+354;100 km/h;;attivo (21/09/2026)
+Velocità istantanea;S.P. ex S.S. 35 Milano-Meda;Meda;134+046;100 km/h;;attivo (21/09/2026)
+Velocità istantanea;S.P. ex S.S. 11 Padana Superiore (dismesso);Settimo Milanese;131+341;90 km/h;593-072, 593-072;dismesso
+Velocità istantanea;S.P. 40 Binasco-Melegnano;Binasco;12+490;70 km/h;;attivo (21/09/2026)
+Velocità istantanea;S.P. 40 Binasco-Melegnano;Melegnano;13+031;70 km/h;;attivo (21/09/2026)
+Velocità istantanea;S.P. 30 Binasco-Vermezzo (dismesso);Binasco;9+792;90 km/h;593-072, 593-072;dismesso
+Velocità istantanea;S.P. 30 Binasco-Vermezzo (dismesso);Vermezzo;10+097;90 km/h;593-072, 593-072;dismesso
+Velocità istantanea;S.P. 203 Gaggiano-Binasco (dismesso);Binasco;6+032;70 km/h;593-072, 593-072;dismesso
+Velocità istantanea;S.P. 103 Cassanese Moderna (dismesso);Milano;6+240;70 km/h;;dismesso
+Velocità istantanea;S.P. 103 Cassanese Moderna (dismesso);Brescia;6+260;90 km/h;;dismesso
+Velocità istantanea;S.P. 103 Cassanese Moderna;Milano;6+315;90 km/h;;attivo (21/09/2026)
+Velocità istantanea;S.P. 103 Cassanese Moderna;Brescia;6+315;90 km/h;;attivo (21/09/2026)
+Velocità istantanea;S.P. ex S.S. 11 Padana Superiore (dismesso);Bareggio;131+171;90 km/h;;dismesso
+Velocità istantanea;S.P. 30 Binasco-Vermezzo;Binasco;9+792;90 km/h;;attivo (21/09/2026)
+Velocità istantanea;S.P. 30 Binasco-Vermezzo;Vermezzo;10+097;90 km/h;;attivo (21/09/2026)
+Velocità istantanea;S.P. 14 Rivoltana;Milano;6+965;110 km/h;;attivo (21/09/2026)
+Velocità istantanea;S.P. 14 Rivoltana;Brescia;8+039;110 km/h;;attivo (21/09/2026)
+Velocità istantanea;S.P. ex S.S. 415 Paullese;Milano;7+051;90 km/h;;attivo (21/09/2026)
+Velocità istantanea;S.P. ex S.S. 415 Paullese;Paullo;7+581;90 km/h;;attivo (21/09/2026)
+Velocità istantanea;S.P. 15 bis Paullese -Circonvallazione Idroscalo;Pioltello;1+700;70 km/h;;attivo (21/09/2026)
+Infrazioni semaforiche;Intersezione della S.P. 13 Monza-Melzo con Via Lussemburgo e Via Sant’Elia;;;;AL0894H, AL0894H, AL0894H, AL0894H, AL0895H, AL0895H;attivo (21/09/2026)
+Infrazioni semaforiche;Intersezione della S.P. 34 per Turbigo con la S.P. 117 Robecco-Bienate e Via Guglielmo Marconi;"S.P. 34 per Turbigo dir. Inveruno; S.P. 34 per Turbigo dir. Castano Primo";;;AQ1944H, AM1267H, AM1267H, AM1267H, AM1267H, AM1267H;attivo (21/09/2026)
+Infrazioni semaforiche;Intersezione della S.P. ex S.S. 415 Paullese con Svolta Via Fiume Lambro e Via Gela;S.P. ex S.S. 415 Paullese dir. Paullo;;;AL0874H, AL0874H, AL0874H, AL0874H, AL0874H, AL1035H;attivo (21/09/2026)
+Infrazioni semaforiche;Intersezione della S.P. 15 bis Paullese con Via Enzo Jannacci e Accessi aeroporto Linate;S.P. 15 bis Paullese dir. Novegro;;;AL1027H, AL1027H, AL1027H, AL1027H, AL1027H, AQ1928H;attivo (21/09/2026)
+Infrazioni semaforiche;Intersezione della S.P. 39 dir diramazione della Cerca con Via del Mulino;"S.P. 39 dir diramazione della Cerca dir. Settala; S.P. 39 dir diramazione della Cerca dir. Truccazzano";;;AQ1984H, AQ1984H, AM1157H, AM1157H, AM1157H, AM1157H;attivo (21/09/2026)
+Infrazioni semaforiche;Intersezione della S.P. 179 Villa Fornaci-Trezzo con Via Roma e Via I Maggio;"S.P. 179 Villa Fornaci-Trezzo dir. Grezzano; S.P. 179 Villa Fornaci-Trezzo dir. Basiano";;;AQ1929H, AQ1929H, AM1192H, AM1192H, AM1192H, AQ2041H;attivo (21/09/2026)
+Infrazioni semaforiche;Intersezione della S.P. 199 Baranzate-Sesto San Giovanni con Via Adelchi;S.P. 199 Baranzate-Sesto San Giovanni dir. Bresso;;;AP1780H, AP1780H, AP1780H, AM1266H, AM1266H, AM1266H;attivo (21/09/2026)
+Infrazioni semaforiche;Intersezione della S.P. 39 della Cerca con Viale Sarmazzano;S.P. 39 della Cerca dir. Colturano;;;AM1301H, AM1301H, AM1301H, AM1302H, AM1302H, AM1302H;attivo (21/09/2026)
+Infrazioni semaforiche;Intersezione della S.P. 59 Corsico-Gaggiano dir. Trezzano sul Naviglio;"S.P. 59 Corsico-Gaggiano dir. Trezzano sul Naviglio; S.P. 59 Corsico-Gaggiano dir. Abbiategrasso";;;AM1405H, AM1405H, AM1404H, AM1404H;attivo (21/09/2026)
+Infrazioni semaforiche;Intersezione della S.P. 34 per Turbigo con la S.P. 129 S.P. 34 per Turbigo dir. Mesero;S.P. 34 per Turbigo dir. Buscate;;;AP1733H, AP1733H, AM1338H, AM1338H, AM1337H, AM1337H;attivo (21/09/2026)
+Infrazioni semaforiche;Intersezione della S.P. 59 Corsico-Gaggiano con Via Leonardo da Vinci;"S.P. 59 Corsico-Gaggiano dir. Trezzano sul Naviglio; S.P. 59 Corsico-Gaggiano dir. Abbiategrasso";;;AM1405H, AM1405H, AM1404H, AM1404H;attivo (21/09/2026)
+Infrazioni semaforiche;Intersezione della S.P. 34 per Turbigo con la S.P. 171 Inveruno-Nerviano e Via Palestro;S.P. 34 per Turbigo dir. Buscate;;;AM1340H, AM1340H, AM1339H, AM1339H;attivo (21/09/2026)
+Infrazioni semaforiche;Intersezione della S.P. ex S.S. 525 del Brembo con Via Roma e Via per Groppello;"S.P. ex S.S. 525 del Brembo dir. Vaprio d’Adda; S.P. ex S.S. 525 del Brembo dir. Gorgonzola";;;AR2116H, AN1624H, AN1624H, AM1194H, AM1194H, AM1195H;attivo (21/09/2026)
+Infrazioni semaforiche;Intersezione della S.P. 104 Truccazzano-Trezzo con Via Guglielmo Marconi;"S.P. 104 Truccazzano-Trezzo dir. Trezzo sull’Adda; S.P. 104 Truccazzano-Trezzo dir. Cassano d’Adda";;;AN1579H, AN1579H, AN1580H, AN1580H;attivo (21/09/2026)

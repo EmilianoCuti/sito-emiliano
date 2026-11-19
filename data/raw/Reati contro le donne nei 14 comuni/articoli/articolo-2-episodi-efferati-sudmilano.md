@@ -1,0 +1,15 @@
+# Le notti peggiori del Sudmilano: cinque anni di violenza efferata tra stazione, ospedale e case private
+
+C'è un femminicidio con un nome, un cognome e una sentenza. E ci sono tre morti di donna che ancora non hanno un colpevole. In mezzo, uno stupro in una stazione di paese, una denuncia in ospedale finita con un suicidio, una studentessa salvata sul cavalcavia.
+
+Il caso chiuso è il primo in ordine di tempo. Il 7 febbraio 2021, a San Giuliano Milanese, in zona Pedriano, Luljeta Heshta, 47 anni, albanese, viene inseguita e uccisa con cinque coltellate in strada: i testimoni filmano quella corsa, in caserma l'uomo viene riconosciuto. È Alfred Kipe, il compagno, albanese, 43 anni, che confessa. Il 22 marzo 2022 la Corte d'Assise di Milano lo condanna a 24 anni. È l’unica condanna per femminicidio emessa per quei quattordici comuni. Nel 2025 è arrivata un’altra condanna: dieci anni a un medico di guardia per abusi su nove pazienti.
+
+Poi la notte della stazione. All'inizio di settembre del 2025 una diciottenne viene aggredita nel parcheggio ovest della stazione ferroviaria di San Zenone al Lambro. Il fermo arriva subito: un venticinquenne del Mali. La Procura di Lodi parla di indizi solidi e dispone il test del Dna su oltre cento ospiti del centro di accoglienza; il fermo viene convalidato a fine settembre. A dicembre la richiesta di giudizio immediato. Il 18 maggio 2026 il gup di Lodi, con rito abbreviato, infligge dodici anni e l'espulsione a fine pena. I pendolari denunciano la sicurezza di quello scalo.
+
+A Vizzolo Predabissi il caso più straziante. Il 28 maggio 2024 una ventunenne, ricoverata dopo una lite domestica, denuncia una violenza sessuale e poche ore dopo si toglie la vita. Un ventottenne, magazziniere, finisce agli arresti domiciliari: nel febbraio 2025 il rinvio a giudizio, il processo è in corso.
+
+A Pantigliate la violenza si ferma sul cavalcavia della Paullese. Il 17 dicembre 2024 una studentessa di vent'anni viene aggredita e tentata di violentare sul sovrappasso: i carabinieri intervengono e bloccano l'aggressore. Il sindaco parla di «situazione monitorata».
+
+Le morti senza responsabile si addensano tra il 2025 e il 2026. A luglio 2025 il corpo di Erika Ferini Strambi viene trovato in campagna dieci giorni dopo la scomparsa: si indaga per omicidio. Il 25 aprile 2026, a Peschiera Borromeo, una donna viene trovata carbonizzata in via Giusti: sul posto i Ris, i funerali con il paese intero. A maggio 2026, a Melegnano, una quarantenne viene trovata ferita in casa nel quartiere Montorfano: trasferita in elicottero al Niguarda, muore per le ferite riportate. Nessuna delle tre indagini è arrivata a un nome.
+
+Se si guarda l'altro lato, quello delle relazioni, il quadro non è diverso: su 123 donne seguite nel 2023 dalla rete antiviolenza dei quattordici comuni, 89 hanno indicato come autore un partner o un ex partner. Marito 36 volte, compagno convivente 18, ex fidanzato 13. Gli sconosciuti: tre. La violenza efferata, nel Sudmilano come altrove, comincia quasi sempre in casa.

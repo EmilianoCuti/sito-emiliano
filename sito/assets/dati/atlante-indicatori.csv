@@ -1,0 +1,18 @@
+id,indicatore,unita,fonte,inchiesta,descrizione
+case_vuote_pct,Case vuote,%,ISTAT · Censimento delle abitazioni 2023,case-vuote-sudmilano,Abitazioni non occupate sul totale delle abitazioni.
+centenari_100k,Centenari,per 100.000,"ISTAT · POSAS, 1 gennaio 2026",centenari-sudmilano,Residenti con 100 anni e più ogni 100.000 abitanti.
+indice_qv,Indice qualità della vita,0 = media,"Elaborazione su 11 indicatori comunali, 2026",qualita-vita-sudmilano,"Indice composito: reddito 30%, servizi 20%, ambiente 20%, sicurezza 15%, demografia 15%."
+incidenti_2024,Incidenti stradali,nel 2024,ISTAT/ACI · microdati regionali,incidenti-stradali-sudmilano,Incidenti con lesioni registrati nel 2024.
+autovelox,Apparati di velocità,impianti,Città metropolitana di Milano · settembre 2026,autovelox-sudmilano,"Apparati di velocità media o istantanea, esclusi semaforici e monitoraggi."
+appalti_ad_pct,Affidamenti diretti,%,ANAC · contratti 2023-2025,appalti-sudmilano,Quota di affidamenti diretti sul totale dei CIG del triennio.
+pm10_giorni,Giorni oltre il limite PM10,nel 2025,ARPA Lombardia · stime modellistiche,aria-paullo,Giorni con media giornaliera sopra 50 µg/m³ (limite: 35).
+mercati_posti_1000,Posti di mercato,per 1.000 ab.,Regione Lombardia e Città metropolitana · 2026,mercati-sudmilano,Posti dichiarati nei mercati settimanali ogni 1.000 abitanti.
+biblio_doc_ab,Documenti in biblioteca,per abitante,Anagrafe biblioteche · 2025,biblioteche-sudmilano,Consistenza documentale per abitante.
+case_vuote_var,Variazione case vuote,p.p.,ISTAT · 2019 → 2023,case-vuote-sudmilano,Variazione in punti percentuali della quota di abitazioni non occupate.
+reddito,Reddito medio,€,MEF · dichiarazioni 2024,qualita-vita-sudmilano,Reddito complessivo medio per contribuente.
+suolo_pct,Suolo consumato,%,"ISPRA · Rapporto 2026, dati 2025",qualita-vita-sudmilano,Percentuale di territorio comunale consumata.
+tasso_inc_2224,Incidenti per 1.000 ab.,2022-24,ISTAT/ACI · media 2022-2024,incidenti-stradali-sudmilano,"Incidenti per 1.000 abitanti, media del triennio."
+biblio_prestiti_ab,Prestiti di biblioteca,per abitante,Anagrafe biblioteche · 2025,biblioteche-sudmilano,Prestiti per abitante nell'anno.
+confiscati,Immobili confiscati,totale,ANBSC · 2022,criminalita-organizzata-sudmilano,Immobili confiscati in gestione o destinati.
+furti_2026,Furti con esplosivo,episodi 2026,Rassegna stampa · ottobre 2026,furti-esplosivo-sudmilano,Episodi nel perimetro dei 14 comuni; solo casi resi pubblici.
+addizionale_30k,Addizionale IRPEF su 30.000 €,€,MEF · anno d'imposta 2025,fiscalita-sudmilano,Addizionale comunale calcolata su 30.000 € di imponibile. Mancano Carpiano e Vizzolo.

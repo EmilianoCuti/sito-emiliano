@@ -1,0 +1,640 @@
+{
+  "inchieste": [
+    {
+      "slug": "fiscalita-sudmilano",
+      "titolo": "La pressione fiscale locale, comune per comune",
+      "occhiello": "Fisco locale",
+      "data": "2026-09-03",
+      "tema": "Denaro pubblico",
+      "territorio": "12 comuni del Sud-Est Milanese",
+      "sintesi": "Dodici comuni, anno d'imposta 2025: addizionale IRPEF e IMU confrontate su carichi identici. L'indice composito va da Dresano (32) a San Zenone al Lambro (85). Il comune più ricco non è il più leggero.",
+      "punto": [
+        "A parità di imponibile, la differenza fra il comune più leggero e il più pesante è di 178 euro l'anno di addizionale su 30.000 euro: San Donato Milanese 62, Mediglia e San Zenone al Lambro 240. La classifica cambia se si guarda l'IMU: Dresano resta primo, San Zenone chiude ultimo.",
+        "Il confronto è costruito su carichi modello, non su aliquote apparenti: addizionale su 30.000 e 60.000 euro di imponibile, IMU su una seconda casa da 150.000 euro, un'abitazione principale di lusso da 400.000, un terreno agricolo da 50.000 e un'area fabbricabile da 100.000. La TARI è esclusa perché non esiste un dataset nazionale comparabile."
+      ],
+      "numeri": [
+        {"v": "12", "l": "comuni a confronto", "n": "anno d'imposta 2025"},
+        {"v": "32-85", "l": "indice composito", "n": "da Dresano a San Zenone"},
+        {"v": "178 €", "l": "differenza annua", "n": "addizionale su 30.000 €"},
+        {"v": "0,6-0,8%", "l": "aliquote addizionali", "n": "strutture progressive e lineari"}
+      ],
+      "metodo": [
+        "Addizionale IRPEF: database MEF delle addizionali comunali, anno d'imposta 2025, con delibere 2024-2025.",
+        "IMU: prospetti MEF per il saldo 2025, aliquote per ciascun comune.",
+        "Popolazione e codici ISTAT: aggiornamento 22 aprile 2026.",
+        "Indice composito calcolato sui cinque carichi modello, con posizione per colonna e graduatoria finale."
+      ],
+      "fonti": [
+        "MEF — Dipartimento delle Finanze, addizionali IRPEF 2025",
+        "MEF — prospetti IMU 2025",
+        "ISTAT / daticomuni.it — popolazione e codici"
+      ],
+      "limiti": [
+        "La TARI non è confrontabile: i regolamenti locali non sono omogenei e non esiste un dataset nazionale per fascia.",
+        "Carpiano e Vizzolo Predabissi restano fuori: l'inchiesta copre 12 comuni su 14.",
+        "Sei comuni hanno già pubblicato le aliquote 2026; per gli altri vale la proroga delle aliquote 2025."
+      ],
+      "dati": {"file": "pressione-fiscale-12-comuni.json", "label": "Dati di analisi (JSON)", "nota": "aliquote, carichi modello e classifica"},
+      "materiali": ["Report completo (Markdown)", "Quattro grafici: addizionale, IMU, tabella grafica, classifica"],
+      "correlati": ["appalti-sudmilano", "case-vuote-sudmilano", "qualita-vita-sudmilano"]
+    },
+    {
+      "slug": "reati-donne-sudmilano",
+      "titolo": "La violenza sulle donne nei quattordici comuni",
+      "occhiello": "Violenza di genere",
+      "data": "2026-09-28",
+      "tema": "Sicurezza",
+      "territorio": "14 comuni del Sudmilano",
+      "sintesi": "Le prese in carico della rete antiviolenza passano da 11 nel 2019 a 58 nei primi dieci mesi del 2021. Fra il 2020 e il 2026 sono censiti 30 episodi, con un femminicidio. Il dato per singolo comune non esiste.",
+      "punto": [
+        "La crescita delle prese in carico misura soprattutto l'avvio di un sistema, non un'impennata del fenomeno: la rete è nata nel 2017, il centro di San Donato ha aperto nel 2018, lo sportello di Peschiera Borromeo nel 2020. Prima non c'era una struttura che raccogliesse le segnalazioni.",
+        "Il dato che regge è un altro: nell'89% dei casi su 123 l'autore è il partner o l'ex partner. È la prima volta che il territorio prova a contare gli episodi uno per uno, con date, luoghi e stato delle indagini."
+      ],
+      "numeri": [
+        {"v": "11 → 58", "l": "prese in carico", "n": "2019 → gennaio-ottobre 2021"},
+        {"v": "89%", "l": "autori partner o ex", "n": "su 123 casi"},
+        {"v": "30", "l": "episodi censiti", "n": "2020-2026"},
+        {"v": "1", "l": "femminicidio", "n": "San Giuliano, 7 febbraio 2021"}
+      ],
+      "metodo": [
+        "Indicatori di emersione della rete «Fuori dal Silenzio» dall'Osservatorio regionale antiviolenza (O.R.A.) di Regione Lombardia.",
+        "Rendiconti e Carta dei servizi del centro antiviolenza, relazioni del comune capofila.",
+        "Rassegna stampa locale per gli episodi 2020-2026, con scheda per caso e stato delle indagini.",
+        "Piano di completamento e verifica dei vuoti informativi: cosa manca e come chiederlo."
+      ],
+      "fonti": [
+        "Regione Lombardia — Osservatorio regionale antiviolenza",
+        "Rete «Fuori dal Silenzio» — rendiconto 2023",
+        "Prefettura, forze dell'ordine e stampa locale per gli episodi"
+      ],
+      "limiti": [
+        "Non esiste un dato per singolo comune: la rete misura per ambito e solo per alcuni indicatori.",
+        "L'emersione non è la prevalenza: più segnalazioni possono significare più servizi, non più violenza.",
+        "Gli episodi sono solo quelli resi pubblici; il 2025 è parziale."
+      ],
+      "dati": {"file": "reati-donne-scheda-14-comuni.csv", "label": "Scheda operativa dei 14 comuni (CSV)", "nota": "servizi presenti e dato disponibile"},
+      "materiali": ["Report completo in 10 sezioni", "Report degli episodi con schede", "Dossier delle fonti e piano di completamento", "Dataset degli episodi 2020-2026"],
+      "correlati": ["criminalita-organizzata-sudmilano", "furti-esplosivo-sudmilano", "qualita-vita-sudmilano"]
+    },
+    {
+      "slug": "criminalita-organizzata-sudmilano",
+      "titolo": "La presenza mafiosa che non si vede nei numeri",
+      "occhiello": "Criminalità organizzata",
+      "data": "2026-09-28",
+      "tema": "Sicurezza",
+      "territorio": "14 comuni del Sudmilano",
+      "sintesi": "102 immobili confiscati in sette comuni, nessuna azienda confiscata, nessuno scioglimento per mafia. Il patrimonio è concentrato: Peschiera Borromeo 40, San Donato Milanese 37. Il resto è contesto.",
+      "punto": [
+        "L'assenza di aziende confiscate e di scioglimenti non significa assenza di criminalità organizzata: significa che gli indicatori disponibili non la misurano. I reati spia ci sono e sono documentati: un'estorsione con metodo mafioso a San Giuliano, la Stidda a Melegnano, il narcotraffico internazionale a Peschiera.",
+        "Il dato più solido è la concentrazione: sette comuni su quattordici hanno immobili confiscati, gli altri sette zero. Non è una geografia casuale, ed è l'unica che i dati pubblici permettono di disegnare."
+      ],
+      "numeri": [
+        {"v": "102", "l": "immobili confiscati", "n": "in 7 comuni su 14"},
+        {"v": "40", "l": "Peschiera Borromeo", "n": "29 in gestione + 11 destinati"},
+        {"v": "37", "l": "San Donato Milanese", "n": "35 destinati"},
+        {"v": "0", "l": "aziende confiscate", "n": "nessuna nei 14 comuni"}
+      ],
+      "metodo": [
+        "Open data ANBSC: immobili in gestione e destinati, elenco delle aziende confiscate 2026.",
+        "Relazione ANBSC 2025 e monitoraggio PoliS-Lombardia / Università degli Studi di Milano.",
+        "DIA e rassegna stampa per i casi locali; catalogo delle fonti con granularità dichiarata.",
+        "Richiesta di accesso agli atti già scritta per ottenere ciò che non è pubblico."
+      ],
+      "fonti": [
+        "ANBSC — Agenzia nazionale per l'amministrazione e la destinazione dei beni sequestrati e confiscati",
+        "PoliS-Lombardia / Università degli Studi di Milano — monitoraggio presenza mafiosa in Lombardia",
+        "DIA — Relazione semestrale"
+      ],
+      "limiti": [
+        "L'elenco ANBSC è per data di confisca, non per anno del reato.",
+        "Le interdittive antimafia non sono pubbliche.",
+        "I reati spia non sono localizzati in modo sistematico: servono richieste a Prefettura e Procura."
+      ],
+      "dati": {"file": "beni-confiscati-14-comuni.csv", "label": "Immobili confiscati per comune (CSV)", "nota": "gestione, destinati, totale 2022"},
+      "materiali": ["Report completo", "Report dedicato ai dati ANBSC", "Approfondimento e catalogo delle fonti", "Analisi dei vuoti informativi", "Modello di richiesta all'ANBSC"],
+      "correlati": ["appalti-sudmilano", "reati-donne-sudmilano", "furti-esplosivo-sudmilano"]
+    },
+    {
+      "slug": "incidenti-stradali-sudmilano",
+      "titolo": "Quindici anni di incidenti, comune per comune",
+      "occhiello": "Incidentalità",
+      "data": "2026-09-28",
+      "tema": "Mobilità",
+      "territorio": "14 comuni del Sudmilano",
+      "sintesi": "6.996 incidenti con lesioni, 91 morti e 10.104 feriti nei quattordici comuni fra il 2010 e il 2024. San Giuliano e San Donato concentrano più della metà dei sinistri. Nel 2024: 470 incidenti, 4 morti, 644 feriti.",
+      "punto": [
+        "La geografia degli incidenti segue le strade, non i confini comunali: la Paullese, la Binasco-Melegnano e la Cerca spiegano gran parte delle differenze fra un comune e l'altro. San Giuliano Milanese, con 2.289 incidenti e 27 morti in quindici anni, è il comune con il numero più alto.",
+        "Il dato 2024 non è un anno qualunque: 470 incidenti e 644 feriti sono il valore più alto del triennio. I pedoni feriti sono 44, circa uno ogni dieci incidenti con lesioni."
+      ],
+      "numeri": [
+        {"v": "6.996", "l": "incidenti", "n": "2010-2024"},
+        {"v": "91", "l": "morti", "n": "78 entro 24 ore + 13 entro 30 giorni"},
+        {"v": "10.104", "l": "feriti", "n": "quindici anni"},
+        {"v": "470", "l": "incidenti nel 2024", "n": "4 morti, 644 feriti"}
+      ],
+      "metodo": [
+        "Microdati ISTAT sull'incidentalità stradale pubblicati da Regione Lombardia, incidente per incidente, 2010-2024.",
+        "Filtro sui quattordici comuni e aggregazione per comune, anno e strada.",
+        "Incrocio con i conteggi di traffico della Città metropolitana e con i rilevatori di velocità.",
+        "Analisi separata delle cause: distrazione, precedenza, distanza di sicurezza."
+      ],
+      "fonti": [
+        "Regione Lombardia / ISTAT — microdati incidentalità 2010-2024",
+        "ACI — open data",
+        "ISTAT — tavole nazionali sulle circostanze"
+      ],
+      "limiti": [
+        "Il dettaglio su alcol e droga non viene pubblicato dal 2009: servono richieste a Prefettura e presidi sanitari.",
+        "I microdati coprono gli incidenti con lesioni, non quelli senza feriti.",
+        "Il 2025 non è ancora disponibile."
+      ],
+      "dati": {"file": "incidenti-serie-2010-2024-14-comuni.csv", "label": "Serie per comune e anno (CSV)", "nota": "incidenti, morti 24h e 30gg, feriti"},
+      "materiali": ["Report completo", "Dossier delle fonti", "Report su cause, alcol e droga", "Microdati dell'area 2010-2024"],
+      "correlati": ["traffico-strade-sudmilano", "autovelox-sudmilano", "qualita-vita-sudmilano"]
+    },
+    {
+      "slug": "traffico-strade-sudmilano",
+      "titolo": "Il traffico che non viene più misurato",
+      "occhiello": "Strade e mobilità",
+      "data": "2026-09-29",
+      "tema": "Mobilità",
+      "territorio": "Città metropolitana di Milano, 14 comuni",
+      "sintesi": "Nei diciotto mesi 2015-2016 i dodici varchi della Città metropolitana contano 97,6 milioni di passaggi. Sulla Paullese 12.822 veicoli al giorno verso Milano. Dal 2017 i conteggi non sono più pubblicati.",
+      "punto": [
+        "La serie si interrompe nel 2016. Il sistema di misura esiste, ma non è open: la pagina che pubblicava i conteggi è ferma, e senza quei numeri non si può dire se il traffico sia cresciuto o calato dopo l'apertura dei nuovi impianti.",
+        "Quello che resta misura la gerarchia delle strade: Paullese 12.822 veicoli al giorno verso Milano, Binasco-Melegnano 9.869, Cassanese 9.227. Sono le stesse sedi su cui si concentrano incidenti e autovelox."
+      ],
+      "numeri": [
+        {"v": "97,6 mln", "l": "passaggi", "n": "12 varchi, 18 mesi"},
+        {"v": "12.822", "l": "veicoli/giorno", "n": "Paullese verso Milano"},
+        {"v": "171", "l": "punti di rilevamento", "n": "Città metropolitana"},
+        {"v": "2016", "l": "ultimo anno pubblicato", "n": "poi la serie si interrompe"}
+      ],
+      "metodo": [
+        "Open data della Città metropolitana di Milano: 6.144 righe di conteggi giornalieri per varco, 2015-2016.",
+        "Mappa dei rilevatori del Progetto Sicurezza Milano Metropolitana, con coordinate e comune.",
+        "Confronto fra varchi, trend annui e incidentalità sulle stesse strade.",
+        "Tre articoli di lettura: strada più pericolosa, episodi gravi, mappa dei rilevatori."
+      ],
+      "fonti": [
+        "Città metropolitana di Milano — conteggi di traffico 2015-2016",
+        "Città metropolitana di Milano — Progetto Sicurezza, KML dei rilevatori",
+        "ISTAT/ACI — incidentalità sulle stesse sedi"
+      ],
+      "limiti": [
+        "I conteggi si fermano al 2016: nessuna serie pubblica dal 2017.",
+        "Il sistema SISS esiste ma non è accessibile come open data.",
+        "I varchi misurano passaggi, non veicoli distinti."
+      ],
+      "dati": {"file": "strade-14-comuni.csv", "label": "Strade dell'area (CSV)", "nota": "incidenti, morti, autovelox e traffico per strada"},
+      "materiali": ["Report completo", "Mappa dei 171 rilevatori", "Conteggi giornalieri per varco", "KML e KMZ originali", "Tre articoli"],
+      "correlati": ["incidenti-stradali-sudmilano", "autovelox-sudmilano", "aria-paullo"]
+    },
+    {
+      "slug": "autovelox-sudmilano",
+      "titolo": "Quattordici autovelox, cinquanta punti sulla mappa",
+      "occhiello": "Controlli stradali",
+      "data": "2026-09-30",
+      "tema": "Mobilità",
+      "territorio": "14 comuni del Sudmilano",
+      "sintesi": "Quattordici impianti ufficiali sulle strade dei comuni, ma cinquanta installazioni sulla mappa del Progetto Sicurezza: solo dodici sono apparati di velocità. Sei impianti in otto chilometri di Paullese. Paullo, Tribiano e San Zenone non ne hanno nessuno.",
+      "punto": [
+        "La differenza fra «impianto» e «punto sulla mappa» è la differenza fra ciò che sanziona e ciò che si vede. Il pettine di Carpiano, dieci punti in fila sulla Binasco-Melegnano, non è un autovelox: è monitoraggio delle piazzole di sosta, come trenta dei cinquanta punti complessivi.",
+        "Melegnano non compare nell'elenco ufficiale degli impianti: gli autovelox della Binasco-Melegnano ai chilometri 12 e 13 sono sul tratto di San Giuliano, in direzione Melegnano. Il comune ha tre punti, ma sono telecamere di sosta."
+      ],
+      "numeri": [
+        {"v": "14", "l": "impianti ufficiali", "n": "elenco CM, 21 settembre 2026"},
+        {"v": "50", "l": "punti sulla mappa", "n": "Progetto Sicurezza"},
+        {"v": "12", "l": "apparati di velocità", "n": "7 media, 5 istantanei"},
+        {"v": "6", "l": "impianti sulla Paullese", "n": "in otto chilometri"}
+      ],
+      "metodo": [
+        "Elenco ufficiale dei posizionamenti della Città metropolitana, aggiornato al 21 settembre 2026.",
+        "Mappa Safety Zone: 171 punti nell'area metropolitana, 50 nei quattordici comuni, tipizzati uno per uno.",
+        "Verifica incrociata fra elenco, mappa e rapporti della Città metropolitana, con box di correzione delle versioni precedenti.",
+        "Lettura congiunta con traffico e incidentalità sulle stesse strade."
+      ],
+      "fonti": [
+        "Città metropolitana di Milano — posizionamenti impianti",
+        "Progetto Sicurezza Milano Metropolitana — mappa e KML",
+        "Prefetto di Milano — decreto 9 giugno 2025"
+      ],
+      "limiti": [
+        "Non è pubblico quante sanzioni e contestazioni produca ogni impianto.",
+        "I nuovi impianti 2026 su Paullese, Rivoltana e Cassanese sono noti solo dalla stampa.",
+        "La mappa distingue i tipi di apparato ma non lo stato di attività di ciascun punto."
+      ],
+      "dati": {"file": "autovelox-rilevatori-14-comuni.csv", "label": "Punti di rilevamento tipizzati (CSV)", "nota": "tipo, comune, coordinate"},
+      "materiali": ["Report principale", "Articolo (2.901 battute)", "Tabella dei 60 impianti CM", "Report di dettaglio e prima versione con correzione"],
+      "correlati": ["traffico-strade-sudmilano", "incidenti-stradali-sudmilano", "appalti-sudmilano"]
+    },
+    {
+      "slug": "aria-paullo",
+      "titolo": "L'aria di Paullo, misurata per stima",
+      "occhiello": "Ambiente",
+      "data": "2026-10-01",
+      "tema": "Ambiente",
+      "territorio": "Paullo e i 14 comuni",
+      "sintesi": "Paullo non ha una centralina ARPA: tutti i valori sono stime modellistiche. Nel 2025 il PM10 resta sotto la media annua ma supera il limite giornaliero per 38 giorni, contro i 35 consentiti. Il PM2.5 supera per 82 giorni.",
+      "punto": [
+        "Il comunicato del Comune del 12 agosto 2024 parla di «controtendenza rispetto alla media regionale». Il dato ARPA colloca Paullo all'11,6° percentile per NO2 su 1.503 comuni lombardi: sta fra i più inquinati, non fra i migliori. Le due cose possono coesistere solo se per «media regionale» si intende altro, e la domanda è precisa.",
+        "Il punto di metodo è che nessuno dei valori paullesi è una misura: la centralina più vicina è a Tribiano, 1,54 chilometri. Tutto il resto è modello. Questo non rende il dato falso, ma cambia cosa si può dire."
+      ],
+      "numeri": [
+        {"v": "1,54 km", "l": "alla centralina più vicina", "n": "Tribiano"},
+        {"v": "38", "l": "giorni oltre il limite PM10", "n": "2025, limite 35"},
+        {"v": "82", "l": "giorni oltre il limite PM2.5", "n": "2025"},
+        {"v": "11,6", "l": "percentile NO2", "n": "su 1.503 comuni lombardi"}
+      ],
+      "metodo": [
+        "Dati aperti ARPA Lombardia: stime comunali giornaliere 2011-2026 e misure delle stazioni fisse.",
+        "Indicatori di legge del D.Lgs. 155/2010 calcolati per anno, separando stime e misure.",
+        "Confronto con 1.503 comuni lombardi e con i 132 della provincia di Milano.",
+        "Meteo della stazione di Rodano per distinguere accumulo e sorgente locale."
+      ],
+      "fonti": [
+        "ARPA Lombardia — dati aperti, stime comunali e stazioni",
+        "Comune di Paullo — comunicato 12 agosto 2024",
+        "ARPA Lombardia — nota sul metodo di calcolo"
+      ],
+      "limiti": [
+        "I valori per Paullo sono stime modellistiche, non misure.",
+        "Esistono due varianti di calcolo, «Comune» e «Urbanizzato»: qui si usa «Comune» e non vanno mescolate.",
+        "Il 2026 è parziale, dati fino al 29 settembre; limiti annui e giornalieri non sono confrontabili fra loro."
+      ],
+      "dati": {"file": "aria-indicatori-14-comuni.csv", "label": "Indicatori di legge per comune e anno (CSV)", "nota": "NO2, PM10, PM2.5"},
+      "materiali": ["Report Paullo in 16 sezioni", "Dossier tecnico delle fonti", "Report dell'area e dei 14 comuni", "Serie giornaliere 2011-2026", "Grafici"],
+      "correlati": ["traffico-strade-sudmilano", "qualita-vita-sudmilano", "case-vuote-sudmilano"]
+    },
+    {
+      "slug": "mercati-sudmilano",
+      "titolo": "Ventidue mercati, un primato e quattro vuoti",
+      "occhiello": "Commercio",
+      "data": "2026-10-01",
+      "tema": "Servizi",
+      "territorio": "14 comuni del Sudmilano",
+      "sintesi": "Ventidue mercati in dieci comuni su quattordici. Melegnano è primo nella Città metropolitana per posti per abitante: 15,60 contro una mediana di 4,01. Quattro mercati sono censiti senza posti dichiarati.",
+      "punto": [
+        "Senza deduplica il risultato è falso: la fonte regionale contiene 27 duplicati esatti, quella metropolitana 5. La Fiera di San Martino di Inveruno era contata tre volte e faceva di Inveruno il primo comune. Tolte le fiere stagionali, il primato spetta a Melegnano e al suo mercato settimanale da 41 posti.",
+        "I quattro mercati senza posti dichiarati non sono quattro mercati a zero posti: sono un dato mancante, e contarli come zero avrebbe abbassato la media dell'area senza motivo."
+      ],
+      "numeri": [
+        {"v": "22", "l": "mercati", "n": "in 10 comuni su 14"},
+        {"v": "7,2%", "l": "dei mercati della CM", "n": "22 su 304"},
+        {"v": "15,60", "l": "posti per 1.000 ab.", "n": "Melegnano, primo della CM"},
+        {"v": "4", "l": "mercati senza posti", "n": "dato mancante, non zero"}
+      ],
+      "metodo": [
+        "Tre dataset aperti: mercati regionali, mercati della Città metropolitana, popolazione 2022.",
+        "Deduplica esatta delle righe e separazione delle fiere stagionali dal confronto settimanale.",
+        "Join sul nome normalizzato del comune: il codice del dataset popolazione non è il codice ISTAT.",
+        "Graduatoria metropolitana per contestualizzare i valori dell'area."
+      ],
+      "fonti": [
+        "Regione Lombardia — dataset mercati su aree pubbliche",
+        "Città metropolitana di Milano — censimento mercati",
+        "Popolazione residente al 31 dicembre 2022"
+      ],
+      "limiti": [
+        "I posti sono dichiarati, non presenze o venditori effettivi: nessun dato di fruizione.",
+        "L'anno di istituzione manca su 12 mercati su 22.",
+        "Non c'è serie storica: non si può dire se la rete sia diminuita."
+      ],
+      "dati": {"file": "mercati-14-comuni.csv", "label": "Mercati per comune (CSV)", "nota": "posti, superfici, periodicità"},
+      "materiali": ["Report completo in 13 sezioni", "Graduatoria della Città metropolitana", "Dataset grezzi", "Script di deduplica", "Tre grafici"],
+      "correlati": ["biblioteche-sudmilano", "qualita-vita-sudmilano", "case-vuote-sudmilano"]
+    },
+    {
+      "slug": "biblioteche-sudmilano",
+      "titolo": "Diciotto biblioteche, una carenza",
+      "occhiello": "Cultura",
+      "data": "2026-10-01",
+      "tema": "Servizi",
+      "territorio": "14 comuni del Sudmilano",
+      "sintesi": "Tutti i quattordici comuni hanno almeno una biblioteca: diciotto sedi. La dotazione va da 3,72 documenti per abitante a Dresano a 0,37 a Mediglia, ultimo comune della Città metropolitana. Diciassette sedi su diciotto sono accessibili; il wifi c'è in nove.",
+      "punto": [
+        "Mediglia non è povera: spende 47.378 euro di funzionamento, di cui 32.352 per il personale, e ha cinquanta postazioni pubbliche, più di Cerro al Lambro, Colturano e Vizzolo. Ha il patrimonio documentale più basso della provincia: 4.490 documenti, 4 multimediali. Il costo c'è, il libro no.",
+        "San Donato ha diciotto dipendenti di ruolo su tre sedi, il valore più alto dell'area, ma 1,75 documenti per abitante: la sede decentrata di Poasco pesa sulla superficie aggregata e il personale è condiviso."
+      ],
+      "numeri": [
+        {"v": "18", "l": "sedi", "n": "almeno una per comune"},
+        {"v": "0,37", "l": "documenti per abitante", "n": "Mediglia, ultimo della CM"},
+        {"v": "2,08", "l": "mediana della CM", "n": "131 comuni"},
+        {"v": "9/18", "l": "sedi con wifi", "n": "17 accessibili su 18"}
+      ],
+      "metodo": [
+        "Tre dataset Socrata: biblioteche comunali della CM, anagrafe biblioteche lombarde, popolazione 2022.",
+        "Deduplica per sede e non per riga: 215 righe corrispondono a 187 sedi, le righe multiple sono orari diversi.",
+        "Confronto della dotazione con la mediana dei 131 comuni metropolitani.",
+        "Verifica incrociata fra le due fonti indipendenti per sedi e anni di fondazione."
+      ],
+      "fonti": [
+        "Città metropolitana di Milano — biblioteche comunali",
+        "Regione Lombardia — anagrafe biblioteche comunali",
+        "Popolazione residente al 31 dicembre 2022"
+      ],
+      "limiti": [
+        "Il personale non è distinto per sede: nei comuni con più sedi è confrontabile solo a livello comunale.",
+        "Il campo delle visite annuali vale zero in 199 comuni su 214 della CM: non è usabile, la fruizione si misura con i prestiti.",
+        "Le spese di funzionamento mancano in 44 sedi su 215."
+      ],
+      "dati": {"file": "biblioteche-14-comuni.csv", "label": "Biblioteche per comune (CSV)", "nota": "sedi, personale, documenti, prestiti"},
+      "materiali": ["Report completo", "Dataset grezzi e di elaborazione", "Script di calcolo e grafici", "Log di download"],
+      "correlati": ["mercati-sudmilano", "qualita-vita-sudmilano", "centenari-sudmilano"]
+    },
+    {
+      "slug": "rettemensa-paullo",
+      "titolo": "La mensa scolastica, il bando che non si trova",
+      "occhiello": "Servizi comunali",
+      "data": "2026-10-02",
+      "tema": "Servizi",
+      "territorio": "Paullo",
+      "sintesi": "Sette anni di gestione, quattro cambi di mano e due importi ufficiali diversi per lo stesso appalto: 4.098.885,74 euro nella delibera, 4.206.264,94 nella relazione. Per le famiglie il pasto è cresciuto del 10,7% in sette anni; per il Comune il valore annuo del contratto del 41,6%.",
+      "punto": [
+        "Il divario si è aperto. Nel 2022 il Comune pagava al gestore 4,81 euro e chiedeva alle famiglie fino a 5,45: il costo del pasto era già interamente a carico degli utenti. Nel 2026 il Comune paga 5,80 euro per una quota massima di 5,54.",
+        "Restano due nodi: un bando da oltre quattro milioni che non è rintracciabile sulle piattaforme, e due importi ufficiali per lo stesso appalto che non si riconciliano. Lo scarto è di 107.379,20 euro."
+      ],
+      "numeri": [
+        {"v": "89", "l": "cifre verificate", "n": "84 confermate, 5 falsi allarmi"},
+        {"v": "107.379 €", "l": "scarto fra i due importi", "n": "4.098.885,74 vs 4.206.264,94"},
+        {"v": "+10,7%", "l": "tariffe alle famiglie", "n": "in sette anni"},
+        {"v": "+41,6%", "l": "valore annuo del contratto", "n": "2022 → 2026"}
+      ],
+      "metodo": [
+        "Albo pretorio e Amministrazione trasparente del Comune di Paullo: delibere, determinazioni, bandi, capitolati, tariffe.",
+        "Bilanci della società in-house SPM Srl dal 2020 al 2024; OCR sui bilanci scansionati.",
+        "Confronto automatico di 89 cifre con il testo originale dei documenti.",
+        "Ricostruzione della catena di gestione: in house, subappalto, reinternalizzazione, nuova concessione."
+      ],
+      "fonti": [
+        "Comune di Paullo — atti e documenti di gara",
+        "SPM Srl — bilanci 2020-2024",
+        "Capitolati, disciplinari e tabelle tariffarie"
+      ],
+      "limiti": [
+        "Il bando della nuova concessione non è rintracciabile: potrebbe essere su una piattaforma non indicizzata.",
+        "Evasione e morosità non sono documentate: servono accessi civici e i dati di incasso di SPM.",
+        "Il rincaro 2026/27 è una possibilità prevista dalla delibera, non un fatto."
+      ],
+      "materiali": ["Report finale", "Report con note di verifica", "Trenta documenti originali in PDF", "Bilanci SPM 2020-2024"],
+      "correlati": ["appalti-sudmilano", "fiscalita-sudmilano", "qualita-vita-sudmilano"]
+    },
+    {
+      "slug": "furti-esplosivo-sudmilano",
+      "titolo": "Cinque colpi con esplosivo in un anno",
+      "occhiello": "Cronaca",
+      "data": "2026-10-06",
+      "tema": "Sicurezza",
+      "territorio": "14 comuni del Sudmilano",
+      "sintesi": "Cinque episodi nel 2026 nei quattordici comuni, tre riusciti, sei sportelli colpiti. L'ufficio postale di Sesto Ulteriano è chiuso dal 6 settembre, per circa 7.000 residenti. L'elenco è costruito sulla cronaca: solo i casi resi pubblici.",
+      "punto": [
+        "È un elenco, non una statistica: i bottini quasi mai sono quantificati e i casi non denunciati o non resi pubblici mancano. Serve come mappa del fenomeno e come traccia per chiedere gli atti, non come misura della criminalità dell'area.",
+        "La conseguenza più pesante non è il bottino: è la chiusura a tempo indeterminato dell'ufficio postale di Sesto Ulteriano, che serve circa settemila residenti fra Sesto e Civesio."
+      ],
+      "numeri": [
+        {"v": "5", "l": "episodi nel 2026", "n": "nei 14 comuni"},
+        {"v": "3", "l": "colpi riusciti", "n": "bottini non resi noti"},
+        {"v": "6", "l": "sportelli colpiti", "n": "4 bancomat, 2 Postamat"},
+        {"v": "3.225", "l": "articoli scanditi", "n": "archivio 7giorni, 12 mesi"}
+      ],
+      "metodo": [
+        "Scansione integrale dell'archivio di 7giorni.info da novembre 2025 a ottobre 2026: 3.225 articoli.",
+        "Confronto con Il Cittadino, Il Giorno, Sky TG24, MilanoToday, Lodi Notizie.",
+        "Verifica una per una delle date del 2023-2025 e distinzione fra episodi nel perimetro e casi di contesto.",
+        "Scheda per episodio: data, luogo, obiettivo, istituto, metodo, esito, conseguenze, stato delle indagini."
+      ],
+      "fonti": [
+        "7giorni.info — archivio 2025-2026",
+        "Il Cittadino, Il Giorno, Sky TG24, MilanoToday, Lodi Notizie",
+        "Comunicati di Prefettura e forze dell'ordine"
+      ],
+      "limiti": [
+        "Solo i casi resi pubblici: l'elenco è per definizione una sottostima.",
+        "I bottini sono quasi sempre non quantificati.",
+        "Gli atti giudiziari non sono disponibili: lo stato delle indagini è quello riportato dalla stampa."
+      ],
+      "dati": {"file": "furti-esplosivo-episodi-2026.csv", "label": "Episodi 2023-2026 (CSV)", "nota": "14 record, dentro e fuori perimetro"},
+      "materiali": ["Dossier completo con schede e fonti", "Tabelle 2023-2026 in Markdown e JPEG", "Estratti e pagine originali", "Script di raccolta"],
+      "correlati": ["criminalita-organizzata-sudmilano", "reati-donne-sudmilano", "appalti-sudmilano"]
+    },
+    {
+      "slug": "centenari-sudmilano",
+      "titolo": "Quarantasei centenari, il doppio del 2019",
+      "occhiello": "Demografia",
+      "data": "2026-11-04",
+      "tema": "Demografia",
+      "territorio": "14 comuni del Sudmilano",
+      "sintesi": "Quarantasei residenti con cento anni e più al 1° gennaio 2026: 26,9 ogni 100.000 abitanti, contro circa 41,9 in Italia. San Donato ne ha diciassette, un terzo del totale. Sei comuni non ne hanno nessuno. La serie è raddoppiata dal 2019.",
+      "punto": [
+        "Il dato è una stima ISTAT e i conteggi comunali piccoli sono volatili: sei comuni a zero non significano sei comuni senza anziani, significano che il numero atteso è inferiore a uno. La persona più anziana documentata è Gina Roma, 106 anni, residente a Peschiera Borromeo.",
+        "La crescita è netta: 23 centenari nel 2019, 46 nel 2026, mentre la popolazione cresceva del 2,3%. Il record storico dell'area resta Ida Ortolani, sandonatese di Metanopoli, 110 anni nel marzo 2023 e morta a 111 anni e 254 giorni."
+      ],
+      "numeri": [
+        {"v": "46", "l": "centenari", "n": "1 gennaio 2026"},
+        {"v": "26,9", "l": "ogni 100.000 abitanti", "n": "Italia: circa 41,9"},
+        {"v": "84,8%", "l": "donne", "n": "39 donne, 7 uomini"},
+        {"v": "17", "l": "San Donato", "n": "37% del totale dell'area"}
+      ],
+      "metodo": [
+        "ISTAT POSAS 2026, provincia di Milano: estrazione dei 14 comuni e calcolo del tasso per 100.000.",
+        "Serie 2019-2026 per comune e confronto con la dinamica della popolazione.",
+        "Rassegna stampa per i casi documentati: 18 schede con date e URL.",
+        "Modello di richiesta all'ufficio anagrafe per il dato fine, che ISTAT non pubblica."
+      ],
+      "fonti": [
+        "ISTAT — POSAS, 1 gennaio 2026",
+        "Uffici anagrafe comunali per i casi documentati",
+        "Stampa locale per le biografie"
+      ],
+      "limiti": [
+        "ISTAT pubblica solo la classe aggregata «100 e oltre»: l'età esatta dei singoli non è un dato open.",
+        "La persona più anziana è la più anziana documentata da fonti pubbliche, non necessariamente quella in assoluto.",
+        "I dati 2026 sono stime; i conteggi comunali piccoli sono volatili."
+      ],
+      "dati": {"file": "centenari-14-comuni.csv", "label": "Centenari per comune (CSV)", "nota": "popolazione, 100+, M/F, tasso, serie"},
+      "materiali": ["Report completo in 7 sezioni", "Versione DOCX", "18 casi documentati", "Nota metodologica", "Modello di richiesta all'anagrafe"],
+      "correlati": ["qualita-vita-sudmilano", "biblioteche-sudmilano", "case-vuote-sudmilano"]
+    },
+    {
+      "slug": "appalti-sudmilano",
+      "titolo": "Ottantasei virgola cinque per cento senza gara",
+      "occhiello": "Contratti pubblici",
+      "data": "2026-11-04",
+      "tema": "Denaro pubblico",
+      "territorio": "14 comuni del Sudmilano",
+      "sintesi": "2.801 contratti per 598,4 milioni di euro dal 2019 al 2025. Nel triennio 2023-2025 l'86,5% degli affidamenti è diretto; il 37,7% delle gare competitive ha una sola offerta. Maggioli è presente in dodici comuni, A2A in tutti e quattordici.",
+      "punto": [
+        "Anomalia statistica non è reato. I 79 record con importi impossibili, che dichiarano 6,39 miliardi su contratti che non possono valere tanto, servono a selezionare i casi da verificare, non a formulare accuse. Lo stesso vale per il ribasso del 100% a Cerro al Lambro.",
+        "L'incrocio con l'elenco ANBSC dà zero corrispondenze per partita IVA su 3.457 record. È un risultato, non una prova: le interdittive antimafia non sono pubbliche, e la richiesta di accesso è la strada per ottenerle."
+      ],
+      "numeri": [
+        {"v": "2.801", "l": "contratti", "n": "2019-2025"},
+        {"v": "598,4 mln", "l": "euro validati", "n": "valore complessivo"},
+        {"v": "86,5%", "l": "affidamenti diretti", "n": "1.546 su 1.788 CIG, 2023-25"},
+        {"v": "37,7%", "l": "gare con una offerta", "n": "46 su 122"}
+      ],
+      "metodo": [
+        "84 file mensili degli open data ANAC, 2019-2025, filtro sui 14 comuni come stazione appaltante.",
+        "Indicatori per comune e anno: affidamenti diretti, gare competitive, offerte, ribassi, concentrazione.",
+        "Ricostruzione della sede degli operatori via VIES per 206 imprese.",
+        "Incrocio per partita IVA con l'elenco delle aziende confiscate ANBSC."
+      ],
+      "fonti": [
+        "ANAC — open data contratti pubblici",
+        "ANAC — Relazione annuale 2025",
+        "ANBSC — elenco aziende confiscate 2026",
+        "VIES — verifica partite IVA"
+      ],
+      "limiti": [
+        "La serie 2019-2022 non è confrontabile con il 2023-2025: prima della riforma i contratti sotto 40.000 euro stavano in SmartCIG.",
+        "Il perimetro è la stazione appaltante: i contratti gestiti da CUC o ARIA non sono attribuiti al comune.",
+        "La sede delle imprese è nota solo per 206 operatori; le interdittive non sono pubbliche."
+      ],
+      "dati": {"file": "appalti-14-comuni-2023-2025.csv", "label": "Indicatori per comune (CSV)", "nota": "affidamenti, gare, ribassi, operatori"},
+      "materiali": ["Report completo in 10 sezioni", "Dataset dei 2.801 CIG", "Gare competitive, operatori, anomalie, frazionamento", "Nota metodologica e verifica indipendente", "Modello di accesso civico"],
+      "correlati": ["fiscalita-sudmilano", "criminalita-organizzata-sudmilano", "rettemensa-paullo"]
+    },
+    {
+      "slug": "qualita-vita-sudmilano",
+      "titolo": "Nessuno classifica questi comuni",
+      "occhiello": "Qualità della vita",
+      "data": "2026-11-05",
+      "tema": "Territorio",
+      "territorio": "14 comuni del Sudmilano",
+      "sintesi": "Un indice composito su undici indicatori ufficiali: vince Colturano (+0,369), ultimo Vizzolo Predabissi (−0,365). Il comune più ricco, San Donato, è settimo. Il divario di reddito interno è di 10.086 euro l'anno.",
+      "punto": [
+        "La graduatoria è una nostra elaborazione, non un dato ufficiale. I singoli indicatori sono tutti ufficiali e verificabili, ma cambiando i pesi cambia l'ordine: chi vuole confrontare questi comuni deve costruirsi il numero e dichiarare come lo pesa.",
+        "Il risultato più solido è il divario: da San Donato (36.709 euro di reddito medio) a San Giuliano Milanese (26.623) ci sono 10.086 euro l'anno. Il comune più grande dell'area è anche uno dei più poveri del Milanese."
+      ],
+      "numeri": [
+        {"v": "+0,369", "l": "Colturano", "n": "primo in graduatoria"},
+        {"v": "−0,365", "l": "Vizzolo Predabissi", "n": "ultimo"},
+        {"v": "11", "l": "indicatori", "n": "cinque dimensioni"},
+        {"v": "10.086 €", "l": "divario di reddito", "n": "San Donato vs San Giuliano"}
+      ],
+      "metodo": [
+        "Undici indicatori comunali da ISTAT, MEF, ISPRA e Anagrafe delle biblioteche.",
+        "Z-score rispetto alla media dei quattordici comuni e indice a media ponderata: reddito 30%, servizi 20%, ambiente 20%, sicurezza 15%, demografia 15%.",
+        "Analisi di sensibilità con pesi alternativi e confronto con la provincia di Milano.",
+        "Verifica dei singoli indicatori sulle fonti originali."
+      ],
+      "fonti": [
+        "ISTAT — popolazione, demografia, incidenti",
+        "MEF — redditi e addizionali",
+        "ISPRA — consumo di suolo 2026",
+        "Anagrafe delle biblioteche — prestiti e iscritti"
+      ],
+      "limiti": [
+        "Quattordici unità: l'indice è descrittivo, non inferenziale.",
+        "I pesi sono una scelta dichiarata, non un dato.",
+        "Non ci sono indicatori soggettivi: la qualità della vita percepita non è misurata."
+      ],
+      "dati": {"file": "qualita-vita-classifica.csv", "label": "Classifica e indicatori (CSV)", "nota": "indice, dimensioni, posizione"},
+      "materiali": ["Report completo", "Nota metodologica", "Dataset comunale", "Classifica in JSON", "Due grafici"],
+      "correlati": ["case-vuote-sudmilano", "biblioteche-sudmilano", "appalti-sudmilano"]
+    },
+    {
+      "slug": "case-vuote-sudmilano",
+      "titolo": "Le case vuote ci sono, ma sono sempre meno",
+      "occhiello": "Abitare",
+      "data": "2026-11-16",
+      "tema": "Casa e territorio",
+      "territorio": "14 comuni del Sudmilano",
+      "sintesi": "7.617 abitazioni non occupate su 81.686: il 9,3%, meno della metà della media italiana. In quattro anni sono calate di 1.856 unità mentre la popolazione cresceva. Il problema non è la quantità: è l'età del patrimonio, l'offerta e chi può permettersela.",
+      "punto": [
+        "Il fenomeno è concentrato, non diffuso: il 30% delle sezioni di censimento sta sotto il 5% di case non occupate, ma 32 sezioni superano il 20% e 15 il 30%. Melegnano ha tre sezioni oltre il 30% e sei su quaranta oltre il 20%.",
+        "La correlazione più forte è con l'età dell'edificio: pre-1918 al 16,5% di abitazioni non occupate, 1981-2000 al 10,4%. Il patrimonio vecchio non è un problema di quantità, è un problema di qualità e di costo di messa a norma."
+      ],
+      "numeri": [
+        {"v": "7.617", "l": "abitazioni non occupate", "n": "su 81.686"},
+        {"v": "9,3%", "l": "dello stock", "n": "Italia 27,2%, Lombardia 21,2%"},
+        {"v": "−1.856", "l": "unità dal 2019", "n": "mentre la popolazione cresceva"},
+        {"v": "32", "l": "sezioni oltre il 20%", "n": "su 357 sezioni con dato"}
+      ],
+      "metodo": [
+        "Censimento permanente delle abitazioni ISTAT, 2023 e 2019, con dettaglio comunale e per sezione.",
+        "688 sezioni di censimento: distribuzione della non occupazione, non solo media comunale.",
+        "Quotazioni OMI 2018/1 per locazione e compravendita; titolo di godimento 2019.",
+        "Quadratura occupate + non occupate = totale su 42 righe e confronto fra banca dati SDMX e file per sezione."
+      ],
+      "fonti": [
+        "ISTAT — Censimento permanente delle abitazioni 2023",
+        "Agenzia delle Entrate — OMI 2018/1",
+        "ISTAT — popolazione residente"
+      ],
+      "limiti": [
+        "«Abitazione non occupata» non significa «casa disponibile»: include seconde case, immobili in vendita o in affitto, alloggi in ristrutturazione.",
+        "Parte del calo può essere tecnica: fra 2021 e 2023 sono migliorate le procedure di collegamento famiglie-abitazioni-edifici.",
+        "Epoca di costruzione, densità e ragioni della non occupazione non sono diffuse a livello comunale; ERP, sfratti e graduatorie non sono pubblici."
+      ],
+      "dati": {"file": "case-vuote-14-comuni.csv", "label": "14 comuni per 28 indicatori (CSV)", "nota": "2019-2026, abitazioni, popolazione, OMI"},
+      "materiali": ["Report completo con grafici SVG", "Report PDF di 18 pagine", "Articolo in 15 capitoli", "Dataset delle sezioni di censimento", "Nota metodologica e verifica"],
+      "correlati": ["centenari-sudmilano", "mercati-sudmilano", "qualita-vita-sudmilano"]
+    }
+  ],
+  "articoli": [
+    {
+      "slug": "case-vuote-articolo",
+      "titolo": "Le case vuote ci sono, ma sono sempre meno",
+      "sommario": "Quattordici comuni, 81.686 abitazioni, 7.617 senza residenti stabili. Il problema abitativo del Sudmilano non è la quantità di case: è la loro età, il tipo di offerta e chi può permettersela.",
+      "inchiesta": "case-vuote-sudmilano",
+      "tema": "Casa e territorio",
+      "fonte": "Case vuote Sudmilano/articoli/articolo-case-vuote-sudmilano.md",
+      "formato": "Articolo in 15 capitoli"
+    },
+    {
+      "slug": "paullese-strada-pericolosa",
+      "titolo": "La Paullese è la strada più pericolosa del Sudmilano: 497 incidenti e 8 morti in quindici anni",
+      "sommario": "La ex statale 415 è la prima strada provinciale dell'area per incidenti e vittime, davanti alla Cerca e alla Binasco-Melegnano. I numeri vengono dai microdati ISTAT filtrati sui quattordici comuni.",
+      "inchiesta": "traffico-strade-sudmilano",
+      "tema": "Mobilità",
+      "fonte": "Traffico strade Città metropolitana Milano/articoli/articolo-1-strade-14-comuni.md",
+      "formato": "Articolo"
+    },
+    {
+      "slug": "paullese-gli-otto-morti",
+      "titolo": "La Paullese uccide: gli otto morti in quindici anni, e i casi che non hanno un nome",
+      "sommario": "Sulla ex statale 415, nel tratto che attraversa i quattordici comuni, dal 2010 al 2024: 497 incidenti con lesioni, 8 morti, 821 feriti. La strada attraversa Mediglia, Tribiano, Pantigliate e il confine di Peschiera.",
+      "inchiesta": "traffico-strade-sudmilano",
+      "tema": "Mobilità",
+      "fonte": "Traffico strade Città metropolitana Milano/articoli/articolo-2-episodi-gravi-strade.md",
+      "formato": "Articolo breve"
+    },
+    {
+      "slug": "autovelox-mappa-50-punti",
+      "titolo": "Autovelox, la mappa nei 14 comuni del Sudmilano: 50 punti, e i tre paesi che restano fuori",
+      "sommario": "Cinquanta rilevatori su 171 punti dell'area metropolitana. Il primato è di Carpiano, con dodici punti: dieci in fila sulla Binasco-Melegnano.",
+      "inchiesta": "autovelox-sudmilano",
+      "tema": "Mobilità",
+      "fonte": "Traffico strade Città metropolitana Milano/articoli/articolo-3-mappa-autovelox-14-comuni.md",
+      "formato": "Articolo breve"
+    },
+    {
+      "slug": "autovelox-dieci-in-fila",
+      "titolo": "Autovelox nei 14 comuni: dieci in fila a Carpiano, sei sulla Paullese e tre paesi senza",
+      "sommario": "Quattordici impianti ufficiali, cinquanta punti sulla mappa: la differenza sta tra gli apparati che si vedono e quelli che sanzionano.",
+      "inchiesta": "autovelox-sudmilano",
+      "tema": "Mobilità",
+      "fonte": "Autovelox nei 14 comuni/articolo-autovelox-14-comuni.md",
+      "formato": "Articolo"
+    },
+    {
+      "slug": "violenza-donne-cifre",
+      "titolo": "Sudmilano, la violenza sulle donne in cifre: in due anni le prese in carico sono quintuplicate",
+      "sommario": "Quattordici comuni, una rete, un numero passato da 11 a 58. La crescita misura soprattutto l'avvio di un sistema, non un'impennata del fenomeno.",
+      "inchiesta": "reati-donne-sudmilano",
+      "tema": "Sicurezza",
+      "fonte": "Reati contro le donne nei 14 comuni/articoli/articolo-1-numeri-violenza-donne-sudmilano.md",
+      "formato": "Articolo"
+    },
+    {
+      "slug": "violenza-donne-notti-peggiori",
+      "titolo": "Le notti peggiori del Sudmilano: cinque anni di violenza efferata tra stazione, ospedale e case private",
+      "sommario": "Un femminicidio con una sentenza, tre morti di donna senza colpevole, uno stupro in una stazione di paese. Il racconto degli episodi censiti.",
+      "inchiesta": "reati-donne-sudmilano",
+      "tema": "Sicurezza",
+      "fonte": "Reati contro le donne nei 14 comuni/articoli/articolo-2-episodi-efferati-sudmilano.md",
+      "formato": "Articolo"
+    }
+  ]
+}

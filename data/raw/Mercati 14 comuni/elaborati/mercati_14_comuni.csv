@@ -1,0 +1,15 @@
+comune,abitanti,mercati,posti_totali,posti_alim,posti_non_alim,sup_m2,mercati_senza_posti,mercati_con_anno,anno_min,anno_max,posti_per_1000_ab,periodicita
+San Giuliano Milanese,39604,5,171,62,109,6206.6,0,4,1976,2008,4.32,SETTIMANALE=5
+Peschiera Borromeo,24355,4,112,47,65,3600.0,0,0,,,4.6,SETTIMANALE=4
+San Donato Milanese,32142,3,124,35,89,3641.0,0,3,1972,1984,3.86,SETTIMANALE=3
+Melegnano,18018,2,281,102,179,7906.6,0,0,,,15.6,SETTIMANALE=2
+Paullo,11099,2,89,20,69,2492.0,0,1,1990,1990,8.02,SETTIMANALE=2
+Mediglia,12313,1,18,8,10,645.0,0,1,1999,1999,1.46,SETTIMANALE=1
+Tribiano,3721,1,0,0,0,0.0,1,0,,,0.0,(dato mancante)=1
+Pantigliate,5777,1,0,0,0,0.0,1,0,,,0.0,(dato mancante)=1
+Dresano,3066,1,15,8,7,643.0,0,1,2001,2001,4.89,SETTIMANALE=1
+Cerro al Lambro,5145,1,0,0,0,0.0,1,0,,,0.0,(dato mancante)=1
+San Zenone al Lambro,4420,1,0,0,0,0.0,1,0,,,0.0,(dato mancante)=1
+Colturano,2047,0,0,0,0,0.0,0,0,,,0.0,
+Carpiano,4135,0,0,0,0,0.0,0,0,,,0.0,
+Vizzolo Predabissi,3894,0,0,0,0,0.0,0,0,,,0.0,

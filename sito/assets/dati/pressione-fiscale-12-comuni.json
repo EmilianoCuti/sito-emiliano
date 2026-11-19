@@ -1,0 +1,682 @@
+[
+  {
+    "nome": "Dresano",
+    "pop": 3023,
+    "istat": "015101",
+    "cc": "D367",
+    "add_tipo": "progressiva",
+    "add_delib": [
+      "36",
+      "26-11-2024",
+      "30-01-2025"
+    ],
+    "add_aliquote": [
+      {
+        "aliquota": 0.0,
+        "fascia": "Esenzione per redditi imponibili fino a euro 15.000,00"
+      },
+      {
+        "aliquota": 0.6,
+        "fascia": "Applicabile a scaglione di reddito fino a euro 28.000,00"
+      },
+      {
+        "aliquota": 0.6,
+        "fascia": "Applicabile a scaglione di reddito da euro 28.000,01 fino a euro 50.000,00"
+      },
+      {
+        "aliquota": 0.8,
+        "fascia": "Applicabile a scaglione di reddito oltre euro 50.000,00"
+      }
+    ],
+    "add30": 90.0,
+    "add60": 290.0,
+    "imu_anno": 2025,
+    "imu_delib": [
+      "37",
+      "26-11-2024",
+      "19-12-2024"
+    ],
+    "imu_ap": 0.5,
+    "imu_af": 0.96,
+    "imu_ter": 0.96,
+    "imu_aree": 0.96,
+    "imu_2026": null,
+    "add26": {
+      "tipo": "progressiva",
+      "delib": [
+        "27",
+        "11-11-2025",
+        "19-01-2026"
+      ],
+      "aliquote": [
+        {
+          "aliquota": 0.0,
+          "fascia": "Esenzione per redditi imponibili fino a euro 15.000,00"
+        },
+        {
+          "aliquota": 0.6,
+          "fascia": "Applicabile a scaglione di reddito fino a euro 28.000,00"
+        },
+        {
+          "aliquota": 0.6,
+          "fascia": "Applicabile a scaglione di reddito da euro 28.000,01 fino a euro 50.000,00"
+        },
+        {
+          "aliquota": 0.8,
+          "fascia": "Applicabile a scaglione di reddito oltre euro 50.000,00"
+        }
+      ],
+      "add30": 90.0
+    },
+    "imu_seconda": 1440.0,
+    "imu_lusso": 2000.0,
+    "imu_terreno": 480.0,
+    "imu_area": 960.0,
+    "n_add30": 15.730337078651685,
+    "n_imu_seconda": 0.0,
+    "n_imu_lusso": 60.0,
+    "n_imu_terreno": 82.14285714285714,
+    "n_imu_area": 0.0,
+    "indice": 31.6,
+    "pos": 1
+  },
+  {
+    "nome": "San Giuliano Milanese",
+    "pop": 35971,
+    "istat": "015195",
+    "cc": "H930",
+    "add_tipo": "unica",
+    "add_delib": [
+      "41",
+      "25-11-2024",
+      "27-02-2025"
+    ],
+    "add_aliquote": [
+      {
+        "aliquota": 0.0,
+        "fascia": "Esenzione per redditi imponibili fino a euro 17.000,00"
+      },
+      {
+        "aliquota": 0.8,
+        "fascia": "Aliquota unica"
+      }
+    ],
+    "add30": 104.0,
+    "add60": 344.0,
+    "imu_anno": 2025,
+    "imu_delib": [
+      "51",
+      "09-12-2024",
+      "25-02-2025"
+    ],
+    "imu_ap": 0.4,
+    "imu_af": 1.06,
+    "imu_ter": 0.5,
+    "imu_aree": 1.06,
+    "imu_2026": null,
+    "add26": {
+      "tipo": "unica",
+      "delib": [
+        "37",
+        "27-10-2025",
+        "18-02-2026"
+      ],
+      "aliquote": [
+        {
+          "aliquota": 0.0,
+          "fascia": "Esenzione per redditi imponibili fino a euro 17.000,00"
+        },
+        {
+          "aliquota": 0.8,
+          "fascia": "Aliquota unica"
+        }
+      ],
+      "add30": 104.0
+    },
+    "imu_seconda": 1590.0,
+    "imu_lusso": 1600.0,
+    "imu_terreno": 250.0,
+    "imu_area": 1060.0,
+    "n_add30": 23.595505617977526,
+    "n_imu_seconda": 71.42857142857143,
+    "n_imu_lusso": 20.0,
+    "n_imu_terreno": 0.0,
+    "n_imu_area": 71.42857142857143,
+    "indice": 37.3,
+    "pos": 2
+  },
+  {
+    "nome": "Cerro al Lambro",
+    "pop": 4956,
+    "istat": "015071",
+    "cc": "C536",
+    "add_tipo": "progressiva",
+    "add_delib": [
+      "33",
+      "16-12-2024",
+      "30-01-2025"
+    ],
+    "add_aliquote": [
+      {
+        "aliquota": 0.0,
+        "fascia": "Esenzione per redditi imponibili fino a euro 15.000,00"
+      },
+      {
+        "aliquota": 0.7,
+        "fascia": "Applicabile a scaglione di reddito fino a euro 28.000,00"
+      },
+      {
+        "aliquota": 0.75,
+        "fascia": "Applicabile a scaglione di reddito da euro 28.000,01 fino a euro 50.000,00"
+      },
+      {
+        "aliquota": 0.8,
+        "fascia": "Applicabile a scaglione di reddito oltre euro 50.000,00"
+      }
+    ],
+    "add30": 106.0,
+    "add60": 336.0,
+    "imu_anno": 2025,
+    "imu_delib": [
+      "32",
+      "16-12-2024",
+      "28-01-2025"
+    ],
+    "imu_ap": 0.35,
+    "imu_af": 1.06,
+    "imu_ter": 1.06,
+    "imu_aree": 1.06,
+    "imu_2026": null,
+    "add26": {
+      "tipo": "unica",
+      "delib": [
+        "5",
+        "09-03-2026",
+        "23-03-2026"
+      ],
+      "aliquote": [
+        {
+          "aliquota": 0.0,
+          "fascia": "Esenzione per redditi imponibili fino a euro 18.000,00"
+        },
+        {
+          "aliquota": 0.8,
+          "fascia": "Aliquota unica"
+        }
+      ],
+      "add30": 96.0
+    },
+    "imu_seconda": 1590.0,
+    "imu_lusso": 1400.0,
+    "imu_terreno": 530.0,
+    "imu_area": 1060.0,
+    "n_add30": 24.719101123595504,
+    "n_imu_seconda": 71.42857142857143,
+    "n_imu_lusso": 0.0,
+    "n_imu_terreno": 100.0,
+    "n_imu_area": 71.42857142857143,
+    "indice": 53.5,
+    "pos": 3
+  },
+  {
+    "nome": "Pantigliate",
+    "pop": 5841,
+    "istat": "015167",
+    "cc": "G316",
+    "add_tipo": "unica",
+    "add_delib": null,
+    "add_aliquote": [
+      {
+        "aliquota": 0.0,
+        "fascia": "Esenzione per redditi imponibili fino a euro 15.000,00"
+      },
+      {
+        "aliquota": 0.8,
+        "fascia": "Aliquota unica"
+      }
+    ],
+    "add30": 120.0,
+    "add60": 360.0,
+    "imu_anno": 2025,
+    "imu_delib": [
+      "48",
+      "19-12-2024",
+      "20-02-2025"
+    ],
+    "imu_ap": 0.4,
+    "imu_af": 1.06,
+    "imu_ter": 1.06,
+    "imu_aree": 1.06,
+    "imu_2026": null,
+    "add26": null,
+    "imu_seconda": 1590.0,
+    "imu_lusso": 1600.0,
+    "imu_terreno": 530.0,
+    "imu_area": 1060.0,
+    "n_add30": 32.58426966292135,
+    "n_imu_seconda": 71.42857142857143,
+    "n_imu_lusso": 20.0,
+    "n_imu_terreno": 100.0,
+    "n_imu_area": 71.42857142857143,
+    "indice": 59.1,
+    "pos": 4
+  },
+  {
+    "nome": "Tribiano",
+    "pop": 3312,
+    "istat": "015222",
+    "cc": "L415",
+    "add_tipo": "unica",
+    "add_delib": null,
+    "add_aliquote": [
+      {
+        "aliquota": 0.4,
+        "fascia": "Aliquota unica"
+      }
+    ],
+    "add30": 120.0,
+    "add60": 240.0,
+    "imu_anno": 2025,
+    "imu_delib": [
+      "36",
+      "12-12-2024",
+      "14-02-2025"
+    ],
+    "imu_ap": 0.5,
+    "imu_af": 1.05,
+    "imu_ter": 1.05,
+    "imu_aree": 1.05,
+    "imu_2026": null,
+    "add26": null,
+    "imu_seconda": 1575.0,
+    "imu_lusso": 2000.0,
+    "imu_terreno": 525.0,
+    "imu_area": 1050.0,
+    "n_add30": 32.58426966292135,
+    "n_imu_seconda": 64.28571428571429,
+    "n_imu_lusso": 60.0,
+    "n_imu_terreno": 98.21428571428571,
+    "n_imu_area": 64.28571428571429,
+    "indice": 63.9,
+    "pos": 5
+  },
+  {
+    "nome": "Paullo",
+    "pop": 11014,
+    "istat": "015169",
+    "cc": "G385",
+    "add_tipo": "unica",
+    "add_delib": [
+      "60",
+      "23-12-2024",
+      "07-10-2025"
+    ],
+    "add_aliquote": [
+      {
+        "aliquota": 0.0,
+        "fascia": "Esenzione per redditi imponibili fino a euro 15.000,00"
+      },
+      {
+        "aliquota": 0.8,
+        "fascia": "Aliquota unica"
+      }
+    ],
+    "add30": 120.0,
+    "add60": 360.0,
+    "imu_anno": 2025,
+    "imu_delib": [
+      "61",
+      "23-12-2024",
+      "06-10-2025"
+    ],
+    "imu_ap": 0.6,
+    "imu_af": 1.05,
+    "imu_ter": 0.8,
+    "imu_aree": 1.06,
+    "imu_2026": null,
+    "add26": null,
+    "imu_seconda": 1575.0,
+    "imu_lusso": 2400.0,
+    "imu_terreno": 400.0,
+    "imu_area": 1060.0,
+    "n_add30": 32.58426966292135,
+    "n_imu_seconda": 64.28571428571429,
+    "n_imu_lusso": 100.0,
+    "n_imu_terreno": 53.57142857142857,
+    "n_imu_area": 71.42857142857143,
+    "indice": 64.4,
+    "pos": 6
+  },
+  {
+    "nome": "Peschiera Borromeo",
+    "pop": 22254,
+    "istat": "015171",
+    "cc": "G488",
+    "add_tipo": "unica",
+    "add_delib": [
+      "7",
+      "27-02-2025",
+      "06-03-2025"
+    ],
+    "add_aliquote": [
+      {
+        "aliquota": 0.0,
+        "fascia": "Esenzione per redditi imponibili fino a euro 17.000,00"
+      },
+      {
+        "aliquota": 0.7,
+        "fascia": "Aliquota unica"
+      }
+    ],
+    "add30": 91.0,
+    "add60": 301.0,
+    "imu_anno": 2025,
+    "imu_delib": [
+      "6",
+      "27-02-2025",
+      "03-03-2025"
+    ],
+    "imu_ap": 0.6,
+    "imu_af": 1.06,
+    "imu_ter": 1.06,
+    "imu_aree": 1.06,
+    "imu_2026": null,
+    "add26": null,
+    "imu_seconda": 1590.0,
+    "imu_lusso": 2400.0,
+    "imu_terreno": 530.0,
+    "imu_area": 1060.0,
+    "n_add30": 16.292134831460675,
+    "n_imu_seconda": 71.42857142857143,
+    "n_imu_lusso": 100.0,
+    "n_imu_terreno": 100.0,
+    "n_imu_area": 71.42857142857143,
+    "indice": 71.8,
+    "pos": 7
+  },
+  {
+    "nome": "Colturano",
+    "pop": 1952,
+    "istat": "015082",
+    "cc": "C908",
+    "add_tipo": "unica",
+    "add_delib": [
+      "39",
+      "17-12-2024",
+      "22-01-2025"
+    ],
+    "add_aliquote": [
+      {
+        "aliquota": 0.0,
+        "fascia": "Esenzione per redditi imponibili fino a euro 9.000,00"
+      },
+      {
+        "aliquota": 0.8,
+        "fascia": "Aliquota unica"
+      }
+    ],
+    "add30": 168.0,
+    "add60": 408.0,
+    "imu_anno": 2025,
+    "imu_delib": [
+      "40",
+      "17-01-2025",
+      "23-01-2025"
+    ],
+    "imu_ap": 0.5,
+    "imu_af": 1.06,
+    "imu_ter": 1.06,
+    "imu_aree": 1.06,
+    "imu_2026": null,
+    "add26": null,
+    "imu_seconda": 1590.0,
+    "imu_lusso": 2000.0,
+    "imu_terreno": 530.0,
+    "imu_area": 1060.0,
+    "n_add30": 59.55056179775281,
+    "n_imu_seconda": 71.42857142857143,
+    "n_imu_lusso": 60.0,
+    "n_imu_terreno": 100.0,
+    "n_imu_area": 71.42857142857143,
+    "indice": 72.5,
+    "pos": 8
+  },
+  {
+    "nome": "Melegnano",
+    "pop": 16774,
+    "istat": "015140",
+    "cc": "F100",
+    "add_tipo": "unica",
+    "add_delib": [
+      "90",
+      "20-12-2024",
+      "02-01-2025"
+    ],
+    "add_aliquote": [
+      {
+        "aliquota": 0.0,
+        "fascia": "Esenzione per redditi imponibili fino a euro 12.000,00"
+      },
+      {
+        "aliquota": 0.8,
+        "fascia": "Aliquota unica"
+      }
+    ],
+    "add30": 144.0,
+    "add60": 384.0,
+    "imu_anno": 2025,
+    "imu_delib": [
+      "91",
+      "20-12-2024",
+      "02-01-2025"
+    ],
+    "imu_ap": 0.6,
+    "imu_af": 1.06,
+    "imu_ter": 1.06,
+    "imu_aree": 1.06,
+    "imu_2026": null,
+    "add26": {
+      "tipo": "unica",
+      "delib": [
+        "72",
+        "22-12-2025",
+        "05-01-2026"
+      ],
+      "aliquote": [
+        {
+          "aliquota": 0.0,
+          "fascia": "Esenzione per redditi imponibili fino a euro 12.000,00"
+        },
+        {
+          "aliquota": 0.8,
+          "fascia": "Aliquota unica"
+        }
+      ],
+      "add30": 144.0
+    },
+    "imu_seconda": 1590.0,
+    "imu_lusso": 2400.0,
+    "imu_terreno": 530.0,
+    "imu_area": 1060.0,
+    "n_add30": 46.06741573033708,
+    "n_imu_seconda": 71.42857142857143,
+    "n_imu_lusso": 100.0,
+    "n_imu_terreno": 100.0,
+    "n_imu_area": 71.42857142857143,
+    "indice": 77.8,
+    "pos": 9
+  },
+  {
+    "nome": "San Donato Milanese",
+    "pop": 30992,
+    "istat": "015192",
+    "cc": "H827",
+    "add_tipo": "progressiva",
+    "add_delib": [
+      "41",
+      "11-12-2024",
+      "10-10-2025"
+    ],
+    "add_aliquote": [
+      {
+        "aliquota": 0.0,
+        "fascia": "Esenzione per redditi imponibili fino a euro 20.000,00"
+      },
+      {
+        "aliquota": 0.6,
+        "fascia": "Applicabile a scaglione di reddito fino a euro 28.000,00"
+      },
+      {
+        "aliquota": 0.7,
+        "fascia": "Applicabile a scaglione di reddito da euro 28.000,01 fino a euro 50.000,00"
+      },
+      {
+        "aliquota": 0.8,
+        "fascia": "Applicabile a scaglione di reddito oltre euro 50.000,00"
+      }
+    ],
+    "add30": 62.0,
+    "add60": 282.0,
+    "imu_anno": 2025,
+    "imu_delib": [
+      "42",
+      "11-12-2024",
+      "28-01-2025"
+    ],
+    "imu_ap": 0.6,
+    "imu_af": 1.1,
+    "imu_ter": 1.06,
+    "imu_aree": 1.1,
+    "imu_2026": null,
+    "add26": {
+      "tipo": "unica",
+      "delib": [
+        "54",
+        "27-11-2025",
+        "26-03-2026"
+      ],
+      "aliquote": [
+        {
+          "aliquota": 0.0,
+          "fascia": "Esenzione per redditi imponibili fino a euro 23.000,00"
+        },
+        {
+          "aliquota": 0.8,
+          "fascia": "Aliquota unica"
+        }
+      ],
+      "add30": 56.0
+    },
+    "imu_seconda": 1650.0,
+    "imu_lusso": 2400.0,
+    "imu_terreno": 530.0,
+    "imu_area": 1100.0,
+    "n_add30": 0.0,
+    "n_imu_seconda": 100.0,
+    "n_imu_lusso": 100.0,
+    "n_imu_terreno": 100.0,
+    "n_imu_area": 100.0,
+    "indice": 80.0,
+    "pos": 10
+  },
+  {
+    "nome": "Mediglia",
+    "pop": 12080,
+    "istat": "015139",
+    "cc": "F084",
+    "add_tipo": "unica",
+    "add_delib": [
+      "56",
+      "26-11-2024",
+      "10-02-2025"
+    ],
+    "add_aliquote": [
+      {
+        "aliquota": 0.8,
+        "fascia": "Aliquota unica"
+      }
+    ],
+    "add30": 240.0,
+    "add60": 480.0,
+    "imu_anno": 2025,
+    "imu_delib": [
+      "57",
+      "26-11-2024",
+      "10-02-2025"
+    ],
+    "imu_ap": 0.6,
+    "imu_af": 1.04,
+    "imu_ter": 1.04,
+    "imu_aree": 1.04,
+    "imu_2026": null,
+    "add26": null,
+    "imu_seconda": 1560.0,
+    "imu_lusso": 2400.0,
+    "imu_terreno": 520.0,
+    "imu_area": 1040.0,
+    "n_add30": 100.0,
+    "n_imu_seconda": 57.14285714285714,
+    "n_imu_lusso": 100.0,
+    "n_imu_terreno": 96.42857142857143,
+    "n_imu_area": 57.14285714285714,
+    "indice": 82.1,
+    "pos": 11
+  },
+  {
+    "nome": "San Zenone al Lambro",
+    "pop": 4186,
+    "istat": "015202",
+    "cc": "I415",
+    "add_tipo": "unica",
+    "add_delib": [
+      "3",
+      "13-02-2025",
+      "07-10-2025"
+    ],
+    "add_aliquote": [
+      {
+        "aliquota": 0.8,
+        "fascia": "Aliquota unica"
+      }
+    ],
+    "add30": 240.0,
+    "add60": 480.0,
+    "imu_anno": 2025,
+    "imu_delib": [
+      "6",
+      "03-02-2025",
+      "17-03-2025"
+    ],
+    "imu_ap": 0.6,
+    "imu_af": 1.06,
+    "imu_ter": 0.96,
+    "imu_aree": 1.06,
+    "imu_2026": null,
+    "add26": {
+      "tipo": "unica",
+      "delib": [
+        "3",
+        "29-01-2026",
+        "17-06-2026"
+      ],
+      "aliquote": [
+        {
+          "aliquota": 0.8,
+          "fascia": "Aliquota unica"
+        }
+      ],
+      "add30": 240.0
+    },
+    "imu_seconda": 1590.0,
+    "imu_lusso": 2400.0,
+    "imu_terreno": 480.0,
+    "imu_area": 1060.0,
+    "n_add30": 100.0,
+    "n_imu_seconda": 71.42857142857143,
+    "n_imu_lusso": 100.0,
+    "n_imu_terreno": 82.14285714285714,
+    "n_imu_area": 71.42857142857143,
+    "indice": 85.0,
+    "pos": 12
+  }
+]

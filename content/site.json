@@ -1,0 +1,83 @@
+{
+  "autore": {
+    "nome": "Emiliano Cuti",
+    "ruolo": "Giornalista",
+    "mestieri": "Cronaca locale, comunicazione istituzionale",
+    "frase": "Scrivo ciò che gli altri ignorano. Verità locali, crepe umane ed echi civici.",
+    "ritratto": "assets/ritratto.svg",
+    "anno": "2026"
+  },
+  "home": {
+    "introduzione": "Quindici inchieste sul Sudmilano, costruite su dati aperti, documenti e verifiche. Ogni dossier dichiara il metodo, le fonti e ciò che non è stato possibile sapere.",
+    "sezioni_ordine": [
+      "inchieste",
+      "atlante",
+      "articoli",
+      "chi-sono"
+    ]
+  },
+  "atlante": {
+    "titolo": "Atlante dei quattordici comuni",
+    "occhiello": "Dati incrociati",
+    "sommario": "Diciassette indicatori da dodici inchieste, comune per comune. Una sola tabella per leggere il territorio invece di quindici rapporti separati. Ogni colonna porta la sua fonte e la sua inchiesta; dove il dato manca la cella resta vuota.",
+    "introduzione": [
+      "L'Atlante non aggiunge dati nuovi: mette in colonna quelli già raccolti nelle inchieste e li rende confrontabili. La popolazione, il reddito e l'indice di qualità della vita vengono dalla stessa base ISTAT e MEF usata per la graduatoria dei quattordici comuni; gli altri indicatori arrivano ciascuno dalla propria inchiesta.",
+      "Serve a rispondere a domande che un singolo dossier non consente: quali comuni uniscono case vuote e servizi deboli, dove gli affidamenti diretti superano la media, quanto pesa il numero di abitanti. Le risposte sono descrittive: con quattordici unità una correlazione è un indizio, non una spiegazione."
+    ],
+    "letture": [
+      {
+        "titolo": "Le case vuote non stanno dove c'è meno reddito",
+        "testo": "La quota di abitazioni non occupate e il reddito medio comunale non hanno relazione: r = 0,00 su quattordici comuni. Il dato toglie di mezzo l'idea più semplice, che le case vuote siano un fenomeno di comuni poveri.",
+        "r": "r = 0,00 · n = 14"
+      },
+      {
+        "titolo": "Case vuote e qualità della vita si muovono insieme, per ragioni di scala",
+        "testo": "I comuni con più abitazioni non occupate tendono a stare meglio nell'indice composito: r = 0,63. È un effetto di scala, non una causa: Colturano, 2.056 abitanti, guida entrambe le classifiche, con il 15,5% di case vuote e il primo posto nell'indice. Su quattordici unità resta un'indizio da verificare.",
+        "r": "r = 0,63 · n = 14"
+      },
+      {
+        "titolo": "Più il comune è piccolo, più affida direttamente",
+        "testo": "La quota di affidamenti diretti cresce al diminuire della popolazione: r = −0,41. I due comuni più piccoli, Colturano e Dresano, stanno sopra l'83%; i tre più grandi, San Giuliano, San Donato e Peschiera, fra il 78,5% e il 91%. Non è una regola: Vizzolo Predabissi, 7.704 abitanti, è primo con il 96,97%.",
+        "r": "r = −0,41 · n = 14"
+      }
+    ],
+    "nota_finale": "Le celle vuote non sono zeri: sono dati che l'inchiesta non ha potuto ottenere. Le fonti e i limiti di ogni colonna sono nella legenda e nel dossier collegato."
+  },
+  "chi_sono": {
+    "titolo": "Chi sono",
+    "paragrafi": [
+      "Emiliano Cuti, giornalista con lunga esperienza nella cronaca locale e nella comunicazione istituzionale.",
+      "Corrispondente prima per La Provincia di Cremona e poi per Il Cittadino, è autore di saggi sul socialismo giuridico e sulla pena di morte. Nel 2007 ha vinto il premio Borsa Verde per i giovani giornalisti in Campania.",
+      "Laureato in Scienze Politiche e Relazioni Internazionali, è stato cultore della materia di Storia del diritto italiano all’università degli Studi di Milano. Oggi segue con passione la finanza, il mondo del software e dell'intelligenza artificiale, le lingue e la letteratura francese e angloamericana."
+    ],
+    "metodo_titolo": "Come lavoro",
+    "metodo": [
+      {
+        "t": "Parto dai dati aperti",
+        "d": "ISTAT, Regione Lombardia, Città metropolitana, ANAC, ARPA, ANBSC, MEF. Se il dato è pubblico, lo scarico e lo pubblico con il codice che l'ha prodotto."
+      },
+      {
+        "t": "Verifico ogni cifra",
+        "d": "Confronto i numeri con il documento originale, riga per riga. Quando non tornano, lo scrivo: nel dossier sulla mensa di Paullo, 89 cifre su 89 sono state ricontrollate e cinque segnalazioni si sono rivelate falsi allarmi."
+      },
+      {
+        "t": "Dichiaro i limiti",
+        "d": "Ogni inchiesta ha una sezione «Cosa non sappiamo». È la parte più utile: dice dove il dato finisce e dove comincia la domanda da fare all'amministrazione."
+      },
+      {
+        "t": "Metto in colonna, non in ordine sparso",
+        "d": "L'Atlante incrocia diciassette indicatori da dodici inchieste. Serve a vedere le relazioni, non a stabilire una classifica definitiva."
+      }
+    ],
+    "chiusura": "L'archivio è in costruzione. Le inchieste sono quindici, i comuni quattordici, gli indicatori dell'Atlante diciassette."
+  },
+  "articoli": {
+    "titolo": "Articoli e racconti",
+    "sommario": "I testi usciti dalle inchieste: cronaca, dati e storie. Ogni articolo rimanda al dossier che lo ha prodotto.",
+    "nota_racconti": "Racconti: nessun testo di narrativa è ancora in archivio. Questa sezione si popolerà quando ci saranno."
+  },
+  "footer": {
+    "nota": "Sito senza cookie, senza tracciamenti e senza pubblicità. Testi e dati: archivio personale.",
+    "colophon": "Progettato e costruito come archivio di lavoro. I dataset dell'Atlante sono scaricabili in CSV."
+  }
+}

@@ -1,0 +1,2 @@
+# Non serve installare nulla: markdown e' incluso in vendor/.
+# Se in futuro vuoi aggiornarlo:  python3 -m pip install "markdown>=3.5"
