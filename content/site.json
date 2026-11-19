@@ -2,10 +2,17 @@
   "autore": {
     "nome": "Emiliano Cuti",
     "ruolo": "Giornalista",
-    "mestieri": "Cronaca locale, comunicazione istituzionale",
+    "mestieri": "Cronaca locale · Finanza · AI · Informatica",
     "frase": "Scrivo ciò che gli altri ignorano. Verità locali, crepe umane ed echi civici.",
-    "ritratto": "assets/ritratto.svg",
-    "anno": "2026"
+    "ritratto": "assets/emiliano-cuti.jpg",
+    "anno": "2026",
+    "foto": "assets/emiliano-cuti.jpg",
+    "email": "emilianocuti@outlook.it",
+    "social": {
+      "facebook": "https://www.facebook.com/emiliano.cuti",
+      "linkedin": "https://www.linkedin.com/in/emiliano-cuti-31554819a",
+      "wordpress": "https://cutiemiliano-qczfn.wordpress.com"
+    }
   },
   "home": {
     "introduzione": "Quindici inchieste sul Sudmilano, costruite su dati aperti, documenti e verifiche. Ogni dossier dichiara il metodo, le fonti e ciò che non è stato possibile sapere.",
@@ -14,7 +21,19 @@
       "atlante",
       "articoli",
       "chi-sono"
-    ]
+    ],
+    "sommario": "Cronaca locale, finanza, intelligenza artificiale e informatica. Un archivio di lavoro: dati aperti, fonti citate, limiti dichiarati.",
+    "intro_3d": {
+      "attivo": true,
+      "occhiello": "Giornalista",
+      "sommario": "Cronaca locale, finanza, intelligenza artificiale e informatica. Dati aperti, fonti citate, limiti dichiarati.",
+      "parole": [
+        "Cronaca",
+        "Finanza",
+        "AI",
+        "Informatica"
+      ]
+    }
   },
   "atlante": {
     "titolo": "Atlante dei quattordici comuni",
@@ -73,11 +92,41 @@
   },
   "articoli": {
     "titolo": "Articoli e racconti",
-    "sommario": "I testi usciti dalle inchieste: cronaca, dati e storie. Ogni articolo rimanda al dossier che lo ha prodotto.",
+    "sommario": "Cronaca, finanza, AI e informatica. I testi nati dalle inchieste e gli articoli liberi: ogni pezzo indica sezione, formato, data e fonti.",
     "nota_racconti": "Racconti: nessun testo di narrativa è ancora in archivio. Questa sezione si popolerà quando ci saranno."
   },
   "footer": {
     "nota": "Sito senza cookie, senza tracciamenti e senza pubblicità. Testi e dati: archivio personale.",
     "colophon": "Progettato e costruito come archivio di lavoro. I dataset dell'Atlante sono scaricabili in CSV."
-  }
+  },
+  "sezioni": [
+    {
+      "id": "inchieste",
+      "titolo": "Cronaca",
+      "url": "inchieste/",
+      "occhiello": "Sudmilano · quattordici comuni",
+      "descrizione": "Inchieste sul Sudmilano costruite su dati aperti, documenti e verifiche. Ogni dossier dichiara il metodo, le fonti e ciò che non è stato possibile sapere."
+    },
+    {
+      "id": "finanza",
+      "titolo": "Finanza",
+      "url": "finanza/",
+      "occhiello": "Mercati e risparmio",
+      "descrizione": "Mercati, ETF e finanza personale. Metodo scientifico, dati citati e fonti verificabili, senza promesse di rendimento."
+    },
+    {
+      "id": "ai",
+      "titolo": "AI",
+      "url": "ai/",
+      "occhiello": "Intelligenza artificiale",
+      "descrizione": "Modelli, strumenti e impatti dell'intelligenza artificiale. Prove pratiche, risultati osservati e limiti dichiarati."
+    },
+    {
+      "id": "informatica",
+      "titolo": "Informatica",
+      "url": "informatica/",
+      "occhiello": "Software e tecnologia",
+      "descrizione": "Software, guide e sicurezza informatica. Codice verificato e passi riproducibili, con le fonti."
+    }
+  ]
 }

@@ -84,6 +84,28 @@ def numero_it(valore, formato="int"):
     return str(valore)
 
 
+ICONS = {
+ "facebook": '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.3 0-1.1-.1-2-.1-2 0-3.4 1.2-3.4 3.5V11H8.5v3H11v7h2.5z"/></svg>',
+ "linkedin": '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M6.9 8.6H4V20h2.9V8.6zM5.4 4a1.7 1.7 0 100 3.4 1.7 1.7 0 000-3.4zM20 13.4c0-3-1.6-4.4-3.8-4.4-1.7 0-2.5.9-2.9 1.6V8.6H10.4V20h2.9v-6c0-1.3.6-2.1 1.7-2.1s1.6.8 1.6 2.1v6H20v-6.6z"/></svg>',
+ "wordpress": '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 100 20 10 10 0 000-20zm-8.5 10c0-1.2.3-2.4.7-3.4L8.9 20a8.5 8.5 0 01-5.4-8zm8.5 8.5c-.8 0-1.6-.1-2.4-.3l2.5-7.3 2.6 7.1c0 .1.1.2.1.3-.9.2-1.8.2-2.8.2zm1.2-12.5c.5 0 1-.1 1-.1.5-.1.4-.8-.1-.8 0 0-1.4.1-2.3.1-.9 0-2.3-.1-2.3-.1-.5 0-.6.7-.1.8 0 0 .5.1 1 .1l1.5 4-2.1 6.2-3.4-10.2c.5 0 1-.1 1-.1.5-.1.4-.8-.1-.8 0 0-1.4.1-2.3.1h-.6A8.5 8.5 0 0118.7 6c-.6.4-1 1-1 1.8 0 .7.4 1.3.8 2 .3.6.5 1.3.5 2.1 0 .9-.3 2-.7 3.4l-1 3.2-3.1-9.5zm4.9 11.4l2.6-7.4c.5-1.2.6-2.2.6-3 0-.3 0-.6-.1-.9a8.5 8.5 0 01-3.1 11.3z"/></svg>',
+ "email": '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M3 5h18a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V6a1 1 0 011-1zm9 7.2L4.2 6.5v11h15.6v-11L12 12.2zM5.6 6.5l6.4 4.6 6.4-4.6H5.6z"/></svg>',
+}
+SOCIAL_LABEL = {"facebook": "Facebook", "linkedin": "LinkedIn", "wordpress": "WordPress"}
+
+
+def social_html(site, prefix="", compatto=False):
+    a = site["autore"]
+    voci = []
+    for k, url in a.get("social", {}).items():
+        voci.append('<a href="%s" target="_blank" rel="noopener noreferrer" aria-label="%s">%s<span>%s</span></a>'
+                    % (esc(url), SOCIAL_LABEL.get(k, k), ICONS.get(k, ""), SOCIAL_LABEL.get(k, k)))
+    if a.get("email"):
+        voci.append('<a href="mailto:%s" aria-label="Email">%s<span>Email</span></a>'
+                    % (esc(a["email"]), ICONS["email"]))
+    cls = "social social--compatto" if compatto else "social"
+    return '<div class="%s">%s</div>' % (cls, "".join(voci))
+
+
 # --------------------------------------------------------------------------- html
 def nome_html(site):
     parti = site["autore"]["nome"].split(" ", 1)
@@ -93,12 +115,8 @@ def nome_html(site):
 
 
 def testata(prefix, attivo, site):
-    voci = [
-        ("inchieste/", "Inchieste", "inchieste"),
-        ("atlante/", "Atlante", "atlante"),
-        ("articoli/", "Articoli e racconti", "articoli"),
-        ("chi-sono/", "Chi sono", "chi-sono"),
-    ]
+    voci = [(s["url"], s["titolo"], s["id"]) for s in site["sezioni"]]
+    voci += [("atlante/", "Atlante", "atlante"), ("chi-sono/", "Chi sono", "chi-sono")]
     links = []
     for href, label, chiave in voci:
         corrente = ' aria-current="page"' if chiave == attivo else ""
@@ -107,7 +125,8 @@ def testata(prefix, attivo, site):
         '<header class="testata">\n<div class="shell testata-inner">\n'
         '<a class="marchio" href="%sindex.html"><img class="marchio-segno" src="%sassets/logo.svg" width="40" height="40" alt=""><span class="marchio-nome">%s<span class="punto">.</span></span></a>\n'
         '<nav class="nav" aria-label="Sezioni del sito">%s</nav>\n'
-        '</div>\n</header>\n' % (prefix, prefix, esc(site["autore"]["nome"]), "".join(links))
+        '%s\n'
+        '</div>\n</header>\n' % (prefix, prefix, esc(site["autore"]["nome"]), "".join(links), social_html(site, prefix, compatto=True))
     )
 
 
@@ -115,14 +134,20 @@ def piede(prefix, site):
     f = site["footer"]
     return (
         '<footer class="piede">\n<div class="shell piede-inner">\n'
-        '<div><strong>%s</strong> — archivio di inchieste, %s.<br>%s</div>\n'
-        '<div>%s</div>\n</div>\n</footer>\n' % (esc(site["autore"]["nome"]), site["autore"]["anno"], esc(f["nota"]), esc(f["colophon"]))
+        '<div><strong>%s</strong> — %s.<br>%s</div>\n'
+        '<div>%s</div>\n'
+        '</div>\n'
+        '<div class="shell piede-social">%s</div>\n'
+        '</footer>\n' % (esc(site["autore"]["nome"]), esc(site["autore"]["mestieri"]), esc(f["nota"]), esc(f["colophon"]), social_html(site, prefix))
     )
 
 
 def pagina(titolo, descrizione, corpo, prefix, attivo, site, classe=""):
     titolo = titolo.replace("{AUTORE}", site["autore"]["nome"])
     descrizione = descrizione.replace("{AUTORE}", site["autore"]["nome"])
+    ogimg = ""
+    if site["autore"].get("foto"):
+        ogimg = '<meta property="og:image" content="%s%s">\n' % (prefix, esc(site["autore"]["foto"]))
     return (
         '<!DOCTYPE html>\n<html lang="it">\n<head>\n<meta charset="utf-8">\n'
         '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
@@ -132,6 +157,7 @@ def pagina(titolo, descrizione, corpo, prefix, attivo, site, classe=""):
         '<meta property="og:locale" content="it_IT">\n'
         '<meta property="og:title" content="%s">\n'
         '<meta property="og:description" content="%s">\n'
+        '%s'
         '<link rel="stylesheet" href="%sassets/style.css">\n'
         '<link rel="icon" href="%sassets/favicon.svg" type="image/svg+xml">\n'
         '</head>\n<body class="%s">\n'
@@ -142,7 +168,7 @@ def pagina(titolo, descrizione, corpo, prefix, attivo, site, classe=""):
         '<script src="%sassets/app.js" defer></script>\n'
         '</body>\n</html>\n'
     ) % (esc(titolo), esc(descrizione), esc(titolo), esc(descrizione),
-         esc(site["autore"]["nome"]),
+         esc(site["autore"]["nome"]), ogimg,
          prefix, prefix, classe, testata(prefix, attivo, site) if attivo != "home" else "",
          corpo, piede(prefix, site), prefix)
 
@@ -159,106 +185,86 @@ def voce(titolo, href, meta, prefix=""):
 def home(site, inchieste, articoli, atlante):
     a = site["autore"]
     h = site["home"]
-    ultime = inchieste[-2:]
-    ultime.reverse()
-    art = articoli[:2]
-    n_inch = len(inchieste)
-    n_art = len(articoli)
+    i3 = h.get("intro_3d", {})
     n_ind = atlante["meta"]["n_indicatori"]
 
-    voci_inchieste = "".join(
-        voce(i["titolo"], "inchieste/%s.html" % i["slug"],
-             "%s<br><b>%s</b>" % (esc(i["tema"]), data_breve(i["data"])))
-        for i in ultime
-    )
-    voci_articoli = "".join(
-        voce(art_item["titolo"], "articoli/%s.html" % art_item["slug"],
-             "%s<br><b>%s</b>" % (esc(art_item["tema"]), esc(art_item["formato"])))
-        for art_item in art
-    )
+    def conta(sid):
+        if sid == "inchieste":
+            return len(inchieste)
+        return len([x for x in articoli if x.get("sezione") == sid])
 
-    corpo = """
-<div class="shell copertina">
- <div class="copertina-griglia">
-  <div class="identita">
-   <div class="copertina-marchio"><img src="assets/logo.svg" width="42" height="42" alt=""></div>
-   <h1 class="nome">%s</h1>
-   <p class="mestiere">%s</p>
-   <div class="ritratto"><img src="%s" width="660" height="880" alt="Ritratto tipografico con le iniziali E. C."></div>
-   <p class="frase">%s</p>
-   <nav class="nav-laterale" aria-label="Indice del sito">
-    <a href="inchieste/"><span>Inchieste</span><span>%d</span></a>
-    <a href="atlante/"><span>Atlante</span><span>%d</span></a>
-    <a href="articoli/"><span>Articoli e racconti</span><span>%d</span></a>
-    <a href="chi-sono/"><span>Chi sono</span><span>—</span></a>
-   </nav>
-   <p class="colophon-mini">%s</p>
-  </div>
+    def ultime(sid):
+        if sid == "inchieste":
+            sel = inchieste[-2:]
+            sel.reverse()
+            return "".join(voce(i["titolo"], "inchieste/%s.html" % i["slug"],
+                                "%s<br><b>%s</b>" % (esc(i["tema"]), data_breve(i["data"]))) for i in sel)
+        sel = [x for x in articoli if x.get("sezione") == sid][:2]
+        return "".join(voce(x["titolo"], "articoli/%s.html" % x["slug"],
+                            "%s<br><b>%s</b>" % (esc(x["tema"]), data_breve(x.get("data", "2026-01-01")))) for x in sel)
 
-  <div class="indice">
-   <section class="sezione">
-    <div class="sezione-testa">
-     <span class="sezione-num">01</span>
-     <h2 class="sezione-titolo"><a href="inchieste/">Inchieste</a></h2>
-     <span class="sezione-conteggio">%d lavori</span>
-    </div>
-    <p class="sezione-nota">%s</p>
-    %s
-    <a class="rimando" href="inchieste/">Tutte le inchieste <span aria-hidden="true">→</span></a>
-   </section>
+    cards = []
+    for n, s in enumerate(site["sezioni"], 1):
+        cards.append(
+            '<section class="sezione">\n'
+            '<div class="sezione-testa"><span class="sezione-num">%02d</span>'
+            '<h2 class="sezione-titolo"><a href="%s">%s</a></h2>'
+            '<span class="sezione-conteggio">%d %s</span></div>\n'
+            '<p class="sezione-nota">%s</p>\n%s\n'
+            '<a class="rimando" href="%s">Apri %s <span aria-hidden="true">→</span></a>\n</section>'
+            % (n, s["url"], esc(s["titolo"]), conta(s["id"]),
+               "inchieste" if s["id"] == "inchieste" else "articoli",
+               esc(s["descrizione"]), ultime(s["id"]), s["url"], esc(s["titolo"].lower())))
+    cards.append(
+        '<section class="sezione">\n<div class="sezione-testa"><span class="sezione-num">%02d</span>'
+        '<h2 class="sezione-titolo"><a href="atlante/">Atlante</a></h2>'
+        '<span class="sezione-conteggio">%d indicatori · 14 comuni</span></div>\n'
+        '<p class="sezione-nota">%s</p>\n%s\n'
+        '<a class="rimando" href="atlante/">Apri l\'atlante <span aria-hidden="true">→</span></a>\n</section>'
+        % (len(site["sezioni"]) + 1, n_ind, esc(site["atlante"]["sommario"]),
+           voce(site["atlante"]["titolo"], "atlante/", "Dati incrociati<br><b>%d indicatori</b>" % n_ind)))
+    cards.append(
+        '<section class="sezione">\n<div class="sezione-testa"><span class="sezione-num">%02d</span>'
+        '<h2 class="sezione-titolo"><a href="chi-sono/">Chi sono</a></h2>'
+        '<span class="sezione-conteggio">Profilo e contatti</span></div>\n'
+        '<p class="sezione-nota">Cronaca, finanza, software e intelligenza artificiale. Il metodo, le fonti e i limiti dichiarati.</p>\n'
+        '<a class="rimando" href="chi-sono/">Leggi la biografia <span aria-hidden="true">→</span></a>\n</section>'
+        % (len(site["sezioni"]) + 2,))
 
-   <section class="sezione">
-    <div class="sezione-testa">
-     <span class="sezione-num">02</span>
-     <h2 class="sezione-titolo"><a href="atlante/">Atlante</a></h2>
-     <span class="sezione-conteggio">%d indicatori · 14 comuni</span>
-    </div>
-    <p class="sezione-nota">%s</p>
-    %s
-    <a class="rimando" href="atlante/">Apri l'atlante <span aria-hidden="true">→</span></a>
-   </section>
+    parole = "".join('<span>%s</span>' % esc(p) for p in i3.get("parole", []))
+    intro = ""
+    if i3.get("attivo", True):
+        intro = (
+            '<section class="intro3d" aria-label="Introduzione">\n'
+            '<canvas class="intro3d-canvas" data-intro3d data-parole=\'%s\'></canvas>\n'
+            '<div class="intro3d-velo"></div>\n'
+            '<div class="shell intro3d-contenuto">\n'
+            '<p class="intro3d-occhiello">%s</p>\n'
+            '<h1 class="intro3d-nome">%s</h1>\n'
+            '<p class="intro3d-mestiere">%s</p>\n'
+            '<p class="intro3d-sommario">%s</p>\n'
+            '%s\n'
+            '<a class="intro3d-scendi" href="#copertina">Entra nell\'archivio <span aria-hidden="true">↓</span></a>\n'
+            '</div>\n</section>\n'
+            % (json.dumps(i3.get("parole", []), ensure_ascii=False).replace("'", "&#39;"),
+               esc(i3.get("occhiello", a["ruolo"])), nome_html(site), esc(a["mestieri"]),
+               esc(i3.get("sommario", h.get("sommario", ""))), social_html(site)))
 
-   <section class="sezione">
-    <div class="sezione-testa">
-     <span class="sezione-num">03</span>
-     <h2 class="sezione-titolo"><a href="articoli/">Articoli e racconti</a></h2>
-     <span class="sezione-conteggio">%d testi</span>
-    </div>
-    %s
-    <a class="rimando" href="articoli/">Tutti gli articoli <span aria-hidden="true">→</span></a>
-   </section>
-
-   <section class="sezione">
-    <div class="sezione-testa">
-     <span class="sezione-num">04</span>
-     <h2 class="sezione-titolo"><a href="chi-sono/">Chi sono</a></h2>
-     <span class="sezione-conteggio">Profilo e metodo</span>
-    </div>
-    <p class="sezione-nota">Il giornalismo di cronaca, il premio Borsa Verde 2007 per i giovani giornalisti in Campania, l'Università degli Studi di Milano. Oggi la finanza, il software e l'intelligenza artificiale, le lingue e la letteratura francese e angloamericana.</p>
-    <a class="rimando" href="chi-sono/">Leggi la biografia <span aria-hidden="true">→</span></a>
-   </section>
-  </div>
- </div>
-</div>
-""" % (
-        nome_html(site),
-        esc(a["mestieri"]),
-        esc(a["ritratto"]),
-        esc(a["frase"]),
-        n_inch, n_ind, n_art,
-        "Nessun cookie, nessun tracciamento.",
-        n_inch,
-        esc(h["introduzione"]),
-        voci_inchieste,
-        n_ind,
-        esc(site["atlante"]["sommario"]),
-        voce(site["atlante"]["titolo"], "atlante/", "Dati incrociati<br><b>%d indicatori</b>" % n_ind),
-        n_art,
-        voci_articoli,
-    )
+    corpo = intro + (
+        '<div class="shell copertina" id="copertina">\n<div class="copertina-griglia">\n'
+        '<div class="identita">\n'
+        '<div class="copertina-marchio"><img src="assets/logo.svg" width="42" height="42" alt=""></div>\n'
+        '<h2 class="nome">%s</h2>\n<p class="mestiere">%s</p>\n'
+        '<div class="ritratto"><img src="%s" width="660" height="880" alt="Ritratto di %s"></div>\n'
+        '<p class="frase">%s</p>\n%s\n'
+        '<p class="colophon-mini">Nessun cookie, nessun tracciamento.</p>\n</div>\n'
+        '<div class="indice">\n%s\n</div>\n</div>\n</div>\n'
+        '<script src="assets/intro3d.js" defer></script>\n'
+        % (nome_html(site), esc(a["mestieri"]), esc(a["ritratto"]), esc(a["nome"]),
+           esc(a["frase"]), social_html(site), "".join(cards)))
     return pagina(
-        "{AUTORE} — giornalista, archivio di inchieste",
-        "Inchieste sul Sudmilano costruite su dati aperti: case vuote, appalti, incidenti, ambiente, servizi. Con metodo, fonti e limiti dichiarati.",
+        "{AUTORE} — cronaca, finanza, AI, informatica",
+        "Archivio di giornalismo: inchieste sul Sudmilano, finanza, intelligenza artificiale e informatica. Metodo, fonti e limiti dichiarati.",
         corpo, "", "home", site, "pagina-home")
 
 
@@ -353,7 +359,7 @@ def dossier(site, i, tutte, articoli):
                 '<a class="dato-link" href="../assets/dati/%s" download>%s <span>%s</span></a></div>'
                 % (esc(d["file"]), esc(d["label"]), esc(d.get("nota", ""))))
 
-    articoli_collegati = [a for a in articoli if a["inchiesta"] == i["slug"]]
+    articoli_collegati = [a for a in articoli if a.get("inchiesta") == i["slug"]]
     blocco_articoli = ""
     if articoli_collegati:
         voci_art = "".join(
@@ -550,25 +556,148 @@ def atlante(site, dati):
 
 
 # --------------------------------------------------------------------------- articoli
-def articoli_index(site, articoli, per_slug):
-    temi = sorted({a["tema"] for a in articoli})
+def diretta_card(n, prefix="../"):
+    """Una edizione FINANZA OGGI come card della diretta."""
+    voci = ""
+    for v in n.get("voci", []):
+        parti = [x for x in (v.get("ora"), v.get("fonte")) if x]
+        coda = (' <span class="diretta-fonte">(%s)</span>' % esc(", ".join(parti))) if parti else ""
+        voci += "<li>%s%s</li>\n" % (esc(v.get("testo", "")), coda)
+    sintesi = ('<div class="diretta-blocco"><h3>Sintesi mercato</h3><p>%s</p></div>' % esc(n["sintesi"])) if n.get("sintesi") else ""
+    prospettiva = ('<div class="diretta-blocco"><h3>Prospettiva</h3><p>%s</p></div>' % esc(n["prospettiva"])) if n.get("prospettiva") else ""
+    fonti = ('<p class="diretta-fonti">Fonti: %s</p>' % esc(", ".join(n["fonti"]))) if n.get("fonti") else ""
+    finestra = ('<span class="diretta-finestra">finestra %s</span>' % esc(n["finestra"])) if n.get("finestra") else ""
+    return """<article class="diretta-card" id="%s">
+ <header class="diretta-testa">
+  <span class="diretta-badge">Finanza oggi</span>
+  <span class="diretta-data">%s · %s</span>
+  %s
+ </header>
+ <ul class="diretta-voci">%s</ul>
+ %s
+ %s
+ %s
+</article>""" % (esc(n["slug"]), data_it(n["data"]), esc(n["ora"]), finestra, voci, sintesi, prospettiva, fonti)
+
+
+VUOTO_DIRETTA = ('<div class="diretta-vuoto"><p>La diretta si popolerà con le edizioni dei cron job '
+                 '(10:00 · 14:00 · 18:00) a partire dalla pubblicazione del sito.</p></div>')
+
+
+def diretta_block(notizie, prefix="../", limite=6):
+    """Blocco "News in diretta" in cima alla pagina Finanza (anche vuoto)."""
+    if not notizie:
+        corpo, link = VUOTO_DIRETTA, ""
+    else:
+        corpo = "".join(diretta_card(n, prefix) for n in notizie[:limite])
+        link = '<p class="diretta-tutte"><a class="bottone" href="diretta.html">Tutte le edizioni →</a></p>'
+    return """<div class="shell">
+ <section class="diretta" aria-label="News in diretta">
+  <div class="diretta-intesta">
+   <p class="pagina-occhiello">In diretta</p>
+   <h2 class="diretta-titolo">News in diretta</h2>
+   <p class="diretta-sotto">Le edizioni di Finanza Oggi dai cron job, dalla più recente.</p>
+  </div>
+  %s
+  %s
+ </section>
+</div>
+""" % (corpo, link)
+
+
+def diretta_index(site, notizie):
+    """Pagina dedicata con tutte le edizioni della diretta (finanza/diretta.html)."""
+    if notizie:
+        corpo = "".join(diretta_card(n, "../") for n in notizie)
+        conta = "%d edizioni" % len(notizie)
+    else:
+        corpo, conta = VUOTO_DIRETTA, "0 edizioni"
+    corpo = """<div class="shell">
+ <p class="pagina-occhiello"><a href="index.html">Finanza</a> · In diretta</p>
+ <h1 class="archivio-titolo">News in diretta</h1>
+ <p class="archivio-sommario">Le edizioni di Finanza Oggi prodotte dai cron job. %s.</p>
+ <section class="diretta diretta--pagina" aria-label="Edizioni">
+ %s
+ </section>
+</div>""" % (conta, corpo)
+    return pagina("News in diretta — Finanza — {AUTORE}",
+                  "Le edizioni di Finanza Oggi dai cron job, in ordine cronologico.",
+                  corpo, "../", "finanza", site)
+
+
+def sezione_index(site, sez, articoli, per_slug, notizie=None):
+    items = [a for a in articoli if a.get("sezione") == sez["id"]]
+    items.sort(key=lambda a: a.get("data", ""), reverse=True)
+    temi = sorted({a["tema"] for a in items})
     chips = ['<button class="chip" type="button" data-tema="tutti" aria-pressed="true">Tutti</button>']
     for t in temi:
         chips.append('<button class="chip" type="button" data-tema="%s" aria-pressed="false">%s</button>' % (esc(t), esc(t)))
+    righe = []
+    for a in items:
+        data = a.get("data") or per_slug.get(a.get("inchiesta"), {}).get("data", "2026-01-01")
+        righe.append(
+            '<a class="riga" data-riga data-temi="%s" data-cerca="%s" href="../articoli/%s.html">\n'
+            '<span class="riga-data">%s</span>\n'
+            '<span><span class="riga-titolo">%s</span>\n<span class="riga-sommario">%s</span></span>\n'
+            '<span class="riga-meta">%s<br><b>%s</b></span>\n</a>\n'
+            % (esc(a["tema"]), esc((a["titolo"] + " " + a["sommario"] + " " + a["tema"]).lower()),
+               esc(a["slug"]), data_breve(data), esc(a["titolo"]), esc(a["sommario"]),
+               esc(a["tema"]), esc(a["formato"])))
+    vuoto = ('<div class="vuoto-sezione"><p>Ancora nessun articolo in questa sezione. '
+             'Si popolerà con i prossimi pezzi.</p></div>') if not items else ""
+    corpo = """
+<div class="shell">
+ <div class="archivio-griglia">
+  <aside class="archivio-testata">
+   <p class="pagina-occhiello">%s</p>
+   <h1 class="archivio-titolo">%s</h1>
+   <p class="archivio-sommario">%s</p>
+   <p class="archivio-conteggio">%d articoli</p>
+   <div class="filtri-lato">
+    <div class="cerca-wrap">
+     <label class="etichetta" for="cerca-sezione" style="position:absolute;left:-9999px">Cerca nella sezione</label>
+     <input class="cerca" id="cerca-sezione" type="search" data-cerca-inchieste placeholder="Cerca…" autocomplete="off">
+    </div>
+    <div class="chips">%s</div>
+    <span class="filtri-conteggio" data-conteggio aria-live="polite">%d articoli</span>
+   </div>
+  </aside>
+  <div class="archivio-corpo">
+   <div class="archivio" data-archivio data-unita="articoli" data-unita-singolare="articolo">%s</div>
+   %s
+   <div class="vuoto" data-vuoto hidden>
+    <h2>Nessun risultato</h2><p>Nessun articolo corrisponde alla ricerca.</p>
+    <button class="bottone" type="button" data-azzera>Azzera i filtri</button>
+   </div>
+  </div>
+ </div>
+</div>
+""" % (esc(sez["occhiello"]), esc(sez["titolo"]), esc(sez["descrizione"]), len(items),
+       "".join(chips), len(items), "".join(righe), vuoto)
+    if sez["id"] == "finanza" and notizie is not None:
+        corpo = diretta_block(notizie, "../") + corpo
+    return pagina("%s — {AUTORE}" % sez["titolo"], sez["descrizione"], corpo, "../", sez["id"], site)
 
+
+def articoli_index(site, articoli, per_slug):
+    sez_label = {s["id"]: s["titolo"] for s in site["sezioni"]}
+    presenti = [s for s in site["sezioni"] if any(a.get("sezione", "inchieste") == s["id"] for a in articoli)]
+    chips = ['<button class="chip" type="button" data-tema="tutti" aria-pressed="true">Tutti</button>']
+    for s in presenti:
+        chips.append('<button class="chip" type="button" data-tema="%s" aria-pressed="false">%s</button>' % (esc(s["id"]), esc(s["titolo"])))
     righe = []
     for a in articoli:
-        inch = per_slug[a["inchiesta"]]
+        sid = a.get("sezione", "inchieste")
+        inch = per_slug.get(a.get("inchiesta"))
+        data = a.get("data") or (inch["data"] if inch else "2026-01-01")
         righe.append(
             '<a class="riga" data-riga data-temi="%s" data-cerca="%s" href="%s.html">\n'
             '<span class="riga-data">%s</span>\n'
-            '<span><span class="riga-titolo">%s</span>\n'
-            '<span class="riga-sommario">%s</span></span>\n'
+            '<span><span class="riga-titolo">%s</span>\n<span class="riga-sommario">%s</span></span>\n'
             '<span class="riga-meta">%s<br><b>%s</b></span>\n</a>\n' % (
-                esc(a["tema"]), esc((a["titolo"] + " " + a["sommario"] + " " + a["tema"]).lower()),
-                esc(a["slug"]), data_breve(inch["data"]), esc(a["titolo"]),
-                esc(a["sommario"]), esc(a["tema"]), esc(a["formato"])))
-
+                esc(sid), esc((a["titolo"] + " " + a["sommario"] + " " + a["tema"] + " " + sez_label.get(sid, "")).lower()),
+                esc(a["slug"]), data_breve(data), esc(a["titolo"]),
+                esc(a["sommario"]), esc(sez_label.get(sid, a["tema"])), esc(a["formato"])))
     corpo = """
 <div class="shell">
  <div class="archivio-griglia">
@@ -576,7 +705,7 @@ def articoli_index(site, articoli, per_slug):
    <p class="pagina-occhiello">Testi</p>
    <h1 class="archivio-titolo">Articoli e racconti</h1>
    <p class="archivio-sommario">%s</p>
-   <p class="archivio-conteggio">%d testi · tutti collegati a un'inchiesta</p>
+   <p class="archivio-conteggio">%d testi · cronaca, finanza, AI, informatica</p>
    <div class="filtri-lato">
     <div class="cerca-wrap">
      <label class="etichetta" for="cerca-articoli" style="position:absolute;left:-9999px">Cerca negli articoli</label>
@@ -590,8 +719,7 @@ def articoli_index(site, articoli, per_slug):
   <div class="archivio-corpo">
    <div class="archivio" data-archivio data-unita="testi" data-unita-singolare="testo">%s</div>
    <div class="vuoto" data-vuoto hidden>
-    <h2>Nessun risultato</h2>
-    <p>Nessun testo corrisponde alla ricerca.</p>
+    <h2>Nessun risultato</h2><p>Nessun testo corrisponde alla ricerca.</p>
     <button class="bottone" type="button" data-azzera>Azzera i filtri</button>
    </div>
   </div>
@@ -599,7 +727,7 @@ def articoli_index(site, articoli, per_slug):
 </div>
 """ % (esc(site["articoli"]["sommario"]), len(articoli), "".join(chips), len(articoli),
        esc(site["articoli"]["nota_racconti"]), "".join(righe))
-    return pagina("Articoli e racconti — {AUTORE}", "Articoli e cronache nati dalle inchieste sul Sudmilano.", corpo, "../", "articoli", site)
+    return pagina("Articoli e racconti — {AUTORE}", "Articoli di cronaca, finanza, AI e informatica.", corpo, "../", "articoli", site)
 
 
 def pulisci_markdown(testo):
@@ -632,15 +760,25 @@ def pulisci_markdown(testo):
 
 
 def articolo(site, a, per_slug):
-    inch = per_slug[a["inchiesta"]]
+    inch = per_slug.get(a.get("inchiesta"))
+    sid = a.get("sezione", "inchieste")
+    sez = next((s for s in site["sezioni"] if s["id"] == sid), None)
+    data = a.get("data") or (inch["data"] if inch else "2026-01-01")
     with open(os.path.join(HERE, "data", "raw", a["fonte"]), encoding="utf-8") as fh:
         grezzo = fh.read()
     md = pulisci_markdown(grezzo)
-    corpo_html = markdown.markdown(
-        md, extensions=["markdown.extensions.tables", "markdown.extensions.sane_lists"])
+    corpo_html = markdown.markdown(md, extensions=["markdown.extensions.tables", "markdown.extensions.sane_lists"])
     corpo_html = re.sub(r"<table>", '<div class="tabella-wrap"><table>', corpo_html)
     corpo_html = re.sub(r"</table>", "</table></div>", corpo_html)
-
+    meta_inch = ('<dt>Inchiesta</dt><dd><a href="../inchieste/%s.html">%s</a></dd>' % (esc(inch["slug"]), esc(inch["titolo"]))) if inch else ""
+    if inch:
+        fine = ('<p class="etichetta">Dal dossier</p>'
+                '<a class="fine-dossier" href="../inchieste/%s.html">%s <span aria-hidden="true">→</span></a>'
+                '<p class="fine-nav"><a href="../articoli/">Tutti gli articoli</a> · <a href="../inchieste/">Tutte le inchieste</a></p>'
+                % (esc(inch["slug"]), esc(inch["titolo"])))
+    else:
+        fine = ('<p class="fine-nav"><a href="../%s">Tutti gli articoli di %s</a> · <a href="../articoli/">Tutti gli articoli</a></p>'
+                % (esc(sez["url"]) if sez else "articoli/", esc(sez["titolo"].lower()) if sez else ""))
     corpo = """
 <div class="shell">
  <header class="dossier-testa">
@@ -648,31 +786,26 @@ def articolo(site, a, per_slug):
   <h1 class="pagina-titolo pagina-titolo--articolo">%s</h1>
   <p class="pagina-sommario">%s</p>
  </header>
-
  <div class="articolo-griglia">
   <aside class="dossier-meta">
    <dl>
     <dt>Data</dt><dd>%s</dd>
+    <dt>Sezione</dt><dd>%s</dd>
     <dt>Tema</dt><dd>%s</dd>
     <dt>Formato</dt><dd>%s</dd>
-    <dt>Inchiesta</dt><dd><a href="../inchieste/%s.html">%s</a></dd>
+    %s
    </dl>
    <p><a href="../articoli/">← Tutti gli articoli</a></p>
   </aside>
   <article class="articolo-testo">
    %s
-   <div class="articolo-fine">
-    <p class="etichetta">Dal dossier</p>
-    <a class="fine-dossier" href="../inchieste/%s.html">%s <span aria-hidden="true">→</span></a>
-    <p class="fine-nav"><a href="../articoli/">Tutti gli articoli</a> · <a href="../inchieste/">Tutte le inchieste</a></p>
-   </div>
+   <div class="articolo-fine">%s</div>
   </article>
  </div>
 </div>
-""" % (esc(a["formato"]), esc(a["tema"]), esc(a["titolo"]), esc(a["sommario"]),
-       data_it(inch["data"]), esc(a["tema"]), esc(a["formato"]),
-       esc(inch["slug"]), esc(inch["titolo"]), corpo_html,
-       esc(inch["slug"]), esc(inch["titolo"]))
+""" % (esc(a["formato"]), esc(sez["titolo"] if sez else a["tema"]), esc(a["titolo"]), esc(a["sommario"]),
+       data_it(data), esc(sez["titolo"] if sez else sid), esc(a["tema"]), esc(a["formato"]),
+       meta_inch, corpo_html, fine)
     return pagina("%s — {AUTORE}" % a["titolo"], a["sommario"], corpo, "../", "articoli", site)
 
 
@@ -680,20 +813,17 @@ def articolo(site, a, per_slug):
 def chi_sono(site):
     c = site["chi_sono"]
     paragrafi = "".join("<p>%s</p>" % esc(p) for p in c["paragrafi"])
-    metodo = "".join(
-        '<article><h3>%s</h3><p>%s</p></article>' % (esc(m["t"]), esc(m["d"]))
-        for m in c["metodo"])
+    metodo = "".join('<article><h3>%s</h3><p>%s</p></article>' % (esc(m["t"]), esc(m["d"])) for m in c["metodo"])
     corpo = """
 <div class="shell">
  <header class="pagina-testa">
   <p class="pagina-occhiello">Profilo</p>
   <h1 class="pagina-titolo">%s</h1>
-  <p class="pagina-sommario">Giornalismo di cronaca, comunicazione istituzionale, dati. Un archivio di lavoro prima che un portfolio.</p>
+  <p class="pagina-sommario">Cronaca locale, finanza, intelligenza artificiale e informatica. Un archivio di lavoro prima che un portfolio.</p>
  </header>
-
  <div class="biografia">
   <figure class="biografia-ritratto">
-   <img src="../%s" width="660" height="880" alt="Ritratto tipografico con le iniziali E. C.">
+   <img src="../%s" width="660" height="880" alt="Ritratto di %s">
    <figcaption>%s</figcaption>
   </figure>
   <div class="biografia-testo">
@@ -703,12 +833,16 @@ def chi_sono(site):
     <div class="metodo-griglia">%s</div>
    </div>
    <p class="chiusura-bio">%s</p>
+   <div class="contatti">
+    <h2>Contatti e profili</h2>
+    %s
+   </div>
   </div>
  </div>
 </div>
-""" % (esc(c["titolo"]), esc(site["autore"]["ritratto"]), esc(site["autore"]["frase"]), paragrafi,
-       esc(c["metodo_titolo"]), metodo, esc(c["chiusura"]))
-    return pagina("Chi sono — {AUTORE}", "{AUTORE}: giornalista di cronaca locale e comunicazione istituzionale, premio Borsa Verde 2007, Università degli Studi di Milano.", corpo, "../", "chi-sono", site)
+""" % (esc(c["titolo"]), esc(site["autore"]["ritratto"]), esc(site["autore"]["nome"]), esc(site["autore"]["frase"]), paragrafi,
+       esc(c["metodo_titolo"]), metodo, esc(c["chiusura"]), social_html(site, "../"))
+    return pagina("Chi sono — {AUTORE}", "{AUTORE}: giornalista. Cronaca locale, finanza, AI e informatica. Premio Borsa Verde 2007, Università degli Studi di Milano.", corpo, "../", "chi-sono", site)
 
 
 # --------------------------------------------------------------------------- 404
@@ -768,6 +902,9 @@ def main():
     inchieste = contenuti["inchieste"]
     articoli = contenuti["articoli"]
     per_slug = {i["slug"]: i for i in inchieste}
+    notizie = []
+    if os.path.exists(os.path.join(HERE, "content", "diretta.json")):
+        notizie = leggi_json("content/diretta.json").get("diretta", [])
 
     if os.path.isdir(out):
         for nome in os.listdir(out):
@@ -784,14 +921,13 @@ def main():
 
     # asset
     os.makedirs(os.path.join(out, "assets"), exist_ok=True)
-    for nome in ("style.css", "app.js", "ritratto.svg", "favicon.svg", "logo.svg"):
+    for nome in ("style.css", "app.js", "ritratto.svg", "favicon.svg", "logo.svg", "intro3d.js", "emiliano-cuti.jpg", "animazione.gif"):
         sorgente = os.path.join(HERE, "assets", nome)
         if os.path.exists(sorgente):
             shutil.copyfile(sorgente, os.path.join(out, "assets", nome))
-    ritratto_foto = os.path.join(HERE, "assets", "ritratto.jpg")
-    if os.path.exists(ritratto_foto):
-        shutil.copyfile(ritratto_foto, os.path.join(out, "assets", "ritratto.jpg"))
-        site["autore"]["ritratto"] = "assets/ritratto.jpg"
+    foto = site["autore"].get("foto")
+    if foto and os.path.exists(os.path.join(HERE, foto)):
+        site["autore"]["ritratto"] = foto
 
     pagine = []
 
@@ -810,6 +946,12 @@ def main():
     scrivi("articoli/index.html", articoli_index(site, articoli, per_slug))
     for a in articoli:
         scrivi("articoli/%s.html" % a["slug"], articolo(site, a, per_slug))
+    for s in site["sezioni"]:
+        if s["id"] != "inchieste":
+            nd = notizie if s["id"] == "finanza" else None
+            scrivi(s["url"] + "index.html", sezione_index(site, s, articoli, per_slug, notizie=nd))
+    if any(s["id"] == "finanza" for s in site["sezioni"]):
+        scrivi("finanza/diretta.html", diretta_index(site, notizie))
     scrivi("chi-sono/index.html", chi_sono(site))
     scrivi("404.html", non_trovata(site))
 
