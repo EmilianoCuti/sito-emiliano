@@ -1908,6 +1908,16 @@
    "sezione": "finanza",
    "data": "2026-11-19",
    "fonte": "articoli/wall-street-rialzo-cambia-struttura-cobb.md"
+  },
+  {
+   "slug": "etf-comparator-skill-ucits",
+   "titolo": "ETF Comparator, la skill che confronta i veri pari di un ETF UCITS: prova reale e dove acquistarla",
+   "sommario": "La skill per agenti AI che ho pubblicato su Agensi a 1 dollaro: risolve nome, ticker o ISIN, confronta solo i pari UCITS sullo stesso indice nella stessa versione, pesa 27 campi strutturali sul profilo dell'investitore e dichiara i dati mancanti. Prova reale su MSCI World: dieci pari, migliore adattamento Xtrackers XDWD. Scheda e acquisto su agensi.io/skills/etf-comparator.",
+   "tema": "Strumenti e agenti",
+   "formato": "Prova pratica",
+   "sezione": "ai",
+   "data": "2026-11-19",
+   "fonte": "articoli/etf-comparator-skill-ucits.md"
   }
  ]
 }

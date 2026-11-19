@@ -645,6 +645,7 @@ def sezione_index(site, sez, articoli, per_slug, notizie=None):
                esc(a["tema"]), esc(a["formato"])))
     vuoto = ('<div class="vuoto-sezione"><p>Ancora nessun articolo in questa sezione. '
              'Si popolerà con i prossimi pezzi.</p></div>') if not items else ""
+    unita = "articolo" if len(items) == 1 else "articoli"
     corpo = """
 <div class="shell">
  <div class="archivio-griglia">
@@ -652,14 +653,14 @@ def sezione_index(site, sez, articoli, per_slug, notizie=None):
    <p class="pagina-occhiello">%s</p>
    <h1 class="archivio-titolo">%s</h1>
    <p class="archivio-sommario">%s</p>
-   <p class="archivio-conteggio">%d articoli</p>
+   <p class="archivio-conteggio">%d %s</p>
    <div class="filtri-lato">
     <div class="cerca-wrap">
      <label class="etichetta" for="cerca-sezione" style="position:absolute;left:-9999px">Cerca nella sezione</label>
      <input class="cerca" id="cerca-sezione" type="search" data-cerca-inchieste placeholder="Cerca…" autocomplete="off">
     </div>
     <div class="chips">%s</div>
-    <span class="filtri-conteggio" data-conteggio aria-live="polite">%d articoli</span>
+    <span class="filtri-conteggio" data-conteggio aria-live="polite">%d %s</span>
    </div>
   </aside>
   <div class="archivio-corpo">
@@ -672,8 +673,8 @@ def sezione_index(site, sez, articoli, per_slug, notizie=None):
   </div>
  </div>
 </div>
-""" % (esc(sez["occhiello"]), esc(sez["titolo"]), esc(sez["descrizione"]), len(items),
-       "".join(chips), len(items), "".join(righe), vuoto)
+""" % (esc(sez["occhiello"]), esc(sez["titolo"]), esc(sez["descrizione"]), len(items), unita,
+       "".join(chips), len(items), unita, "".join(righe), vuoto)
     if sez["id"] == "finanza" and notizie is not None:
         corpo = diretta_block(notizie, "../") + corpo
     return pagina("%s — {AUTORE}" % sez["titolo"], sez["descrizione"], corpo, "../", sez["id"], site)
