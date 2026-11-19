@@ -1,0 +1,153 @@
+# Wall Street, Tom Lee punta sul rimbalzo dell’AI
+
+<style>
+.articolo-testo figure.grafico{margin:2.4rem 0;padding:1.4rem 1.5rem 1.2rem;border:1px solid rgba(23,20,15,.18);background:#f1ebdd}
+.articolo-testo figure.grafico .gt{font-family:var(--sans);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#a23a24;font-weight:700;margin:0 0 1rem}
+.articolo-testo figure.grafico svg{width:100%;height:auto;display:block}
+.articolo-testo figure.grafico svg text{font-family:var(--sans)}
+.articolo-testo figure.grafico figcaption{font-family:var(--sans);font-size:.82rem;line-height:1.55;color:#6d6457;margin-top:1rem}
+</style>
+
+Wall Street ha appena assorbito la più grande offerta pubblica iniziale di sempre mentre una parte dei titoli legati all’intelligenza artificiale fatica a ritrovare slancio. Per Tom Lee, stratega di Fundstrat, le due cose potrebbero essere collegate: per sottoscrivere una quotazione delle dimensioni di Anthropic, alcuni investitori avrebbero venduto altri asset, accentuando una correzione già in corso. È una delle ragioni per cui Lee ritiene che la svendita sia «nelle fasi finali» e che abbia senso comprare sul calo. Non dice, però, che il minimo sia già alle spalle.
+
+La sua tesi tiene insieme due argomenti distinti. Il primo è statistico: quanto tempo è servito al Nasdaq 100 per toccare il fondo dopo ribassi analoghi? Il secondo riguarda i flussi: la raccolta di Anthropic ha sottratto liquidità al resto del mercato? Entrambi portano Lee a cerchiare il 18 novembre, ma nessuno dei due, da solo, basta a certificare un’inversione.
+
+## Diciannove ribassi, due esiti diversi
+
+Il punto di partenza è la discesa del Nasdaq 100: secondo i dati citati da Lee, l’indice ha perso il 15% in 22 sedute fino al 5 novembre. Lo stratega definisce il movimento un waterfall decline, un ribasso a cascata, e individua 19 episodi comparabili dal 1985. In media, sei mesi dopo, il mercato era salito del 18%. Ma è proprio quella media, avverte Lee, a nascondere la distinzione più importante.
+
+In otto casi il calo era avvenuto in un mercato già ribassista e le perdite erano proseguite. Negli altri undici, il ribasso si era inserito in una fase rialzista ed era stato seguito da una forte ripresa. Lee colloca il caso attuale nel secondo gruppo: a suo giudizio, la tendenza di fondo resta positiva sia per l’S&P 500 sia per la tecnologia. È questa la premessa decisiva: il campione storico descrive che cosa è successo nei due scenari, ma non stabilisce in quale dei due si trovi oggi il mercato.
+
+<figure class="grafico">
+<p class="gt">Diciannove precedenti, due esiti</p>
+<svg viewBox="0 0 720 230" role="img" aria-label="Barra dei 19 episodi comparabili dal 1985: 8 in mercato già ribassista con perdite proseguite, 11 in fase rialzista con forte ripresa; media più 18 per cento a sei mesi sull'intero campione">
+<text x="45" y="34" fill="#6d6457" font-size="13">19 episodi comparabili dal 1985 · Nasdaq 100</text>
+<rect x="45" y="52" width="264" height="56" fill="#a23a24"/>
+<rect x="309" y="52" width="363" height="56" fill="#17140f"/>
+<text x="177" y="87" fill="#f7f3ea" font-size="22" font-weight="700" text-anchor="middle">8</text>
+<text x="490" y="87" fill="#f7f3ea" font-size="22" font-weight="700" text-anchor="middle">11</text>
+<text x="45" y="136" fill="#a23a24" font-size="14" font-weight="700">Mercato già ribassista</text>
+<text x="45" y="156" fill="#6d6457" font-size="13">le perdite erano proseguite</text>
+<text x="309" y="136" fill="#17140f" font-size="14" font-weight="700">Fase rialzista</text>
+<text x="309" y="156" fill="#6d6457" font-size="13">forte ripresa successiva</text>
+<text x="45" y="196" fill="#17140f" font-size="14">Media sull’intero campione: +18% a sei mesi.</text>
+<text x="45" y="216" fill="#6d6457" font-size="12.5">La media nasconde i due gruppi: non dice in quale scenario si trovi oggi il mercato.</text>
+</svg>
+<figcaption>Il campione storico descrive i due esiti, non assegna una probabilità al caso attuale. Lee colloca il ribasso in corso nel gruppo rialzista: è una premessa, non una misura.</figcaption>
+</figure>
+
+Negli undici episodi rialzisti, riferisce Lee, la distanza mediana tra la fine del ribasso a cascata e il minimo successivo è stata di nove sedute. Prendendo come riferimento il 5 novembre, giorno che associa a forti chiusure di posizioni da parte degli hedge fund, il conteggio arriva al 18. Lee aggiunge che nel sottocampione rialzista i rendimenti a uno, tre e sei mesi sono stati positivi in oltre il 90% dei casi. Quel dato descrive un gruppo di appena undici precedenti: non equivale a una probabilità superiore al 90% che il mercato salga stavolta, né dice quanto siano state disperse le date dei minimi attorno alla mediana.
+
+<figure class="grafico">
+<p class="gt">Il conteggio delle sedute: dal 5 al 18 novembre</p>
+<svg viewBox="0 0 720 230" role="img" aria-label="Linea del tempo: 5 novembre fine del ribasso a cascata, più nove sedute mediane, 18 novembre minimo ipotizzato da Lee; la mediana non è una probabilità">
+<text x="90" y="50" fill="#17140f" font-size="16" font-weight="700" text-anchor="middle">5 novembre</text>
+<text x="90" y="68" fill="#6d6457" font-size="12.5" text-anchor="middle">fine del ribasso a cascata</text>
+<text x="600" y="50" fill="#a23a24" font-size="16" font-weight="700" text-anchor="middle">18 novembre</text>
+<text x="600" y="68" fill="#6d6457" font-size="12.5" text-anchor="middle">minimo ipotizzato da Lee</text>
+<line x1="90" y1="100" x2="600" y2="100" stroke="#17140f" stroke-width="2"/>
+<circle cx="90" cy="100" r="6" fill="#17140f"/>
+<circle cx="600" cy="100" r="6" fill="#a23a24"/>
+<line x1="345" y1="84" x2="345" y2="100" stroke="#6d6457" stroke-width="1.2" stroke-dasharray="4 4"/>
+<text x="345" y="76" fill="#6d6457" font-size="13" text-anchor="middle">+9 sedute (mediana)</text>
+<text x="90" y="130" fill="#6d6457" font-size="12.5" text-anchor="middle">−15% in 22 sedute</text>
+<text x="600" y="130" fill="#6d6457" font-size="12.5" text-anchor="middle">da verificare nelle sedute successive</text>
+<text x="90" y="180" fill="#17140f" font-size="14">Rendimenti a 1, 3 e 6 mesi positivi in oltre il 90% dei casi.</text>
+<text x="90" y="200" fill="#6d6457" font-size="12.5">Su appena 11 precedenti: non è una probabilità &gt;90% per stavolta,</text>
+<text x="90" y="218" fill="#6d6457" font-size="12.5">né dice quanto le date dei minimi fossero disperse attorno alla mediana.</text>
+</svg>
+<figcaption>La mediana di nove sedute è una distanza tipica del sottocampione rialzista, non una data certa né una probabilità di inversione.</figcaption>
+</figure>
+
+## Anthropic, il record dell’IPO non prova il drenaggio di liquidità
+
+Sul fronte dell’IPO, il dato definitivo è arrivato. Anthropic ha fissato il prezzo a 83 dollari per azione, per un’offerta pubblica da 81,3 miliardi di dollari e una valutazione di circa 1.500 miliardi. L’operazione ha superato i 75 miliardi dell’offerta iniziale di SpaceX a giugno, pur restando sotto i 90 miliardi ipotizzati da Lee. Reuters indica una dimensione complessiva di 107,3 miliardi includendo il collocamento privato da 26 miliardi: una cifra da tenere distinta da quella dell’offerta pubblica.
+
+<figure class="grafico">
+<p class="gt">L’IPO Anthropic in miliardi di dollari</p>
+<svg viewBox="0 0 720 280" role="img" aria-label="Barre in miliardi: SpaceX 75, offerta pubblica Anthropic 81,3, ipotesi Lee 90, totale Reuters 107,3 composto da 81,3 pubblici più 26 privati">
+<text x="200" y="61" fill="#17140f" font-size="13.5" text-anchor="end">SpaceX · giugno</text>
+<rect x="210" y="44" width="375" height="26" fill="#6d6457"/>
+<text x="592" y="62" fill="#17140f" font-size="13.5">75</text>
+<text x="200" y="105" fill="#17140f" font-size="13.5" text-anchor="end">Anthropic · offerta pubblica</text>
+<rect x="210" y="88" width="406" height="26" fill="#a23a24"/>
+<text x="623" y="106" fill="#a23a24" font-size="13.5" font-weight="700">81,3</text>
+<text x="200" y="149" fill="#17140f" font-size="13.5" text-anchor="end">Ipotesi Lee (non realizzata)</text>
+<rect x="210" y="132" width="450" height="26" fill="none" stroke="#6d6457" stroke-width="1.3" stroke-dasharray="5 4"/>
+<text x="667" y="150" fill="#6d6457" font-size="13.5">90</text>
+<text x="200" y="193" fill="#17140f" font-size="13.5" text-anchor="end">Totale Reuters (incl. privato)</text>
+<rect x="210" y="176" width="406" height="26" fill="#a23a24"/>
+<rect x="616" y="176" width="130" height="26" fill="#6d6457"/>
+<text x="413" y="194" fill="#f7f3ea" font-size="12.5" text-anchor="middle">81,3</text>
+<text x="681" y="194" fill="#f7f3ea" font-size="12.5" text-anchor="middle">26</text>
+<text x="210" y="228" fill="#6d6457" font-size="12.5">Rosso = offerta pubblica · grigio = collocamento privato · tratteggio = ipotesi.</text>
+<text x="210" y="250" fill="#17140f" font-size="13.5">Prezzo 83 $/azione · valutazione circa 1.500 miliardi.</text>
+<text x="210" y="270" fill="#6d6457" font-size="12.5">Il totale 107,3 include il privato da 26: va distinto dall’offerta pubblica.</text>
+</svg>
+<figcaption>Le dimensioni dell’offerta non dicono quanta parte sia stata finanziata vendendo titoli già in portafoglio anziché usando liquidità disponibile.</figcaption>
+</figure>
+
+Il meccanismo proposto da Lee è semplice: un investitore che vuole partecipare a una grande IPO può vendere azioni o altri asset per liberare liquidità; chi usa la leva può ridurre altre esposizioni per recuperare margine. Se lo fanno in molti nello stesso periodo, la pressione può estendersi ben oltre il settore della società che si quota. Ma le dimensioni dell’offerta, per quanto eccezionali, non dicono quanta parte sia stata finanziata vendendo titoli già in portafoglio anziché usando liquidità disponibile.
+
+Per sostenere il parallelo, Lee usa ether come indicatore della propensione al rischio. Prima dell’IPO di SpaceX, riferisce, la criptovaluta aveva perso il 39% in otto settimane e il 29% nelle ultime due. Prima del collocamento di Anthropic, le flessioni erano state rispettivamente del 39% e del 28%. Nel primo caso, secondo Lee, alla fissazione del prezzo era seguito un rialzo degli asset rischiosi. La somiglianza è notevole, ma due traiettorie quasi identiche non dimostrano che gli investitori abbiano venduto per la stessa ragione, né che dopo Anthropic debba ripetersi lo stesso recupero.
+
+<figure class="grafico">
+<p class="gt">Ether prima delle due IPO: flessioni a confronto</p>
+<svg viewBox="0 0 720 300" role="img" aria-label="Barre negative di ether: prima di SpaceX meno 39 per cento in otto settimane e meno 29 in due; prima di Anthropic meno 39 e meno 28; traiettorie simili non provano la stessa causa">
+<text x="200" y="50" fill="#17140f" font-size="14" font-weight="700" text-anchor="middle">Prima di SpaceX</text>
+<text x="520" y="50" fill="#17140f" font-size="14" font-weight="700" text-anchor="middle">Prima di Anthropic</text>
+<line x1="60" y1="70" x2="660" y2="70" stroke="#17140f" stroke-width="1.5"/>
+<text x="60" y="62" fill="#6d6457" font-size="12">0%</text>
+<rect x="140" y="70" width="50" height="117" fill="#17140f"/>
+<rect x="210" y="70" width="50" height="87" fill="#a23a24"/>
+<rect x="460" y="70" width="50" height="117" fill="#17140f"/>
+<rect x="530" y="70" width="50" height="84" fill="#a23a24"/>
+<text x="165" y="205" fill="#17140f" font-size="13.5" text-anchor="middle">−39%</text>
+<text x="235" y="205" fill="#a23a24" font-size="13.5" text-anchor="middle">−29%</text>
+<text x="485" y="205" fill="#17140f" font-size="13.5" text-anchor="middle">−39%</text>
+<text x="555" y="205" fill="#a23a24" font-size="13.5" text-anchor="middle">−28%</text>
+<rect x="140" y="232" width="14" height="14" fill="#17140f"/>
+<text x="162" y="244" fill="#6d6457" font-size="12.5">8 settimane</text>
+<rect x="300" y="232" width="14" height="14" fill="#a23a24"/>
+<text x="322" y="244" fill="#6d6457" font-size="12.5">ultime 2 settimane</text>
+<text x="60" y="272" fill="#6d6457" font-size="12.5">Due traiettorie quasi identiche non dimostrano la stessa causa di vendita,</text>
+<text x="60" y="290" fill="#6d6457" font-size="12.5">né che dopo Anthropic debba ripetersi lo stesso recupero degli asset rischiosi.</text>
+</svg>
+<figcaption>Ether è usato da Lee come indicatore della propensione al rischio: la somiglianza dei ribassi è un indizio, non una prova del drenaggio di liquidità.</figcaption>
+</figure>
+
+## Nvidia perde terreno, ma una parte della filiera tiene
+
+La debolezza di Nvidia non descrive da sola l’andamento dell’intero comparto. Nella settimana esaminata da Lee, i cinque titoli a grande capitalizzazione con le migliori performance nel suo confronto erano AMD, Arista Networks, Micron, Quanta Services e Vertiv. La lista attraversa più segmenti della filiera: chip, reti, memorie e infrastrutture per i data center. Nvidia figurava invece tra i peggiori, insieme a Strategy. La graduatoria è coerente con una rotazione all’interno del tema AI, ma non misura i flussi: mostra che alcuni titoli hanno tenuto meglio di altri, non che siano entrati capitali nel comparto nel suo insieme.
+
+Per Nvidia, intanto, si sono chiariti due punti. I risultati trimestrali hanno superato le attese, ma la prospettiva di un ritorno di Jensen Huang, evocata da Lee nel suo aggiornamento, è stata esclusa dal consiglio di amministrazione. Colette Kress, direttrice finanziaria e amministratrice delegata ad interim, lo ha confermato alla CNBC; il presidente del consiglio Harvey Jones ha ribadito la posizione durante la presentazione dei conti. Una trimestrale migliore del previsto ha quindi ridotto l’incertezza sui risultati, non quella sulla successione: l’azienda continua a cercare un amministratore delegato permanente.
+
+## Il vero test viene dopo il 18 novembre
+
+Il risultato già verificabile è la dimensione del collocamento di Anthropic. Resta invece da stabilire se il 18 novembre sia stato un minimo per il Nasdaq 100. La prova non è il successo dell’IPO, né un rimbalzo di una seduta: è la tenuta dei minimi nelle sedute successive, accompagnata da un recupero che coinvolga più di una manciata di titoli. Se l’indice torna a segnare nuovi minimi, viene meno anzitutto la previsione sulla data; non basta, da solo, a dimostrare che l’intero mercato sia entrato in una fase ribassista.
+
+Qui sta anche la differenza con la tesi di David Orr sulla possibile sovracapacità di calcolo. Lee si chiede se Wall Street abbia venduto troppo nel giro di poche settimane; Orr si chiede se l’industria stia costruendo più capacità di quanta ne potrà vendere a prezzi remunerativi nei prossimi anni. Un rimbalzo dei titoli AI darebbe credito alla lettura tattica di Lee, ma non risolverebbe la questione industriale posta da Orr. E una quotazione record dimostra che gli investitori erano disposti a finanziare Anthropic a quel prezzo, non che abbiano già trovato il fondo per tutto il settore.
+
+<figure class="grafico">
+<p class="gt">Due domande diverse: Lee e Orr</p>
+<svg viewBox="0 0 720 280" role="img" aria-label="Confronto: Lee domanda tattica se Wall Street abbia venduto troppo in poche settimane; Orr domanda industriale se l'industria costruisca più capacità di quanta ne venderà a prezzi remunerativi nei prossimi anni; un rimbalzo AI dà credito a Lee ma non risolve Orr">
+<rect x="20" y="30" width="328" height="150" rx="3" fill="#f7f3ea" stroke="#17140f" stroke-width="1.2"/>
+<rect x="372" y="30" width="328" height="150" rx="3" fill="#f7f3ea" stroke="#a23a24" stroke-width="1.2"/>
+<text x="40" y="62" fill="#17140f" font-size="16" font-weight="700">Tom Lee · Fundstrat</text>
+<text x="40" y="84" fill="#a23a24" font-size="12.5" letter-spacing="1">DOMANDA TATTICA</text>
+<text x="40" y="112" fill="#17140f" font-size="13.5">Wall Street ha venduto troppo</text>
+<text x="40" y="132" fill="#17140f" font-size="13.5">nel giro di poche settimane?</text>
+<text x="40" y="160" fill="#6d6457" font-size="12.5">Orizzonte: settimane · minimo ipotizzato 18 nov</text>
+<text x="392" y="62" fill="#17140f" font-size="16" font-weight="700">David Orr · Militia</text>
+<text x="392" y="84" fill="#a23a24" font-size="12.5" letter-spacing="1">DOMANDA INDUSTRIALE</text>
+<text x="392" y="112" fill="#17140f" font-size="13.5">Si costruisce più capacità di quanta</text>
+<text x="392" y="132" fill="#17140f" font-size="13.5">se ne venderà a prezzi remunerativi?</text>
+<text x="392" y="160" fill="#6d6457" font-size="12.5">Orizzonte: anni · sovracapacità di calcolo</text>
+<rect x="20" y="200" width="680" height="60" rx="3" fill="#f1ebdd" stroke="#6d6457" stroke-width="1"/>
+<text x="40" y="226" fill="#17140f" font-size="13.5">Un rimbalzo dei titoli AI darebbe credito alla lettura tattica di Lee,</text>
+<text x="40" y="246" fill="#17140f" font-size="13.5">ma non risolverebbe la questione industriale posta da Orr.</text>
+</svg>
+<figcaption>La tesi industriale di Orr è approfondita nell’articolo collegato: <a href="ai-rischio-troppo-calcolo-david-orr.html">AI, il rischio del troppo calcolo</a>.</figcaption>
+</figure>
+
+*Fonti: analisi di Tom Lee (Fundstrat) come riportata nel testo; dati sull’IPO Anthropic e confronto con SpaceX citati da Reuters; dichiarazioni Nvidia di Colette Kress (CNBC) e Harvey Jones (presentazione dei conti).*
