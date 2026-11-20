@@ -1,3 +1,69 @@
 {
-  "diretta": []
+  "diretta": [
+    {
+      "slug": "2026-11-20-1000",
+      "data": "2026-11-20",
+      "ora": "10:00",
+      "finestra": "00:00-10:00",
+      "voci": [
+        {
+          "testo": "Il collocamento Anthropic ha raccolto 81,3 miliardi di dollari, record globale: sulla scia, titoli tecnologici statunitensi e asiatici in calo.",
+          "ora": "07:00",
+          "fonte": "SCMP Business"
+        },
+        {
+          "testo": "Aggiornamento: Anthropic ha chiuso la prima seduta a +17,1% sul prezzo di collocamento, dopo un massimo di 115,10 dollari. Oltre la metà dei circa 1.200 investitori istituzionali è rimasta senza azioni; record di scambi per i piccoli risparmiatori: 700-800 milioni di dollari.",
+          "ora": "00:15",
+          "fonte": "Wallstreetcn"
+        },
+        {
+          "testo": "Le Borse globali inanellano la più lunga serie di ribassi da oltre tre anni: i titoli dell'IA cedono dopo la corsa del 2026, investitori al riparo nei titoli di Stato USA.",
+          "ora": "08:05",
+          "fonte": "Bloomberg Politics"
+        },
+        {
+          "testo": "Il Topix giapponese ha chiuso la peggiore settimana da aprile 2025: vendite sui tecnologici per i timori sull'IA.",
+          "ora": "00:45",
+          "fonte": "Bloomberg Tech"
+        },
+        {
+          "testo": "Le azioni dei mercati emergenti avviate verso un mercato ribassista: pesano il calo dei tecnologici, i tassi attesi in rialzo e le tensioni commerciali.",
+          "ora": "01:05",
+          "fonte": "Bloomberg Tech"
+        },
+        {
+          "testo": "Il dollaro verso il quarto rialzo settimanale consecutivo: domanda legata al collocamento Anthropic, attese di nuovi rialzi dei tassi Fed e rendimenti elevati sui titoli di Stato USA.",
+          "ora": "00:20",
+          "fonte": "Bloomberg Markets"
+        },
+        {
+          "testo": "Emissioni obbligazionarie in Europa oltre 2.000 miliardi di euro per la prima volta: il debito pubblico incontra i finanziamenti del boom dell'IA.",
+          "ora": "08:30",
+          "fonte": "Bloomberg Markets"
+        },
+        {
+          "testo": "Nvidia, sesta seduta consecutiva in calo: giovedì -3,3% a 145,98 dollari, 669 miliardi di capitalizzazione evaporati (-16%). Moody's porta la prospettiva da positiva a stabile; dopo le dimissioni di Jensen Huang, guida ad interim alla direttrice finanziaria Colette Kress.",
+          "ora": "00:12",
+          "fonte": "Eastmoney"
+        },
+        {
+          "testo": "In Islanda la Blue Lagoon si quota in Borsa: collocamento da 110 milioni di dollari per la nota località termale, scommessa su turismo e benessere.",
+          "ora": "06:00",
+          "fonte": "CNBC Markets"
+        }
+      ],
+      "sintesi": "Il ridimensionamento delle scommesse sull'IA domina la finestra: Asia in netto calo, emergenti verso il mercato ribassista, dollaro forte. Seduta europea appena avviata.",
+      "prospettiva": "Seconda seduta di Anthropic con apertura indicata debole; da seguire la tenuta dei tecnologici e le attese di rialzi dei tassi Fed.",
+      "fonti": [
+        "SCMP Business",
+        "Wallstreetcn",
+        "Bloomberg Politics",
+        "Bloomberg Tech",
+        "Bloomberg Markets",
+        "Eastmoney",
+        "CNBC Markets"
+      ],
+      "testo": "📌 FINANZA OGGI — venerdì 20 novembre 2026, 10:00 (CET) — finestra 00:00-10:00\n\n• Il collocamento Anthropic ha raccolto 81,3 miliardi di dollari, record globale: sulla scia, titoli tecnologici statunitensi e asiatici in calo. (07:00, SCMP Business)\n\n• Aggiornamento: Anthropic ha chiuso la prima seduta a +17,1% sul prezzo di collocamento, dopo un massimo di 115,10 dollari. Oltre la metà dei circa 1.200 investitori istituzionali è rimasta senza azioni; record di scambi per i piccoli risparmiatori: 700-800 milioni di dollari. (00:15, Wallstreetcn)\n\n• Le Borse globali inanellano la più lunga serie di ribassi da oltre tre anni: i titoli dell'IA cedono dopo la corsa del 2026, investitori al riparo nei titoli di Stato USA. (08:05, Bloomberg Politics)\n\n• Il Topix giapponese ha chiuso la peggiore settimana da aprile 2025: vendite sui tecnologici per i timori sull'IA. (00:45, Bloomberg Tech)\n\n• Le azioni dei mercati emergenti avviate verso un mercato ribassista: pesano il calo dei tecnologici, i tassi attesi in rialzo e le tensioni commerciali. (01:05, Bloomberg Tech)\n\n• Il dollaro verso il quarto rialzo settimanale consecutivo: domanda legata al collocamento Anthropic, attese di nuovi rialzi dei tassi Fed e rendimenti elevati sui titoli di Stato USA. (00:20, Bloomberg Markets)\n\n• Emissioni obbligazionarie in Europa oltre 2.000 miliardi di euro per la prima volta: il debito pubblico incontra i finanziamenti del boom dell'IA. (08:30, Bloomberg Markets)\n\n• Nvidia, sesta seduta consecutiva in calo: giovedì -3,3% a 145,98 dollari, 669 miliardi di capitalizzazione evaporati (-16%). Moody's porta la prospettiva da positiva a stabile; dopo le dimissioni di Jensen Huang, guida ad interim alla direttrice finanziaria Colette Kress. (00:12, Eastmoney)\n\n• In Islanda la Blue Lagoon si quota in Borsa: collocamento da 110 milioni di dollari per la nota località termale, scommessa su turismo e benessere. (06:00, CNBC Markets)\n\n📊 SINTESI MERCATO\n• Il ridimensionamento delle scommesse sull'IA domina la finestra: Asia in netto calo, emergenti verso il mercato ribassista, dollaro forte. Seduta europea appena avviata.\n\n🔮 PROSPETTIVA\n• Seconda seduta di Anthropic con apertura indicata debole; da seguire la tenuta dei tecnologici e le attese di rialzi dei tassi Fed.\n\n— Fonti: SCMP Business, Wallstreetcn, Bloomberg Politics, Bloomberg Tech, Bloomberg Markets, Eastmoney, CNBC Markets"
+    }
+  ]
 }
