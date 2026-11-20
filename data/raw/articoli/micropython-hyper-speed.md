@@ -1,0 +1,306 @@
+# MicroPython Hyper-Speed: Ottimizzazione Avanzata e Velocizzazione del Codice di 3 Volte
+
+<style>
+.articolo-testo figure.grafico{margin:2.4rem 0;padding:1.4rem 1.5rem 1.2rem;border:1px solid rgba(23,20,15,.18);background:#f1ebdd}
+.articolo-testo figure.grafico .gt{font-family:var(--sans);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#a23a24;font-weight:700;margin:0 0 1rem}
+.articolo-testo figure.grafico svg{width:100%;height:auto;display:block}
+.articolo-testo figure.grafico svg text{font-family:var(--sans)}
+.articolo-testo figure.grafico figcaption{font-family:var(--sans);font-size:.82rem;line-height:1.55;color:#6d6457;margin-top:1rem}
+.articolo-testo pre{margin:1.6rem 0;padding:1rem 1.2rem;background:#f7f3ea;border:1px solid rgba(23,20,15,.18);border-left:3px solid #a23a24;overflow-x:auto}
+.articolo-testo pre code{font-family:ui-monospace,"Cascadia Code","Source Code Pro",Menlo,Consolas,"DejaVu Sans Mono",monospace;font-size:.8rem;line-height:1.55;color:#17140f;background:none;padding:0;white-space:pre}
+.articolo-testo :not(pre)>code{font-family:ui-monospace,"Cascadia Code",Menlo,Consolas,monospace;background:#f1ebdd;padding:.08em .35em;border-radius:3px;font-size:.86em;color:#a23a24}
+</style>
+
+L'adozione del linguaggio Python nel contesto dei microcontrollori e dei sistemi embedded ha rivoluzionato le metodologie di prototipazione rapida dell'hardware. Tuttavia, la natura interpretata di Python comporta un vincolo prestazionale inevitabile. Nei sistemi integrati caratterizzati da risorse computazionali ristrette, limitata memoria RAM e frequenze di clock contenute, l'efficienza nell'esecuzione del codice diviene un fattore critico per garantire la reattività in tempo reale e il rispetto delle tempistiche di I/O.
+
+Come illustrato nelle analisi tecniche condotte da Martin Mohr sulla rivista specializzata Raspberry Pi Geek, MicroPython offre meccanismi avanzati in grado di superare i colli di bottiglia tipici dell'interprete standard. Attraverso una combinazione sistematica di ristrutturazione dello scope di visibilità, ottimizzazione della ricerca dei simboli nei dizionari di memoria e l'impiego del decoratore `@micropython.native`, è possibile incrementare la velocità di esecuzione di oltre 3,2 volte rispetto alle routine tradizionali, mantenendo al contempo la flessibilità e la leggibilità del linguaggio Python.
+
+## 1. Architettura del runtime MicroPython e analisi dei colli di bottiglia
+
+Per comprendere i presupposti teorici e pratici dei guadagni prestazionali ottenibili, occorre analizzare l'architettura fondamentale dell'ambiente di esecuzione. MicroPython è stato creato alla fine di aprile del 2014 da Damien George, il quale ne ha sviluppato l'intero codice sorgente in linguaggio C. L'obiettivo primario del progetto era la realizzazione di un'implementazione Python autonoma, in grado di operare direttamente sull'hardware ("bare-metal") senza dipendere da un sistema operativo intermedio o da un BIOS.
+
+Il flusso di lavoro interno di MicroPython si articola in tre fasi sequenziali:
+
+- **Parsing e analisi lessicale**: il codice sorgente in formato testo viene analizzato e strutturato in un albero sintattico astratto.
+- **Generazione del bytecode**: l'albero sintattico viene tradotto in un formato intermedio compatto denominato bytecode.
+- **Interpretazione e valutazione**: la macchina virtuale di MicroPython scorre ed esegue il bytecode istruzione per istruzione, convertendole in operazioni fisiche sul microcontrollore.
+
+<figure class="grafico">
+<p class="gt">Il flusso di esecuzione e le due scorciatoie</p>
+<svg viewBox="0 0 720 212" role="img" aria-label="Pipeline: sorgente, parsing, bytecode, macchina virtuale, hardware. Il file .mpy pre-compilato salta il parsing all'avvio; il decoratore @micropython.native bypassa la macchina virtuale.">
+<rect x="16" y="40" width="112" height="64" fill="#f7f3ea" stroke="#17140f" stroke-width="1.2"/>
+<text x="72" y="66" text-anchor="middle" font-size="13" font-weight="700" fill="#17140f">Sorgente</text>
+<text x="72" y="86" text-anchor="middle" font-size="10.5" fill="#6d6457">codice .py</text>
+<rect x="152" y="40" width="112" height="64" fill="#f7f3ea" stroke="#17140f" stroke-width="1.2"/>
+<text x="208" y="66" text-anchor="middle" font-size="13" font-weight="700" fill="#17140f">Parsing</text>
+<text x="208" y="86" text-anchor="middle" font-size="10.5" fill="#6d6457">albero AST</text>
+<rect x="288" y="40" width="112" height="64" fill="#f7f3ea" stroke="#17140f" stroke-width="1.2"/>
+<text x="344" y="66" text-anchor="middle" font-size="13" font-weight="700" fill="#17140f">Bytecode</text>
+<text x="344" y="86" text-anchor="middle" font-size="10.5" fill="#6d6457">formato .mpy</text>
+<rect x="424" y="40" width="112" height="64" fill="#f7f3ea" stroke="#17140f" stroke-width="1.2"/>
+<text x="480" y="66" text-anchor="middle" font-size="13" font-weight="700" fill="#17140f">VM</text>
+<text x="480" y="86" text-anchor="middle" font-size="10.5" fill="#6d6457">interpreta</text>
+<rect x="560" y="40" width="112" height="64" fill="#a23a24" stroke="#a23a24" stroke-width="1.2"/>
+<text x="616" y="66" text-anchor="middle" font-size="13" font-weight="700" fill="#f7f3ea">Hardware</text>
+<text x="616" y="86" text-anchor="middle" font-size="10.5" fill="#f7f3ea">CPU · GPIO</text>
+<path d="M128,72 L150,72 M146,68 L150,72 L146,76" stroke="#6d6457" stroke-width="1.4" fill="none"/>
+<path d="M264,72 L286,72 M282,68 L286,72 L282,76" stroke="#6d6457" stroke-width="1.4" fill="none"/>
+<path d="M400,72 L422,72 M418,68 L422,72 L418,76" stroke="#6d6457" stroke-width="1.4" fill="none"/>
+<path d="M536,72 L558,72 M554,68 L558,72 L554,76" stroke="#6d6457" stroke-width="1.4" fill="none"/>
+<path d="M72,104 C72,138 344,138 344,104" stroke="#6d6457" stroke-width="1.3" stroke-dasharray="4 3" fill="none"/>
+<text x="208" y="156" text-anchor="middle" font-size="11.5" fill="#6d6457">.mpy pre-compilato: parsing saltato all'avvio</text>
+<path d="M344,104 C344,178 616,178 616,104" stroke="#a23a24" stroke-width="1.3" stroke-dasharray="4 3" fill="none"/>
+<text x="480" y="196" text-anchor="middle" font-size="11.5" fill="#a23a24">@micropython.native: la VM è bypassata</text>
+</svg>
+<figcaption>Schema del flusso descritto nell'articolo: parsing → bytecode → macchina virtuale. Le due scorciatoie eliminano rispettivamente il parsing all'avvio (.mpy) e l'intermediazione della VM (@micropython.native). Illustrazione, non una misura.</figcaption>
+</figure>
+
+Un primo livello di ottimizzazione dell'architettura consiste nell'azzerare l'overhead della fase di parsing iniziale durante l'avvio. Salvando il codice pre-compilato sotto forma di file con estensione `.mpy`, il runtime risparmia cicli di clock e risorse di memoria RAM, demandando il processo di generazione del bytecode all'ambiente di sviluppo primario.
+
+Nonostante l'uso del bytecode pre-compilato, la macchina virtuale continua a risentire del dinamismo intrinseco di Python. Ogni operazione di accesso a variabili, metodi o attributi richiede la scansione di dizionari e tabelle hash dinamiche, un processo significativamente più lento rispetto al puntamento diretto in memoria tipico dei linguaggi compilati come C o C++.
+
+## 2. Dinamiche di memoria: scope, allocazione e garbage collection
+
+La velocità di esecuzione in MicroPython è condizionata dalla gestione degli identificatori e dalle operazioni di allocazione nella memoria RAM. Comprendere la struttura degli ambiti di visibilità (scope) permette di eliminare i ritardi di lookup nei cicli critici.
+
+### Gestione dello scope globale vs. scope locale
+
+In MicroPython, le variabili e gli oggetti definiti al livello principale di uno script risiedono nello **scope globale**. La tabella dei simboli globale rappresenta una struttura dati di grandi dimensioni. Ogni volta che il codice fa riferimento a un oggetto globale — comprese le chiamate di modulo come `machine.Pin` o le invocazioni di metodo come `a.on()` — il runtime deve eseguire una ricerca esaustiva all'interno di questa struttura.
+
+Quando il codice viene incapsulato all'interno di una funzione, le variabili definite al suo interno passano allo **scope locale**. Le strutture dati locali sono ridotte e strutturate per una scansione estremamente rapida. Il semplice passaggio della logica di controllo da un contesto globale a una funzione dedicata abbatte immediatamente l'overhead legato alla ricerca dei simboli.
+
+<figure class="grafico">
+<p class="gt">Scope globale e scope locale a confronto</p>
+<svg viewBox="0 0 720 210" role="img" aria-label="A sinistra la tabella dei simboli globale, ampia, con ricerca esaustiva a ogni accesso (lento). A destra la tabella locale di una funzione, ridotta, con accesso diretto (veloce).">
+<text x="160" y="28" text-anchor="middle" font-size="13" font-weight="700" fill="#a23a24">Scope globale</text>
+<rect x="20" y="40" width="280" height="150" fill="#f7f3ea" stroke="#17140f" stroke-width="1.2"/>
+<text x="160" y="62" text-anchor="middle" font-size="10.5" fill="#6d6457">tabella dei simboli ampia</text>
+<text x="45" y="88" font-size="11" fill="#6d6457">machine</text>
+<text x="45" y="106" font-size="11" fill="#6d6457">time</text>
+<text x="45" y="124" font-size="11" fill="#6d6457">loops</text>
+<text x="45" y="142" font-size="11" fill="#6d6457">a</text>
+<text x="175" y="88" font-size="11" fill="#6d6457">Pin</text>
+<text x="175" y="106" font-size="11" fill="#6d6457">range</text>
+<text x="175" y="124" font-size="11" fill="#6d6457">on</text>
+<text x="175" y="142" font-size="11" fill="#6d6457">off</text>
+<rect x="110" y="158" width="100" height="24" fill="#6d6457"/>
+<text x="160" y="174" text-anchor="middle" font-size="12" font-weight="700" fill="#f7f3ea">lento</text>
+<text x="560" y="28" text-anchor="middle" font-size="13" font-weight="700" fill="#17140f">Scope locale (funzione)</text>
+<rect x="420" y="40" width="280" height="150" fill="#f1ebdd" stroke="#17140f" stroke-width="1.2"/>
+<text x="560" y="62" text-anchor="middle" font-size="10.5" fill="#6d6457">tabella ridotta</text>
+<text x="445" y="88" font-size="11" fill="#17140f">on</text>
+<text x="445" y="106" font-size="11" fill="#17140f">off</text>
+<text x="445" y="124" font-size="11" fill="#17140f">r</text>
+<text x="445" y="142" font-size="11" fill="#17140f">i</text>
+<rect x="510" y="158" width="100" height="24" fill="#a23a24"/>
+<text x="560" y="174" text-anchor="middle" font-size="12" font-weight="700" fill="#f7f3ea">veloce</text>
+<text x="360" y="100" text-anchor="middle" font-size="9.5" fill="#a23a24">incapsula in</text>
+<text x="360" y="112" text-anchor="middle" font-size="9.5" fill="#a23a24">una funzione</text>
+<path d="M302,130 L416,130 M410,124 L416,130 L410,136" stroke="#a23a24" stroke-width="1.6" fill="none"/>
+</svg>
+<figcaption>Schema concettuale (non una misura): al livello globale la tabella dei simboli è ampia e ogni accesso la scansiona; dentro una funzione la tabella locale è ridotta e l'accesso è diretto. È il guadagno dello stadio 2 del benchmark.</figcaption>
+</figure>
+
+### Allocazione dinamica e mitigazione del garbage collector
+
+Ogni istanziazione di nuovi oggetti o creazione di variabili temporanee comporta l'allocazione di un blocco di memoria nella heap dinamica. Tale operazione richiede tempo ed estende la frammentazione della RAM.
+
+Quando la memoria disponibile si esaurisce, interviene automaticamente il **garbage collector** per identificare ed eliminare le strutture non più referenziate. L'esecuzione del garbage collector introduce pause non deterministiche nella linea temporale del programma, compromettendo la reattività del sistema. Per mitigare questo fenomeno si applicano due accorgimenti:
+
+- **Riutilizzo delle strutture esistenti**: evitare la ri-allocazione continua di oggetti temporanei nei cicli ad alta frequenza, riciclando le variabili pre-allocate.
+- **Nomi di variabili sintetici**: l'uso di identificatori brevi riduce l'occupazione di memoria nei dizionari dei simboli e velocizza la scansione da parte dell'interprete.
+
+## 3. Tecniche progressive di ottimizzazione a livello sorgente
+
+L'applicazione metodica di ristrutturazioni del codice Python consente di accumulare incrementi prestazionali rilevanti già a livello di codice interpretabile.
+
+### Caching locale dei metodi e delle funzioni strutturali
+
+Nei cicli iterativi intensivi, richiamare metodi tramite la notazione puntata (ad esempio `a.on()`) costringe MicroPython a risolvere due livelli di ricerca a ogni ciclo: prima identificare l'oggetto `a` e poi accedere al suo metodo `.on`.
+
+Memorizzando il riferimento al metodo in una variabile locale all'interno della funzione (`on = a.on`), l'operazione di risoluzione puntata viene eseguita una sola volta al momento dell'assegnazione. Negli attraversamenti successivi, la chiamata `on()` avviene per accesso locale diretto. Allo stesso modo, la pre-assegnazione locale dell'oggetto iterabile restituito da `range()` (tramite `r = range(...)`) evita la ri-valutazione della funzione a ogni iterazione.
+
+### Srotolamento dei cicli (loop unrolling)
+
+Ogni iterazione di un ciclo `for` comporta un costo computazionale legato all'incremento dell'indice, alla verifica della condizione limite e al salto di memoria. Lo srotolamento del ciclo (loop unrolling) consiste nel moltiplicare le istruzioni eseguite nel corpo del ciclo, riducendo la frequenza dei controlli di struttura.
+
+Raggruppando più chiamate operative nello stesso blocco iterativo e dividendo il numero di cicli totali per il fattore di raggruppamento, si riduce significativamente l'overhead di gestione del loop.
+
+## 4. Compilazione nativa: il decoratore @micropython.native
+
+Quando l'ottimizzazione del codice Python di alto livello non è sufficiente a soddisfare i vincoli prestazionali dell'applicazione, MicroPython mette a disposizione il decoratore `@micropython.native`.
+
+### Meccanismo di funzionamento della compilazione nativa
+
+Inserito immediatamente prima della dichiarazione di una funzione, il decoratore `@micropython.native` segnala al compilatore interno di bypassare la generazione del bytecode standard per quella specifica funzione. Il blocco di codice viene tradotto direttamente in **codice macchina nativo** per la specifica architettura della CPU target (ad esempio ARM Cortex-M o ESP32).
+
+<pre><code>@micropython.native
+def blink4(l):
+    on = a.on
+    off = a.off
+    r = range(int(l / 10))
+    for i in r:
+        on(); off(); on(); off()
+        on(); off(); on(); off()
+        on(); off(); on(); off()
+        on(); off(); on(); off()
+        on(); off(); on(); off()</code></pre>
+
+L'eliminazione dell'intermediazione della macchina virtuale consente alle istruzioni di essere elaborate direttamente dall'unità di calcolo del microcontrollore alla velocità massima consentita dall'hardware.
+
+### Confronto con l'assembler inline
+
+MicroPython supporta anche la scrittura di assembler inline mediante il decoratore `@micropython.asm_thumb`. Sebbene l'assembler consenta teoricamente di spingere le prestazioni al limite fisico dell'hardware, esso comporta svantaggi significativi:
+
+- **Perdita della portabilità**: il codice in assembler è strettamente dipendente dal set di istruzioni della CPU specifica e non può essere trasferito su architetture differenti.
+- **Elevata complessità manutentiva**: lo sviluppo in assembler richiede una conoscenza approfondita dei registri interni del microcontrollore, rendendo le fasi di aggiornamento e debugging complesse e onerose.
+
+Il decoratore `@micropython.native` fornisce il bilanciamento ideale: garantisce prestazioni vicine a quelle del codice compilato nativamente preservando l'astrazione e la portabilità del codice Python.
+
+## 5. Valutazione empirica e matrice dei benchmark
+
+Per valutare quantitativamente l'efficacia di ciascun intervento di ottimizzazione, si prende in esame un testbed sperimentale focalizzato sulla commutazione ad alta frequenza di un pin di output GPIO (`machine.Pin(25)`). Il benchmark misura i microsecondi necessari per completare 100.000 cicli di attivazione e disattivazione.
+
+Il codice utilizzato nei test confronta progressivamente le diverse tecniche descritte:
+
+<pre><code>import machine, time
+
+
+loops = 100000
+a = machine.Pin(25, machine.Pin.OUT)
+
+
+# 1. Esecuzione nello scope globale (Normal Time)
+start = time.ticks_us()
+for i in range(loops):
+    a.on()
+    a.off()
+stop = time.ticks_us()
+print(&quot;Normal Time µs:&quot; + str((stop - start)) + &quot; Loops:&quot; + str(loops))
+
+
+# 2. Trasferimento all&#x27;interno di una funzione locale (Funktion Time)
+def blink(l):
+    for i in range(l):
+        a.on()
+        a.off()
+
+
+# 3. Caching locale dei metodi e di range() (Lokale Time)
+def blink2(l):
+    on = a.on
+    off = a.off
+    r = range(l)
+    for i in r:
+        on()
+        off()
+
+
+# 4. Srotolamento del ciclo / Loop Unrolling (Trick Time)
+def blink3(l):
+    on = a.on
+    off = a.off
+    r = range(int(l / 10))
+    for i in r:
+        on(); off(); on(); off()
+        on(); off(); on(); off()
+        on(); off(); on(); off()
+        on(); off(); on(); off()
+        on(); off(); on(); off()
+
+
+# 5. Compilazione nativa con decoratore (Native Time)
+@micropython.native
+def blink4(l):
+    on = a.on
+    off = a.off
+    r = range(int(l / 10))
+    for i in r:
+        on(); off(); on(); off()
+        on(); off(); on(); off()
+        on(); off(); on(); off()
+        on(); off(); on(); off()
+        on(); off(); on(); off()</code></pre>
+
+### Risultati delle misurazioni prestazionali
+
+I dati risultanti dai test evidenziano la progressiva riduzione dei tempi di esecuzione in funzione del livello di ottimizzazione applicato al codice.
+
+| Stadio di ottimizzazione | Tecnica e metodologia applicata | Tempo di esecuzione (100.000 iterazioni) | Guadagno prestazionale relativo |
+|---|---|---|---|
+| 1. Baseline globale | Codice eseguito nello scope globale senza ottimizzazioni | 1.617.416 µs (~1,62 s) | 1,00× (riferimento) |
+| 2. Incapsulamento | Spostamento del codice all'interno di una funzione (`blink`) | 1.432.960 µs (~1,43 s) | +11,4% velocità (1,13×) |
+| 3. Caching metodi | Assegnazione locale `on = a.on`, `off = a.off` e `r = range(l)` | 841.972 µs (~0,84 s) | +48,0% velocità (1,92×) |
+| 4. Loop unrolling | Raggruppamento di 10 operazioni per iterazione (`blink3`) | 640.662 µs (~0,64 s) | +60,4% velocità (2,52×) |
+| 5. Compilazione nativa | Inserimento della direttiva `@micropython.native` (`blink4`) | 498.484 µs (~0,50 s) | +69,2% velocità (3,24×) |
+
+<figure class="grafico">
+<p class="gt">Tempi di esecuzione a confronto — 100.000 cicli on/off</p>
+<svg viewBox="0 0 720 278" role="img" aria-label="Barre dei tempi: scope globale circa 1,62 secondi (1,00x), funzione locale 1,43 (1,13x), caching 0,84 (1,92x), unrolling 0,64 (2,52x), codice nativo 0,50 (3,24x).">
+<line x1="160" y1="34" x2="160" y2="248" stroke="rgba(23,20,15,.18)" stroke-width="1"/>
+<text x="150" y="56" text-anchor="end" font-size="12.5" fill="#17140f">1 · Scope globale</text>
+<rect x="160" y="39" width="430.0" height="26" fill="#6d6457"/>
+<text x="168" y="56" font-size="12" font-weight="700" fill="#f7f3ea">1,00×</text>
+<text x="598.0" y="56" font-size="12.5" fill="#17140f">~1,62 s</text>
+<text x="150" y="100" text-anchor="end" font-size="12.5" fill="#17140f">2 · Funzione locale</text>
+<rect x="160" y="83" width="381.0" height="26" fill="#6d6457"/>
+<text x="168" y="100" font-size="12" font-weight="700" fill="#f7f3ea">1,13×</text>
+<text x="549.0" y="100" font-size="12.5" fill="#17140f">~1,43 s</text>
+<text x="150" y="144" text-anchor="end" font-size="12.5" fill="#17140f">3 · Caching metodi</text>
+<rect x="160" y="127" width="223.8" height="26" fill="#6d6457"/>
+<text x="168" y="144" font-size="12" font-weight="700" fill="#f7f3ea">1,92×</text>
+<text x="391.8" y="144" font-size="12.5" fill="#17140f">~0,84 s</text>
+<text x="150" y="188" text-anchor="end" font-size="12.5" fill="#17140f">4 · Loop unrolling</text>
+<rect x="160" y="171" width="170.3" height="26" fill="#6d6457"/>
+<text x="168" y="188" font-size="12" font-weight="700" fill="#f7f3ea">2,52×</text>
+<text x="338.3" y="188" font-size="12.5" fill="#17140f">~0,64 s</text>
+<text x="150" y="232" text-anchor="end" font-size="12.5" fill="#17140f">5 · Codice nativo</text>
+<rect x="160" y="215" width="132.5" height="26" fill="#a23a24"/>
+<text x="168" y="232" font-size="12" font-weight="700" fill="#f7f3ea">3,24×</text>
+<text x="300.5" y="232" font-size="12.5" fill="#17140f">~0,50 s</text>
+<text x="160" y="268" font-size="11.5" fill="#6d6457">tempo di esecuzione → (barre in scala lineare sui µs)</text>
+</svg>
+<figcaption>Tempo per completare 100.000 attivazioni/disattivazioni del pin GPIO, per stadio di ottimizzazione. Dati: benchmark di Martin Mohr, Raspberry Pi Geek (machine.Pin(25)). Il codice nativo chiude a ~0,50 s contro ~1,62 s iniziali: 3,24×. Valori esatti in µs nella tabella.</figcaption>
+</figure>
+
+<figure class="grafico">
+<p class="gt">Quanto risparmia ciascuna tecnica (vs stadio precedente)</p>
+<svg viewBox="0 0 720 234" role="img" aria-label="Microsecondi risparmiati: incapsulamento 184.456 (16,5%), caching 590.988 (52,8%), unrolling 201.310 (18,0%), nativo 142.178 (12,7%). Il caching è la leva singola più efficace.">
+<line x1="160" y1="34" x2="160" y2="204" stroke="rgba(23,20,15,.18)" stroke-width="1"/>
+<text x="150" y="56" text-anchor="end" font-size="12.5" fill="#17140f">Incapsulamento</text>
+<rect x="160" y="39" width="134.2" height="26" fill="#6d6457"/>
+<text x="168" y="56" font-size="11.5" font-weight="700" fill="#f7f3ea">16,5%</text>
+<text x="302.2" y="56" font-size="12.5" fill="#17140f">−184.456 µs</text>
+<text x="150" y="100" text-anchor="end" font-size="12.5" fill="#17140f">Caching metodi</text>
+<rect x="160" y="83" width="430.0" height="26" fill="#a23a24"/>
+<text x="168" y="100" font-size="11.5" font-weight="700" fill="#f7f3ea">52,8%</text>
+<text x="598.0" y="100" font-size="12.5" fill="#17140f">−590.988 µs</text>
+<text x="150" y="144" text-anchor="end" font-size="12.5" fill="#17140f">Loop unrolling</text>
+<rect x="160" y="127" width="146.5" height="26" fill="#6d6457"/>
+<text x="168" y="144" font-size="11.5" font-weight="700" fill="#f7f3ea">18,0%</text>
+<text x="314.5" y="144" font-size="12.5" fill="#17140f">−201.310 µs</text>
+<text x="150" y="188" text-anchor="end" font-size="12.5" fill="#17140f">Compilazione nativa</text>
+<rect x="160" y="171" width="103.4" height="26" fill="#6d6457"/>
+<text x="168" y="188" font-size="11.5" font-weight="700" fill="#f7f3ea">12,7%</text>
+<text x="271.4" y="188" font-size="12.5" fill="#17140f">−142.178 µs</text>
+<text x="160" y="224" font-size="11.5" fill="#6d6457">µs risparmiati → · percentuale = quota sul guadagno totale (1.118.932 µs)</text>
+</svg>
+<figcaption>Microsecondi risparmiati da ogni intervento rispetto al precedente e quota sul guadagno totale (1.118.932 µs). Il caching locale dei metodi è la leva singola più efficace: −590.988 µs, il 52,8% dell'intero guadagno. Dati: benchmark Martin Mohr, Raspberry Pi Geek.</figcaption>
+</figure>
+
+Dai dati empirici emerge come la combinazione delle best-practice di memorizzazione locale unitamente alla direttiva `@micropython.native` permetta di ridurre il tempo di esecuzione da 1,617 secondi a soli 0,498 secondi. Questo risultato certifica un'accelerazione pari a **3,24 volte la velocità iniziale**.
+
+## 6. Considerazioni di ingegnerizzazione e conclusioni
+
+Come evidenziato dalle conclusioni dell'esperto Martin Mohr, sebbene Python non sia nato originariamente per l'elaborazione ad alte prestazioni, l'ecosistema MicroPython dimostra una sorprendente maturità. Grazie all'efficienza del runtime in C e alla disponibilità di strumenti quali la compilazione nativa, la pre-compilazione in bytecode `.mpy` e il caching locale, MicroPython è ampiamente in grado di competere con ambienti di programmazione tradizionali quali C e C++ anche in ambiti con rigidi vincoli temporali.
+
+Per massimizzare l'efficienza dei sistemi embedded basati su MicroPython, si consiglia la seguente metodologia di sviluppo:
+
+- **Evitare lo scope globale per la logica operativa**: racchiudere sempre le routine di controllo, i driver fisici e gli interrupt handler all'interno di funzioni.
+- **Adottare il caching dei metodi nei cicli ad alta frequenza**: assegnare riferimenti locali a funzioni di modulo e metodi di periferica (GPIO, I2C, SPI) per eliminare l'overhead di lookup puntato.
+- **Applicare la compilazione nativa `@micropython.native` nei punti critici**: identificare mediante profiling i colli di bottiglia computazionali e contrassegnarli con il decoratore nativo per l'esecuzione ad altissima velocità.
+- **Prevenire l'allocazione dinamica di RAM nei cicli fissi**: riutilizzare i buffer di memoria ed evitare la creazione costante di identificatori temporanei per scongiurare pause da garbage collection.
+
+---
+
+**Fonti.** Analisi e benchmark di Martin Mohr, *Raspberry Pi Geek* (testbed: commutazione di `machine.Pin(25)`, 100.000 cicli on/off). Documentazione ufficiale MicroPython, «Maximising MicroPython speed» (docs.micropython.org). I grafici a barre riportano i tempi misurati nella fonte; gli schemi di runtime e scope sono illustrativi.

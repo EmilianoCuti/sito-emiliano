@@ -1918,6 +1918,16 @@
    "sezione": "ai",
    "data": "2026-11-19",
    "fonte": "articoli/etf-comparator-skill-ucits.md"
+  },
+  {
+   "slug": "micropython-hyper-speed",
+   "titolo": "MicroPython Hyper-Speed: Ottimizzazione Avanzata e Velocizzazione del Codice di 3 Volte",
+   "sommario": "Scope locale, caching dei metodi, loop unrolling e decoratore @micropython.native: le tecniche illustrate da Martin Mohr su Raspberry Pi Geek accelerano il codice embedded fino a 3,24 volte, da 1,62 a 0,50 secondi su 100.000 cicli GPIO.",
+   "tema": "Embedded",
+   "formato": "Guida",
+   "sezione": "informatica",
+   "data": "2026-11-20",
+   "fonte": "articoli/micropython-hyper-speed.md"
   }
  ]
 }
