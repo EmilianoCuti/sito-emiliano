@@ -1,6 +1,70 @@
 {
   "diretta": [
     {
+      "slug": "2026-11-20-1400",
+      "data": "2026-11-20",
+      "ora": "14:00",
+      "finestra": "10:00-14:00",
+      "voci": [
+        {
+          "testo": "Tech europeo in caduta: lo Stoxx 600 Technology perde il 3,7% e va verso la peggior settimana da sei anni; il collocamento Anthropic catalizza le vendite sui titoli IA.",
+          "ora": "13:05",
+          "fonte": "Bloomberg Markets"
+        },
+        {
+          "testo": "SpaceX completa 32 miliardi di dollari di obbligazioni per i chip IA Nvidia: la tranche da 25,2 miliardi rende l'8,259%, contro il 5,95% medio dei titoli USA di alta qualità; debito fuori bilancio tramite veicolo dedicato.",
+          "ora": "10:30",
+          "fonte": "Wallstreetcn"
+        },
+        {
+          "testo": "Bank of America: rimbalzo tecnico probabile dopo il Ringraziamento, ma breve. Per un rialzo strutturale servono decennale USA sotto il 4,5%, WTI sotto 70 dollari e dollaro al picco dopo dati deboli su lavoro e inflazione. Il 68% degli indici globali è in ipervenduto su base netta, sotto le medie a 50 e 200 giorni.",
+          "ora": "12:05",
+          "fonte": "Wallstreetcn"
+        },
+        {
+          "testo": "Accordo Regno Unito-UE: fino allo 0,5% del PIL britannico in più, 17 miliardi di sterline (22,3 miliardi di dollari), secondo il premier Andy Burnham.",
+          "ora": "13:45",
+          "fonte": "Bloomberg Politics"
+        },
+        {
+          "testo": "ARK Invest compra Anthropic per 90,8 milioni di dollari in sei fondi; Cathie Wood si dice «molto ottimista».",
+          "ora": "13:11",
+          "fonte": "CNBC Markets"
+        },
+        {
+          "testo": "Cina: multa da 500.000 yuan (75.000 dollari) all'unità di Baidu a Hong Kong per l'acquisizione di parte di Joyy chiusa prima del via libera antitrust.",
+          "ora": "13:50",
+          "fonte": "SCMP Business"
+        },
+        {
+          "testo": "India: il regolatore propone di allentare gli obblighi informativi per gli investitori esteri e attirare capitali.",
+          "ora": "13:47",
+          "fonte": "Bloomberg Markets"
+        },
+        {
+          "testo": "Lufax inietta 500 milioni di dollari di Hong Kong (63,7 milioni di dollari USA) in Ping An Digital Bank, acquisita nel 2023, per sostenerne l'espansione.",
+          "ora": "13:24",
+          "fonte": "SCMP Business"
+        },
+        {
+          "testo": "Anthropic, dopo il collocamento record la sfida è l'autonomia finanziaria: non dipendere da continue iniezioni di capitale. L'IA ha dominato azioni e debito negli ultimi quattro anni.",
+          "ora": "12:10",
+          "fonte": "Axios"
+        }
+      ],
+      "sintesi": "",
+      "prospettiva": "",
+      "fonti": [
+        "Bloomberg Markets",
+        "Wallstreetcn",
+        "Bloomberg Politics",
+        "CNBC Markets",
+        "SCMP Business",
+        "Axios"
+      ],
+      "testo": "📌 FINANZA OGGI — venerdì 20 novembre 2026, 14:00 (CET) — finestra 10:00-14:00\n\n• Tech europeo in caduta: lo Stoxx 600 Technology perde il 3,7% e va verso la peggior settimana da sei anni; il collocamento Anthropic catalizza le vendite sui titoli IA. (13:05, Bloomberg Markets)\n\n• SpaceX completa 32 miliardi di dollari di obbligazioni per i chip IA Nvidia: la tranche da 25,2 miliardi rende l'8,259%, contro il 5,95% medio dei titoli USA di alta qualità; debito fuori bilancio tramite veicolo dedicato. (10:30, Wallstreetcn)\n\n• Bank of America: rimbalzo tecnico probabile dopo il Ringraziamento, ma breve. Per un rialzo strutturale servono decennale USA sotto il 4,5%, WTI sotto 70 dollari e dollaro al picco dopo dati deboli su lavoro e inflazione. Il 68% degli indici globali è in ipervenduto su base netta, sotto le medie a 50 e 200 giorni. (12:05, Wallstreetcn)\n\n• Accordo Regno Unito-UE: fino allo 0,5% del PIL britannico in più, 17 miliardi di sterline (22,3 miliardi di dollari), secondo il premier Andy Burnham. (13:45, Bloomberg Politics)\n\n• ARK Invest compra Anthropic per 90,8 milioni di dollari in sei fondi; Cathie Wood si dice «molto ottimista». (13:11, CNBC Markets)\n\n• Cina: multa da 500.000 yuan (75.000 dollari) all'unità di Baidu a Hong Kong per l'acquisizione di parte di Joyy chiusa prima del via libera antitrust. (13:50, SCMP Business)\n\n• India: il regolatore propone di allentare gli obblighi informativi per gli investitori esteri e attirare capitali. (13:47, Bloomberg Markets)\n\n• Lufax inietta 500 milioni di dollari di Hong Kong (63,7 milioni di dollari USA) in Ping An Digital Bank, acquisita nel 2023, per sostenerne l'espansione. (13:24, SCMP Business)\n\n• Anthropic, dopo il collocamento record la sfida è l'autonomia finanziaria: non dipendere da continue iniezioni di capitale. L'IA ha dominato azioni e debito negli ultimi quattro anni. (12:10, Axios)\n\n— Fonti: Bloomberg Markets, Wallstreetcn, Bloomberg Politics, CNBC Markets, SCMP Business, Axios"
+    },
+    {
       "slug": "2026-11-20-1000",
       "data": "2026-11-20",
       "ora": "10:00",
