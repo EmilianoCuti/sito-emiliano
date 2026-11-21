@@ -1,6 +1,72 @@
 {
   "diretta": [
     {
+      "slug": "2026-11-21-1400",
+      "data": "2026-11-21",
+      "ora": "14:00",
+      "finestra": "10:00-14:00",
+      "voci": [
+        {
+          "testo": "Aggiornamento: venerdì S&P 500 e Dow Jones hanno chiuso in correzione, -10% dai record; il Nasdaq Composite ha azzerato il guadagno dell'anno.",
+          "ora": "11:29",
+          "fonte": "CNBC Markets"
+        },
+        {
+          "testo": "Bilancio UE: il presidente del Consiglio europeo Antonio Costa propone 204 miliardi di euro di risparmi e una tassa digitale; la Francia ha respinto la proposta, che sarà portata come compromesso al vertice di Bruxelles.",
+          "ora": "11:01",
+          "fonte": "Le Monde Eco"
+        },
+        {
+          "testo": "Larry McDonald, fondatore di Bear Traps Report, avverte che il mercato del credito segnala uno shock alla crescita per le azioni: vede stagflazione in arrivo, rischio IA nei fondi indicizzati S&P 500 e preferisce beni reali.",
+          "ora": "12:31",
+          "fonte": "MarketWatch"
+        },
+        {
+          "testo": "Anthropic: collocamento in borsa da record questa settimana, poi prima seduta completa difficile, con i mercati in calo sui timori per la spesa in intelligenza artificiale.",
+          "ora": "10:03",
+          "fonte": "NYT Business"
+        },
+        {
+          "testo": "Ming-Chi Kuo: Google taglia di circa il 20% (un milione di pezzi) le spedizioni 2027 dei TPU 8i progettati da Broadcom, con il modello 8i Max più colpito, e vuole aumentare la quota di MediaTek.",
+          "ora": "11:47",
+          "fonte": "Wallstreetcn"
+        },
+        {
+          "testo": "Warren Buffett ha più che quadruplicato le donazioni del Ringraziamento alle quattro fondazioni di famiglia: 5,5 miliardi di dollari quest'anno.",
+          "ora": "13:01",
+          "fonte": "CNBC Markets"
+        },
+        {
+          "testo": "Germania: da gennaio è previsto un tetto ai prezzi di benzina e diesel, ma la ministra dell'Economia Reiche vuole esentare le stazioni di servizio autostradali.",
+          "ora": "11:27",
+          "fonte": "FAZ Wirtschaft"
+        },
+        {
+          "testo": "Russia: una nave mercantile diretta a Kaliningrad è stata attaccata da droni in acque neutrali del Golfo di Finlandia; crescono i rischi per le esportazioni di energia e alimenti sulle rotte del Baltico.",
+          "ora": "11:44",
+          "fonte": "Bloomberg Markets"
+        },
+        {
+          "testo": "Cina: dal 23 al 27 novembre tre nuove quotazioni, con raccolta prevista oltre 2 miliardi di yuan; sblocchi azionari su 34 titoli per 11,592 miliardi di yuan, tre con quote oltre il 40%.",
+          "ora": "10:20",
+          "fonte": "Eastmoney"
+        }
+      ],
+      "sintesi": "Sabato, mercati chiusi e borse non attive: i dati della finestra descrivono la seduta di venerdì e la settimana conclusa, non la giornata odierna.",
+      "prospettiva": "Lunedì riapertura delle borse dopo la correzione; il compromesso di Costa sul bilancio UE; per l'IA la tenuta della domanda di chip.",
+      "fonti": [
+        "CNBC Markets",
+        "Le Monde Eco",
+        "MarketWatch",
+        "NYT Business",
+        "Wallstreetcn",
+        "FAZ Wirtschaft",
+        "Bloomberg Markets",
+        "Eastmoney"
+      ],
+      "testo": "📌 FINANZA OGGI — sabato 21 novembre 2026, 14:00 (CET) — finestra 10:00-14:00\n\n• Aggiornamento: venerdì S&P 500 e Dow Jones hanno chiuso in correzione, -10% dai record; il Nasdaq Composite ha azzerato il guadagno dell'anno. (11:29, CNBC Markets)\n\n• Bilancio UE: il presidente del Consiglio europeo Antonio Costa propone 204 miliardi di euro di risparmi e una tassa digitale; la Francia ha respinto la proposta, che sarà portata come compromesso al vertice di Bruxelles. (11:01, Le Monde Eco)\n\n• Larry McDonald, fondatore di Bear Traps Report, avverte che il mercato del credito segnala uno shock alla crescita per le azioni: vede stagflazione in arrivo, rischio IA nei fondi indicizzati S&P 500 e preferisce beni reali. (12:31, MarketWatch)\n\n• Anthropic: collocamento in borsa da record questa settimana, poi prima seduta completa difficile, con i mercati in calo sui timori per la spesa in intelligenza artificiale. (10:03, NYT Business)\n\n• Ming-Chi Kuo: Google taglia di circa il 20% (un milione di pezzi) le spedizioni 2027 dei TPU 8i progettati da Broadcom, con il modello 8i Max più colpito, e vuole aumentare la quota di MediaTek. (11:47, Wallstreetcn)\n\n• Warren Buffett ha più che quadruplicato le donazioni del Ringraziamento alle quattro fondazioni di famiglia: 5,5 miliardi di dollari quest'anno. (13:01, CNBC Markets)\n\n• Germania: da gennaio è previsto un tetto ai prezzi di benzina e diesel, ma la ministra dell'Economia Reiche vuole esentare le stazioni di servizio autostradali. (11:27, FAZ Wirtschaft)\n\n• Russia: una nave mercantile diretta a Kaliningrad è stata attaccata da droni in acque neutrali del Golfo di Finlandia; crescono i rischi per le esportazioni di energia e alimenti sulle rotte del Baltico. (11:44, Bloomberg Markets)\n\n• Cina: dal 23 al 27 novembre tre nuove quotazioni, con raccolta prevista oltre 2 miliardi di yuan; sblocchi azionari su 34 titoli per 11,592 miliardi di yuan, tre con quote oltre il 40%. (10:20, Eastmoney)\n\n📊 SINTESI MERCATO\n• Sabato, mercati chiusi e borse non attive: i dati della finestra descrivono la seduta di venerdì e la settimana conclusa, non la giornata odierna.\n\n🔮 PROSPETTIVA\n• Lunedì riapertura delle borse dopo la correzione; il compromesso di Costa sul bilancio UE; per l'IA la tenuta della domanda di chip.\n\n— Fonti: CNBC Markets, Le Monde Eco, MarketWatch, NYT Business, Wallstreetcn, FAZ Wirtschaft, Bloomberg Markets, Eastmoney"
+    },
+    {
       "slug": "2026-11-21-1000",
       "data": "2026-11-21",
       "ora": "10:00",
