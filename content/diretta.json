@@ -1,6 +1,66 @@
 {
   "diretta": [
     {
+      "slug": "2026-11-21-1000",
+      "data": "2026-11-21",
+      "ora": "10:00",
+      "finestra": "00:00-10:00",
+      "voci": [
+        {
+          "testo": "Aggiornamento: bilancio settimanale dei chip USA, chiuso venerdì: indice dei semiconduttori di Filadelfia in calo di oltre il 10%, peggiore settimana dal 2001, 2.300 miliardi di dollari evaporati. Nvidia circa -47% dai massimi di ottobre, settima settimana di ribasso: capitalizzazione a 3.030 miliardi, sotto Alphabet.",
+          "ora": "02:27",
+          "fonte": "Wallstreetcn"
+        },
+        {
+          "testo": "Trump promette di tassare le società statunitensi che costruiscono centri dati all'estero.",
+          "ora": "00:10",
+          "fonte": "Bloomberg Politics"
+        },
+        {
+          "testo": "Taiwan amplia i limiti alle vendite allo scoperto e dichiara di aver acquistato azioni: l'indice principale ha chiuso la peggiore settimana da 35 anni.",
+          "ora": "07:53",
+          "fonte": "Bloomberg Tech"
+        },
+        {
+          "testo": "Regno Unito-UE: il premier Burnham ha presentato venerdì a Bruxelles l'accordo di «reset», con stop alla maggior parte dei controlli su cibo e prodotti agricoli. Per Goldman Sachs il ritorno al mercato unico potrebbe valere dal 2% al 5% del PIL.",
+          "ora": "08:07",
+          "fonte": "Wallstreetcn"
+        },
+        {
+          "testo": "Cina: il massimo organo di pianificazione chiede agli enti locali di accelerare i progetti di investimento pubblico e l'erogazione dei fondi per sostenere la crescita.",
+          "ora": "05:24",
+          "fonte": "Bloomberg Markets"
+        },
+        {
+          "testo": "Edilizia europea: le imprese di costruzione puntano su 620 miliardi di euro di infrastrutture per la difesa, tra basi, aeroporti e ponti, per compensare la debolezza del mercato residenziale.",
+          "ora": "05:00",
+          "fonte": "FT Markets"
+        },
+        {
+          "testo": "GTA VI, debutto record giovedì: 3,79 miliardi di dollari di vendite in un giorno (circa 3,5 miliardi di euro), quasi cinque volte il capitolo del 2013.",
+          "ora": "00:13",
+          "fonte": "Le Monde Eco"
+        },
+        {
+          "testo": "Cina, consumi al ribasso: da Sam's Club un piumino a 399,9 yuan (60 dollari), prodotto «civetta» esaurito in pochi giorni: i clienti cercano convenienza nel rallentamento economico.",
+          "ora": "08:00",
+          "fonte": "SCMP Business"
+        }
+      ],
+      "sintesi": "Sabato, mercati chiusi e borse non attive: i dati della finestra descrivono la seduta di venerdì e la settimana appena conclusa, dominata dalle vendite sui titoli dell'IA.",
+      "prospettiva": "Alla riapertura di lunedì: tenuta dei tecnologici dopo il bilancio settimanale, sei mesi di negoziati UK-UE e linea della Fed, ancora restrittiva.",
+      "fonti": [
+        "Wallstreetcn",
+        "Bloomberg Politics",
+        "Bloomberg Tech",
+        "Bloomberg Markets",
+        "FT Markets",
+        "Le Monde Eco",
+        "SCMP Business"
+      ],
+      "testo": "📌 FINANZA OGGI — sabato 21 novembre 2026, 10:00 (CET) — finestra 00:00-10:00\n\n• Aggiornamento: bilancio settimanale dei chip USA, chiuso venerdì: indice dei semiconduttori di Filadelfia in calo di oltre il 10%, peggiore settimana dal 2001, 2.300 miliardi di dollari evaporati. Nvidia circa -47% dai massimi di ottobre, settima settimana di ribasso: capitalizzazione a 3.030 miliardi, sotto Alphabet. (02:27, Wallstreetcn)\n\n• Trump promette di tassare le società statunitensi che costruiscono centri dati all'estero. (00:10, Bloomberg Politics)\n\n• Taiwan amplia i limiti alle vendite allo scoperto e dichiara di aver acquistato azioni: l'indice principale ha chiuso la peggiore settimana da 35 anni. (07:53, Bloomberg Tech)\n\n• Regno Unito-UE: il premier Burnham ha presentato venerdì a Bruxelles l'accordo di «reset», con stop alla maggior parte dei controlli su cibo e prodotti agricoli. Per Goldman Sachs il ritorno al mercato unico potrebbe valere dal 2% al 5% del PIL. (08:07, Wallstreetcn)\n\n• Cina: il massimo organo di pianificazione chiede agli enti locali di accelerare i progetti di investimento pubblico e l'erogazione dei fondi per sostenere la crescita. (05:24, Bloomberg Markets)\n\n• Edilizia europea: le imprese di costruzione puntano su 620 miliardi di euro di infrastrutture per la difesa, tra basi, aeroporti e ponti, per compensare la debolezza del mercato residenziale. (05:00, FT Markets)\n\n• GTA VI, debutto record giovedì: 3,79 miliardi di dollari di vendite in un giorno (circa 3,5 miliardi di euro), quasi cinque volte il capitolo del 2013. (00:13, Le Monde Eco)\n\n• Cina, consumi al ribasso: da Sam's Club un piumino a 399,9 yuan (60 dollari), prodotto «civetta» esaurito in pochi giorni: i clienti cercano convenienza nel rallentamento economico. (08:00, SCMP Business)\n\n📊 SINTESI MERCATO\n• Sabato, mercati chiusi e borse non attive: i dati della finestra descrivono la seduta di venerdì e la settimana appena conclusa, dominata dalle vendite sui titoli dell'IA.\n\n🔮 PROSPETTIVA\n• Alla riapertura di lunedì: tenuta dei tecnologici dopo il bilancio settimanale, sei mesi di negoziati UK-UE e linea della Fed, ancora restrittiva.\n\n— Fonti: Wallstreetcn, Bloomberg Politics, Bloomberg Tech, Bloomberg Markets, FT Markets, Le Monde Eco, SCMP Business"
+    },
+    {
       "slug": "2026-11-20-1800",
       "data": "2026-11-20",
       "ora": "18:00",
