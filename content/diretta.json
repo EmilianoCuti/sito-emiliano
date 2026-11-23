@@ -1,6 +1,64 @@
 {
   "diretta": [
     {
+      "slug": "2026-11-23-1800",
+      "data": "2026-11-23",
+      "ora": "18:00",
+      "finestra": "14:00-18:00",
+      "voci": [
+        {
+          "testo": "Nvidia ha reinsediato Jensen Huang alla guida dell'azienda: il ritorno ha scatenato un rimbalzo diffuso, dopo sette sedute di fila di calo dell'S&P 500.",
+          "ora": "17:42",
+          "fonte": "Bloomberg Tech"
+        },
+        {
+          "testo": "I numeri della seduta: S&P 500 +5,5%, Dow Jones +3,3%, Nasdaq +7,6%, indice Nasdaq 100 +7,9%, indice dei semiconduttori di Filadelfia +15,3%. Tra i titoli: Nvidia +35%, Nebius +33,5%, CoreWeave +28%, Lumentum +21,8%.",
+          "ora": "15:48",
+          "fonte": "Wallstreetcn"
+        },
+        {
+          "testo": "All'apertura Nvidia era su del 34% a circa 170 dollari, restituendo agli azionisti più di 1000 miliardi di dollari e cancellando gran parte della vendita di venerdì. Apple +1,7%, Broadcom +6%.",
+          "ora": "15:52",
+          "fonte": "Yahoo Finance"
+        },
+        {
+          "testo": "Anche il debito societario è in rialzo in tutto il mondo: gli indicatori di tensione statunitensi sono migliorati quanto non accadeva da mesi e i titoli dei gruppi tecnologici hanno recuperato.",
+          "ora": "15:56",
+          "fonte": "Bloomberg Markets"
+        },
+        {
+          "testo": "La volatilità resta alta: venerdì il Nasdaq aveva chiuso il 5% sotto il livello del 1° gennaio e la vendita si era concentrata sui titoli tecnologici. La scorsa settimana Anthropic era entrata in borsa con un primo giorno da record.",
+          "ora": "14:51",
+          "fonte": "Guardian Business"
+        },
+        {
+          "testo": "In Asia la seduta è chiusa in calo, con le azioni della Corea del Sud e della Cina: la diffidenza verso l'intelligenza artificiale resta elevata, nonostante le misure di sostegno decise dalle autorità.",
+          "ora": "17:13",
+          "fonte": "Bloomberg Markets"
+        },
+        {
+          "testo": "Samsung ha vincolato in gran parte con contratti la produzione di memorie tra il 2027 e il 2029 e alcuni clienti cercano accordi fino al 2031: i principali produttori coprirebbero solo il 60-70% della domanda.",
+          "ora": "16:05",
+          "fonte": "Wallstreetcn"
+        },
+        {
+          "testo": "Le azioni tokenizzate incontrano resistenze: NYSE e Nasdaq cambiano rotta verso un nuovo mercato e la piattaforma OKXICE debutta nonostante le obiezioni del 90% delle società coinvolte.",
+          "ora": "15:30",
+          "fonte": "CNBC Markets"
+        }
+      ],
+      "sintesi": "Nella finestra i mercati asiatici sono scesi, mentre Wall Street è ripartita con forza dopo sette sedute di ribasso: il ritorno di Huang ha ribaltato il segno sul fronte dell'intelligenza artificiale, con il debito societario che segue il rialzo.",
+      "prospettiva": "Da seguire nelle prossime ore: la tenuta del rimbalzo, le misure di sostegno in Asia, la domanda di memorie e i rendimenti statunitensi.",
+      "fonti": [
+        "Wallstreetcn",
+        "Bloomberg",
+        "Yahoo Finance",
+        "Guardian",
+        "CNBC"
+      ],
+      "testo": "📌 FINANZA OGGI — lunedì 23 novembre 2026, 18:00 (CEST) — finestra 14:00-18:00\n\n• Nvidia ha reinsediato Jensen Huang alla guida dell'azienda: il ritorno ha scatenato un rimbalzo diffuso, dopo sette sedute di fila di calo dell'S&P 500. (17:42, Bloomberg Tech)\n\n• I numeri della seduta: S&P 500 +5,5%, Dow Jones +3,3%, Nasdaq +7,6%, indice Nasdaq 100 +7,9%, indice dei semiconduttori di Filadelfia +15,3%. Tra i titoli: Nvidia +35%, Nebius +33,5%, CoreWeave +28%, Lumentum +21,8%. (15:48, Wallstreetcn)\n\n• All'apertura Nvidia era su del 34% a circa 170 dollari, restituendo agli azionisti più di 1000 miliardi di dollari e cancellando gran parte della vendita di venerdì. Apple +1,7%, Broadcom +6%. (15:52, Yahoo Finance)\n\n• Anche il debito societario è in rialzo in tutto il mondo: gli indicatori di tensione statunitensi sono migliorati quanto non accadeva da mesi e i titoli dei gruppi tecnologici hanno recuperato. (15:56, Bloomberg Markets)\n\n• La volatilità resta alta: venerdì il Nasdaq aveva chiuso il 5% sotto il livello del 1° gennaio e la vendita si era concentrata sui titoli tecnologici. La scorsa settimana Anthropic era entrata in borsa con un primo giorno da record. (14:51, Guardian Business)\n\n• In Asia la seduta è chiusa in calo, con le azioni della Corea del Sud e della Cina: la diffidenza verso l'intelligenza artificiale resta elevata, nonostante le misure di sostegno decise dalle autorità. (17:13, Bloomberg Markets)\n\n• Samsung ha vincolato in gran parte con contratti la produzione di memorie tra il 2027 e il 2029 e alcuni clienti cercano accordi fino al 2031: i principali produttori coprirebbero solo il 60-70% della domanda. (16:05, Wallstreetcn)\n\n• Le azioni tokenizzate incontrano resistenze: NYSE e Nasdaq cambiano rotta verso un nuovo mercato e la piattaforma OKXICE debutta nonostante le obiezioni del 90% delle società coinvolte. (15:30, CNBC Markets)\n\n📊 SINTESI MERCATO\n• Nella finestra i mercati asiatici sono scesi, mentre Wall Street è ripartita con forza dopo sette sedute di ribasso: il ritorno di Huang ha ribaltato il segno sul fronte dell'intelligenza artificiale, con il debito societario che segue il rialzo.\n\n🔮 PROSPETTIVA\n• Da seguire nelle prossime ore: la tenuta del rimbalzo, le misure di sostegno in Asia, la domanda di memorie e i rendimenti statunitensi.\n\n— Fonti: Wallstreetcn, Bloomberg, Yahoo Finance, Guardian, CNBC"
+    },
+    {
       "slug": "2026-11-22-1800",
       "data": "2026-11-22",
       "ora": "18:00",
