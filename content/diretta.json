@@ -1,6 +1,87 @@
 {
   "diretta": [
     {
+      "slug": "2026-11-27-1520",
+      "data": "2026-11-27",
+      "ora": "15:20",
+      "finestra": "07:30-15:20",
+      "voci": [
+        {
+          "testo": "Kuwait: due tecnici italiani della Rheinmetall sono morti per le schegge di droni intercettati dalle difese aeree; la Farnesina ha confermato i decessi, il Kuwait attribuisce la responsabilità all'Iran che nega ogni coinvolgimento.",
+          "ora": "07:35",
+          "fonte": "Milano Finanza"
+        },
+        {
+          "testo": "Borse asiatiche in deciso rialzo dopo la pausa americana del Ringraziamento, con i tecnologici che consolidano i guadagni della vigilia: Tokyo +2,11%, Shanghai +3,73%, Shenzen +7,23%, Hang Seng +1,98%, Kospi +4,34%.",
+          "ora": "08:58",
+          "fonte": "Repubblica"
+        },
+        {
+          "testo": "Petrolio in rialzo per i timori sull'offerta in Medio Oriente: il Wti a 86,16 dollari (+1,46%), il Brent a 92,60 dollari secondo Milano Finanza e a 97,5 secondo Repubblica, su contratti di riferimento diversi; attacchi a petroliere nello Stretto di Hormuz e alla raffineria saudita di Jazan, domenica 29 novembre la riunione Opec+.",
+          "ora": "08:59",
+          "fonte": "Repubblica"
+        },
+        {
+          "testo": "Il rendimento del Treasury a 10 anni sale oltre il 4,90%, sui massimi da oltre due mesi: pesano il rimbalzo dei tecnologici e un'inflazione core Pce a +3,3% annuo a ottobre, il livello più alto dal 2023, con il Pil del terzo trimestre rivisto a +4,3%.",
+          "ora": "09:03",
+          "fonte": "Repubblica"
+        },
+        {
+          "testo": "Milano apre in rialzo: il Ftse Mib guadagna l'1,31% a 48.996,40 punti, con Technoprobe +4,58%, Stm +3,93%, Prysmian +3,34% e le banche positive (Unicredit +3,09%, Bper +1,79%, Intesa +1,67%).",
+          "ora": "09:06",
+          "fonte": "Repubblica"
+        },
+        {
+          "testo": "Aggiornamento a metà mattina: Ftse Mib +1,63% a 49.153 punti, spread Btp-Bund sotto i 105 punti base con il decennale sotto il 4,35%, bitcoin verso i 62.000 dollari, oro a 3.710 dollari l'oncia.",
+          "ora": "10:26",
+          "fonte": "Soldionline"
+        },
+        {
+          "testo": "Fincantieri +5,5% a 12,08 euro dopo la commessa da 500 milioni di euro, di cui 88 in opzione, per la terza nave di supporto logistico della Marina militare, firmata dal raggruppamento guidato dalla società con Leonardo (+3,24%).",
+          "ora": "10:11",
+          "fonte": "Repubblica"
+        },
+        {
+          "testo": "Unicredit supera l'ultimo passaggio autorizzativo con l'ok dell'authority polacca sull'offerta su Commerzbank: dopo il regolamento deterrà il 49,7% dell'istituto tedesco, con l'accredito delle nuove azioni atteso entro il 7 dicembre.",
+          "ora": "07:35",
+          "fonte": "Milano Finanza"
+        },
+        {
+          "testo": "Inflazione in frenata in Europa: la Spagna scende al 4,1% a novembre dal 4,9% dei due mesi precedenti, sotto le attese del 4,6%, con il core al 2,6%; la Francia va al 2,9% dal 3,4% e il Pil del terzo trimestre è rivisto a -0,2%.",
+          "ora": "10:46",
+          "fonte": "Repubblica"
+        },
+        {
+          "testo": "Il Tesoro colloca 8 miliardi tra Btp a 5 e 10 anni e Ccteu, con rendimenti ai minimi da agosto: 3,84% sul quinquennale contro il 4,02% di fine ottobre e 4,33% sul decennale contro il 4,49%.",
+          "ora": "11:57",
+          "fonte": "Repubblica"
+        },
+        {
+          "testo": "A metà seduta le Borse europee proseguono in rialzo con Milano maglia rosa (+1,59%), Londra +0,63%, Francoforte +0,53%, Parigi +0,17% e Madrid +1,2%; guidano i tecnologici, con Asml +4,5%, Infineon +4% e Stm +3,8%.",
+          "ora": "13:44",
+          "fonte": "Repubblica"
+        },
+        {
+          "testo": "Commercio Usa: a ottobre il deficit dei beni sale a 149,5 miliardi di dollari, 14,4 miliardi in più sul mese e sopra le attese di 133 miliardi, per importazioni a 365,3 miliardi ed esportazioni a 215,8 miliardi.",
+          "ora": "14:39",
+          "fonte": "Repubblica"
+        }
+      ],
+      "sintesi": "Ultima seduta della settimana in deciso rimbalzo dopo la pausa del Ringraziamento: tornano gli acquisti sui tecnologici, Milano è la maglia rosa d'Europa e l'asta dei Btp chiude ai minimi da agosto. Restano alti i rendimenti americani, oltre il 4,90%, e sale il petrolio per il rischio in Medio Oriente, mentre il mercato sconta un rialzo dei tassi Fed a dicembre.",
+      "prospettiva": "Wall Street riapre alle 15:30 e chiude alle 19 ora italiana, sessione abbreviata del Black Friday con volumi ridotti: da seguire la tenuta del rimbalzo. Domenica 29 novembre la riunione Opec+ sull'offerta 2027, il 17 dicembre la Bce con i mercati che scontano 25 punti base in più.",
+      "fonti": [
+        "Repubblica",
+        "Milano Finanza",
+        "Soldionline",
+        "Al Jazeera",
+        "Farnesina",
+        "Ine",
+        "Insee",
+        "Census Bureau"
+      ],
+      "testo": "📌 FINANZA OGGI — venerdì 27 novembre 2026, 15:20 (CET) — finestra 07:30-15:20\n\n• Kuwait: due tecnici italiani della Rheinmetall sono morti per le schegge di droni intercettati dalle difese aeree; la Farnesina ha confermato i decessi, il Kuwait attribuisce la responsabilità all'Iran che nega ogni coinvolgimento. (07:35, Milano Finanza)\n\n• Borse asiatiche in deciso rialzo dopo la pausa americana del Ringraziamento, con i tecnologici che consolidano i guadagni della vigilia: Tokyo +2,11%, Shanghai +3,73%, Shenzen +7,23%, Hang Seng +1,98%, Kospi +4,34%. (08:58, Repubblica)\n\n• Petrolio in rialzo per i timori sull'offerta in Medio Oriente: il Wti a 86,16 dollari (+1,46%), il Brent a 92,60 dollari secondo Milano Finanza e a 97,5 secondo Repubblica, su contratti di riferimento diversi; attacchi a petroliere nello Stretto di Hormuz e alla raffineria saudita di Jazan, domenica 29 novembre la riunione Opec+. (08:59, Repubblica)\n\n• Il rendimento del Treasury a 10 anni sale oltre il 4,90%, sui massimi da oltre due mesi: pesano il rimbalzo dei tecnologici e un'inflazione core Pce a +3,3% annuo a ottobre, il livello più alto dal 2023, con il Pil del terzo trimestre rivisto a +4,3%. (09:03, Repubblica)\n\n• Milano apre in rialzo: il Ftse Mib guadagna l'1,31% a 48.996,40 punti, con Technoprobe +4,58%, Stm +3,93%, Prysmian +3,34% e le banche positive (Unicredit +3,09%, Bper +1,79%, Intesa +1,67%). (09:06, Repubblica)\n\n• Aggiornamento a metà mattina: Ftse Mib +1,63% a 49.153 punti, spread Btp-Bund sotto i 105 punti base con il decennale sotto il 4,35%, bitcoin verso i 62.000 dollari, oro a 3.710 dollari l'oncia. (10:26, Soldionline)\n\n• Fincantieri +5,5% a 12,08 euro dopo la commessa da 500 milioni di euro, di cui 88 in opzione, per la terza nave di supporto logistico della Marina militare, firmata dal raggruppamento guidato dalla società con Leonardo (+3,24%). (10:11, Repubblica)\n\n• Unicredit supera l'ultimo passaggio autorizzativo con l'ok dell'authority polacca sull'offerta su Commerzbank: dopo il regolamento deterrà il 49,7% dell'istituto tedesco, con l'accredito delle nuove azioni atteso entro il 7 dicembre. (07:35, Milano Finanza)\n\n• Inflazione in frenata in Europa: la Spagna scende al 4,1% a novembre dal 4,9% dei due mesi precedenti, sotto le attese del 4,6%, con il core al 2,6%; la Francia va al 2,9% dal 3,4% e il Pil del terzo trimestre è rivisto a -0,2%. (10:46, Repubblica)\n\n• Il Tesoro colloca 8 miliardi tra Btp a 5 e 10 anni e Ccteu, con rendimenti ai minimi da agosto: 3,84% sul quinquennale contro il 4,02% di fine ottobre e 4,33% sul decennale contro il 4,49%. (11:57, Repubblica)\n\n• A metà seduta le Borse europee proseguono in rialzo con Milano maglia rosa (+1,59%), Londra +0,63%, Francoforte +0,53%, Parigi +0,17% e Madrid +1,2%; guidano i tecnologici, con Asml +4,5%, Infineon +4% e Stm +3,8%. (13:44, Repubblica)\n\n• Commercio Usa: a ottobre il deficit dei beni sale a 149,5 miliardi di dollari, 14,4 miliardi in più sul mese e sopra le attese di 133 miliardi, per importazioni a 365,3 miliardi ed esportazioni a 215,8 miliardi. (14:39, Repubblica)\n\n📊 SINTESI MERCATO\n• Ultima seduta della settimana in deciso rimbalzo dopo la pausa del Ringraziamento: tornano gli acquisti sui tecnologici, Milano è la maglia rosa d'Europa e l'asta dei Btp chiude ai minimi da agosto. Restano alti i rendimenti americani, oltre il 4,90%, e sale il petrolio per il rischio in Medio Oriente, mentre il mercato sconta un rialzo dei tassi Fed a dicembre.\n\n🔮 PROSPETTIVA\n• Wall Street riapre alle 15:30 e chiude alle 19 ora italiana, sessione abbreviata del Black Friday con volumi ridotti: da seguire la tenuta del rimbalzo. Domenica 29 novembre la riunione Opec+ sull'offerta 2027, il 17 dicembre la Bce con i mercati che scontano 25 punti base in più.\n\n— Fonti: Repubblica, Milano Finanza, Soldionline, Al Jazeera, Farnesina, Ine, Insee, Census Bureau"
+    },
+    {
       "slug": "2026-11-23-1800",
       "data": "2026-11-23",
       "ora": "18:00",
