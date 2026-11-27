@@ -1813,6 +1813,113 @@
     "qualita-vita-sudmilano",
     "incidenti-stradali-sudmilano"
    ]
+  },
+  {
+   "slug": "case-vuote-lodigiano",
+   "titolo": "Il Lodigiano e le sue case vuote: 20.645 abitazioni non occupate da residenti",
+   "occhiello": "Abitare",
+   "data": "2026-11-27",
+   "tema": "Casa e territorio",
+   "territorio": "60 comuni della provincia di Lodi",
+   "sintesi": "20.645 abitazioni non occupate da residenti su 119.383, il 17,3%: meno della media nazionale, più del doppio del Sudmilano. Ma la media nasconde due province in una, e quattro città raccolgono il 41,4% delle case senza residenti.",
+   "punto": [
+    "«Non occupata» non significa «disponibile»: la definizione ISTAT comprende seconde case, immobili in vendita o in affitto, alloggi in ristrutturazione e abitazioni usate soltanto da persone non residenti. È una misura del legame tra case e residenti, non dello stock invenduto.",
+    "La provincia ha due paesaggi. I cinque comuni sotto i mille abitanti hanno il 26,8% di case non occupate, i quattro tra 5.000 e 10.000 scendono al 12,7%, i quattro sopra i 10.000 risalgono al 17,6%. Maccastorna è al 46,9%, ma sono 23 abitazioni su 49 in un comune di 67 residenti: un immobile sposta il tasso di due punti. All'estremo opposto Galgagnano è al 5,2%.",
+    "Le città concentrano i numeri assoluti: Lodi 4.096 abitazioni non occupate, Codogno 1.623, Sant'Angelo Lodigiano 1.428, Casalpusterlengo 1.391. Insieme fanno 8.538 unità, il 41,4% di tutte le case senza residenti della provincia.",
+    "Dal 2019 le abitazioni non occupate calano: da 23.037 a 20.645, −2.392 in quattro anni, in diminuzione in 50 comuni su 60. Nello stesso periodo la popolazione passa da 226.949 a 231.481 residenti (+2,0%). ISTAT avverte che parte della riduzione può dipendere dal miglioramento delle procedure di collegamento tra edifici e famiglie, non solo da nuove occupazioni.",
+    "Dove le quotazioni OMI 2026 sono più basse lo sfitto è più alto (r = −0,59 su 60 comuni); i comuni che hanno perso residenti dal 2019 hanno più case non occupate (r = −0,39). Diciotto comuni su 60 hanno meno abitanti nel 2026 che nel 2019."
+   ],
+   "numeri": [
+    {
+     "v": "20.645",
+     "l": "abitazioni non occupate",
+     "n": "su 119.383, il 17,3%"
+    },
+    {
+     "v": "17,3%",
+     "l": "dello stock abitativo",
+     "n": "Italia 27,2%, Lombardia 21,2% (2021)"
+    },
+    {
+     "v": "−2.392",
+     "l": "unità dal 2019",
+     "n": "in calo in 50 comuni su 60"
+    },
+    {
+     "v": "41,4%",
+     "l": "nelle quattro città",
+     "n": "8.538 abitazioni su 20.645"
+    }
+   ],
+   "metodo": [
+    "Censimento permanente delle abitazioni ISTAT: stato di occupazione per tutti i 60 comuni nel 2019, 2021 e 2023.",
+    "Dettaglio per sezione di censimento 2023 (2.148 sezioni in provincia); epoca di costruzione e densità abitativa a livello provinciale.",
+    "Popolazione residente ISTAT POSAS al 1° gennaio 2019 e 2026; quotazioni OMI 2026 dell'Agenzia delle Entrate.",
+    "Quadratura occupate + non occupate = totale su tutti i 60 comuni, con confronto tra banca dati SDMX e file per sezione; correlazioni di Pearson calcolate sui 60 comuni."
+   ],
+   "fonti": [
+    "ISTAT — Censimento permanente delle abitazioni 2023 (SDMX e dati per sezione)",
+    "ISTAT — Censimento permanente 2021: caratteristiche delle abitazioni (Italia 27,2%, Lombardia 21,2%)",
+    "ISTAT — popolazione residente 2019 e 2026 (POSAS)",
+    "Agenzia delle Entrate — quotazioni OMI 2026"
+   ],
+   "limiti": [
+    "«Abitazione non occupata» non equivale a «casa disponibile»: include seconde case, immobili in vendita o in affitto e alloggi in ristrutturazione.",
+    "La base 2019 (abitazioni totali) non è riconciliata con le percentuali comunali: per il 2019 il testo riporta solo valori assoluti.",
+    "Parte del calo 2019-2023 può essere tecnica: dal 2021 ISTAT ha migliorato il collegamento tra famiglie, abitazioni ed edifici.",
+    "Nei comuni con poche decine di abitazioni le percentuali sono fragili; epoca di costruzione e densità sono disponibili solo a livello provinciale.",
+    "Lo stato di manutenzione degli alloggi e le ragioni della singola non occupazione non sono pubblici: non è possibile distinguere casa chiusa per scelta da casa inattesa di lavori."
+   ],
+   "dati": {
+    "file": "case-vuote-lodigiano-60-comuni.csv",
+    "label": "60 comuni, 23 indicatori (CSV)",
+    "nota": "2019-2026 · abitazioni, popolazione, OMI"
+   },
+   "materiali": [
+    "Articolo integrale con le tabelle comunali",
+    "Dataset dei 60 comuni, scaricabile in CSV",
+    "Quattro grafici originali in SVG",
+    "Nota di verifica dei dati del 26 novembre 2026"
+   ],
+   "grafici": [
+    {
+     "file": "case-vuote-classifica.svg",
+     "titolo": "Le due province in una",
+     "nota": "Quota di abitazioni non occupate da residenti: i dodici comuni con il valore più alto e i dodici con il più basso. Linea tratteggiata: media provinciale 17,3%. Fonte: ISTAT 2023.",
+     "alt": "Barre orizzontali: da Maccastorna 46,9% a Galgagnano 5,2%, con la media provinciale al 17,3%",
+     "larghezza": "720",
+     "altezza": "430"
+    },
+    {
+     "file": "case-vuote-quattro-citta.svg",
+     "titolo": "Quattro città, il 41,4% delle case non occupate",
+     "nota": "Lodi, Codogno, Sant'Angelo Lodigiano e Casalpusterlengo insieme: 8.538 abitazioni non occupate su 20.645. Fonte: ISTAT 2023.",
+     "alt": "Barra ripartita: le quattro città con 8.538 abitazioni non occupate, gli altri 56 comuni con 12.107",
+     "larghezza": "720",
+     "altezza": "162"
+    },
+    {
+     "file": "case-vuote-classi-confronti.svg",
+     "titolo": "Piccoli, medi, grandi",
+     "nota": "Il tasso per classe di popolazione e i confronti territoriali; Lombardia e Italia sono fermi al 2021, ultimo anno confrontabile. Fonte: ISTAT.",
+     "alt": "Barre: comuni sotto mille abitanti 26,8%, tra mille e cinquemila 17,9%, tra cinquemila e diecimila 12,7%, sopra diecimila 17,6%; confronti con Sudmilano 9,3%, provincia 17,3%, Lombardia 21,2%, Italia 27,2%",
+     "larghezza": "720",
+     "altezza": "200"
+    },
+    {
+     "file": "case-vuote-prezzi.svg",
+     "titolo": "Dove il mercato è più debole",
+     "nota": "Prezzo medio di compravendita (OMI 2026) e quota di abitazioni non occupate, un punto per comune. r = −0,59 su 60 comuni. Fonti: Agenzia delle Entrate, ISTAT.",
+     "alt": "Grafico a dispersione: prezzo al metro quadro e quota di case non occupate nei 60 comuni, con retta di interpolazione negativa",
+     "larghezza": "720",
+     "altezza": "400"
+    }
+   ],
+   "correlati": [
+    "case-vuote-sudmilano",
+    "demografia-sudmilano",
+    "biblioteche-lodigiano"
+   ]
   }
  ],
  "articoli": [
@@ -1928,6 +2035,17 @@
    "sezione": "informatica",
    "data": "2026-11-20",
    "fonte": "articoli/micropython-hyper-speed.md"
+  },
+  {
+   "slug": "case-vuote-lodigiano-articolo",
+   "titolo": "Il Lodigiano e le sue case vuote: 20.645 abitazioni non occupate da residenti",
+   "sommario": "Ventimila case non occupate non sono ventimila occasioni abitative: il censimento ISTAT 2023 misura il legame tra abitazioni e residenti, comune per comune. La mappa, i numeri e le cautele.",
+   "inchiesta": "case-vuote-lodigiano",
+   "tema": "Casa e territorio",
+   "formato": "Inchiesta in dati",
+   "data": "2026-11-27",
+   "sezione": "casa-e-territorio",
+   "fonte": "Case vuote Lodigiano/articolo-case-vuote-lodigiano.md"
   }
  ]
 }

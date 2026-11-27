@@ -45,6 +45,7 @@ DATI = {
     "appalti-14-comuni-2023-2025.csv": "Appalti nei 14 comuni/tabella-comuni-2023-2025.csv",
     "qualita-vita-classifica.csv": "Qualità della vita 14 comuni Sudmilano/dati/classifica_indice.csv",
     "case-vuote-14-comuni.csv": "Case vuote Sudmilano/dataset-case-vuote-sudmilano-14-comuni.csv",
+    "case-vuote-lodigiano-60-comuni.csv": "Case vuote Lodigiano/dataset-case-vuote-lodigiano.csv",
 }
 
 
@@ -308,7 +309,7 @@ def archivio_inchieste(site, inchieste):
    <p class="pagina-occhiello">Archivio · 2026</p>
    <h1 class="archivio-titolo">Inchieste</h1>
    <p class="archivio-sommario">%s</p>
-   <p class="archivio-conteggio">%d inchieste · 14 comuni</p>
+   <p class="archivio-conteggio">%d inchieste · Sudmilano e Lodigiano</p>
    <div class="filtri-lato">
     <div class="cerca-wrap">
      <label class="etichetta" for="cerca-inchieste" style="position:absolute;left:-9999px">Cerca nelle inchieste</label>
@@ -332,7 +333,9 @@ def archivio_inchieste(site, inchieste):
 </div>
 """ % (esc(site["home"]["introduzione"]), len(inchieste), "".join(chips),
        len(inchieste), "".join(righe))
-    return pagina("Inchieste — {AUTORE}", "Quindici inchieste sul Sudmilano: case vuote, appalti, incidenti, ambiente, servizi, criminalità. Cerca per tema o per comune.", corpo, "../", "inchieste", site)
+    descrizione = ("%d inchieste su Sudmilano e Lodigiano: case vuote, appalti, incidenti, ambiente, "
+                   "servizi, criminalità. Cerca per tema o per comune." % len(inchieste))
+    return pagina("Inchieste — {AUTORE}", descrizione, corpo, "../", "inchieste", site)
 
 
 # --------------------------------------------------------------------------- dossier
@@ -362,6 +365,17 @@ def dossier(site, i, tutte, articoli):
         dato = ('<div class="dati-box"><p class="etichetta">Dati scaricabili</p>'
                 '<a class="dato-link" href="../assets/dati/%s" download>%s <span>%s</span></a></div>'
                 % (esc(d["file"]), esc(d["label"]), esc(d.get("nota", ""))))
+
+    grafici = ""
+    if i.get("grafici"):
+        figure = "".join(
+            '<figure class="grafico">'
+            '<img src="../assets/grafici/%s" alt="%s" width="%s" height="%s" loading="lazy">'
+            '<figcaption><b>%s</b>%s</figcaption></figure>'
+            % (esc(g["file"]), esc(g.get("alt", "")), esc(g.get("larghezza", "720")),
+               esc(g.get("altezza", "400")), esc(g["titolo"]), esc(g.get("nota", "")))
+            for g in i["grafici"])
+        grafici = '<h2>I grafici</h2><div class="grafici">%s</div>' % figure
 
     articoli_collegati = [a for a in articoli if a.get("inchiesta") == i["slug"]]
     blocco_articoli = ""
@@ -405,6 +419,7 @@ def dossier(site, i, tutte, articoli):
    <div class="testo">
     <h2>Il punto</h2>
     %s
+    %s
     <h2>Come è stata fatta</h2>
     <ul>%s</ul>
     <h2>Le fonti</h2>
@@ -432,7 +447,7 @@ def dossier(site, i, tutte, articoli):
 """ % (
         esc(i["occhiello"]), esc(i["titolo"]), esc(i["sintesi"]),
         data_it(i["data"]), esc(i["tema"]), esc(i["territorio"]),
-        numeri, punto, metodo, fonti, materiali, dato,
+        numeri, punto, grafici, metodo, fonti, materiali, dato,
         limiti, correlati, blocco_articoli, passo)
 
     return pagina("%s — {AUTORE}" % i["titolo"], i["sintesi"], corpo, "../", "inchieste", site)
@@ -629,8 +644,10 @@ def diretta_index(site, notizie):
                   corpo, "../", "finanza", site)
 
 
-def sezione_index(site, sez, articoli, per_slug, notizie=None):
+def sezione_index(site, sez, articoli, per_slug, notizie=None, inchieste=None):
     items = [a for a in articoli if a.get("sezione") == sez["id"]]
+    dossiers = sorted([i for i in (inchieste or []) if i["tema"].lower() == sez["titolo"].lower()],
+                      key=lambda i: i["data"], reverse=True)
     items.sort(key=lambda a: a.get("data", ""), reverse=True)
     temi = sorted({a["tema"] for a in items})
     chips = ['<button class="chip" type="button" data-tema="tutti" aria-pressed="true">Tutti</button>']
@@ -650,6 +667,15 @@ def sezione_index(site, sez, articoli, per_slug, notizie=None):
     vuoto = ('<div class="vuoto-sezione"><p>Ancora nessun articolo in questa sezione. '
              'Si popolerà con i prossimi pezzi.</p></div>') if not items else ""
     unita = "articolo" if len(items) == 1 else "articoli"
+    blocco_inchieste = ""
+    if dossiers:
+        voci = "".join(
+            '<li><a href="../inchieste/%s.html"><span>%s</span><span class="tema">%s</span></a></li>'
+            % (esc(i["slug"]), esc(i["titolo"]), data_breve(i["data"])) for i in dossiers)
+        blocco_inchieste = ('<div class="testo sezione-hub"><h2>Le inchieste</h2>'
+                            '<ul class="correlati">%s</ul></div>' % voci)
+    conteggio = ("%d inchieste · %d %s" % (len(dossiers), len(items), unita)) if dossiers else ("%d %s" % (len(items), unita))
+    titolo_articoli = '<h2 class="sezione-sottotitolo">Gli articoli</h2>' if dossiers else ""
     corpo = """
 <div class="shell">
  <div class="archivio-griglia">
@@ -657,7 +683,7 @@ def sezione_index(site, sez, articoli, per_slug, notizie=None):
    <p class="pagina-occhiello">%s</p>
    <h1 class="archivio-titolo">%s</h1>
    <p class="archivio-sommario">%s</p>
-   <p class="archivio-conteggio">%d %s</p>
+   <p class="archivio-conteggio">%s</p>
    <div class="filtri-lato">
     <div class="cerca-wrap">
      <label class="etichetta" for="cerca-sezione" style="position:absolute;left:-9999px">Cerca nella sezione</label>
@@ -668,6 +694,8 @@ def sezione_index(site, sez, articoli, per_slug, notizie=None):
    </div>
   </aside>
   <div class="archivio-corpo">
+   %s
+   %s
    <div class="archivio" data-archivio data-unita="articoli" data-unita-singolare="articolo">%s</div>
    %s
    <div class="vuoto" data-vuoto hidden>
@@ -677,8 +705,8 @@ def sezione_index(site, sez, articoli, per_slug, notizie=None):
   </div>
  </div>
 </div>
-""" % (esc(sez["occhiello"]), esc(sez["titolo"]), esc(sez["descrizione"]), len(items), unita,
-       "".join(chips), len(items), unita, "".join(righe), vuoto)
+""" % (esc(sez["occhiello"]), esc(sez["titolo"]), esc(sez["descrizione"]), conteggio,
+       "".join(chips), len(items), unita, blocco_inchieste, titolo_articoli, "".join(righe), vuoto)
     if sez["id"] == "finanza" and notizie is not None:
         corpo = diretta_block(notizie, "../") + corpo
     return pagina("%s — {AUTORE}" % sez["titolo"], sez["descrizione"], corpo, "../", sez["id"], site)
@@ -930,6 +958,13 @@ def main():
         sorgente = os.path.join(HERE, "assets", nome)
         if os.path.exists(sorgente):
             shutil.copyfile(sorgente, os.path.join(out, "assets", nome))
+    grafici_dir = os.path.join(HERE, "assets", "grafici")
+    if os.path.isdir(grafici_dir):
+        os.makedirs(os.path.join(out, "assets", "grafici"), exist_ok=True)
+        for nome in os.listdir(grafici_dir):
+            if nome.endswith(".svg"):
+                shutil.copyfile(os.path.join(grafici_dir, nome),
+                                os.path.join(out, "assets", "grafici", nome))
     foto = site["autore"].get("foto")
     if foto and os.path.exists(os.path.join(HERE, foto)):
         site["autore"]["ritratto"] = foto
@@ -954,7 +989,7 @@ def main():
     for s in site["sezioni"]:
         if s["id"] != "inchieste":
             nd = notizie if s["id"] == "finanza" else None
-            scrivi(s["url"] + "index.html", sezione_index(site, s, articoli, per_slug, notizie=nd))
+            scrivi(s["url"] + "index.html", sezione_index(site, s, articoli, per_slug, notizie=nd, inchieste=inchieste))
     if any(s["id"] == "finanza" for s in site["sezioni"]):
         scrivi("finanza/diretta.html", diretta_index(site, notizie))
     scrivi("chi-sono/index.html", chi_sono(site))

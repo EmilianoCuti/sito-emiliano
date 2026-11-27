@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 200" width="720" height="200" role="img" aria-labelledby="t d">
+<title id="t">Le case non occupate per dimensione del comune e i confronti territoriali</title>
+<desc id="d">Barre: quota di abitazioni non occupate nei comuni sotto mille abitanti (26,8 per cento), tra mille e cinquemila (17,9), tra cinquemila e diecimila (12,7), sopra diecimila (17,6); confronto con Sudmilano 9,3, provincia di Lodi 17,3, Lombardia 21,2, Italia 27,2.</desc>
+<text x="0" y="11" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="8.6" fill="#6d6457" text-anchor="start" font-weight="700" letter-spacing="1.1">PER DIMENSIONE DEL COMUNE</text>
+<text x="0" y="43" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9.6" fill="#38322a" text-anchor="start" font-weight="400">&lt; 1.000 abitanti</text>
+<rect x="118" y="32.5" width="169.6" height="11" fill="#a23a24"/>
+<text x="392" y="43" font-family="Georgia, Times New Roman, serif" font-size="10.5" fill="#17140f" text-anchor="end" font-weight="600">26,8%</text>
+<text x="392" y="55" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="8.4" fill="#6d6457" text-anchor="end" font-weight="400">290 su 1.083</text>
+<text x="0" y="79" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9.6" fill="#38322a" text-anchor="start" font-weight="400">1.000–5.000</text>
+<rect x="118" y="68.5" width="113.3" height="11" fill="#a23a24"/>
+<text x="392" y="79" font-family="Georgia, Times New Roman, serif" font-size="10.5" fill="#17140f" text-anchor="end" font-weight="600">17,9%</text>
+<text x="392" y="91" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="8.4" fill="#6d6457" text-anchor="end" font-weight="400">10.166 su 56.805</text>
+<text x="0" y="115" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9.6" fill="#38322a" text-anchor="start" font-weight="400">5.000–10.000</text>
+<rect x="118" y="104.5" width="80.7" height="11" fill="#4a4238"/>
+<text x="392" y="115" font-family="Georgia, Times New Roman, serif" font-size="10.5" fill="#17140f" text-anchor="end" font-weight="600">12,7%</text>
+<text x="392" y="127" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="8.4" fill="#6d6457" text-anchor="end" font-weight="400">1.651 su 12.959</text>
+<text x="0" y="151" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9.6" fill="#38322a" text-anchor="start" font-weight="400">&gt; 10.000</text>
+<rect x="118" y="140.5" width="111.4" height="11" fill="#a23a24"/>
+<text x="392" y="151" font-family="Georgia, Times New Roman, serif" font-size="10.5" fill="#17140f" text-anchor="end" font-weight="600">17,6%</text>
+<text x="392" y="163" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="8.4" fill="#6d6457" text-anchor="end" font-weight="400">8.538 su 48.536</text>
+<text x="430" y="11" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="8.6" fill="#6d6457" text-anchor="start" font-weight="700" letter-spacing="1.1">I CONFRONTI</text>
+<text x="430" y="43" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9.6" fill="#38322a" text-anchor="start" font-weight="400">Sudmilano (14 comuni)</text>
+<rect x="545" y="32.5" width="37.2" height="11" fill="#4a4238"/>
+<text x="700" y="43" font-family="Georgia, Times New Roman, serif" font-size="10.5" fill="#17140f" text-anchor="end" font-weight="600">9,3%</text>
+<text x="430" y="79" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9.6" fill="#38322a" text-anchor="start" font-weight="400">Provincia di Lodi</text>
+<rect x="545" y="68.5" width="69.2" height="11" fill="#a23a24"/>
+<text x="700" y="79" font-family="Georgia, Times New Roman, serif" font-size="10.5" fill="#17140f" text-anchor="end" font-weight="600">17,3%</text>
+<text x="430" y="115" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9.6" fill="#38322a" text-anchor="start" font-weight="400">Lombardia (2021)</text>
+<rect x="545" y="104.5" width="84.8" height="11" fill="#4a4238"/>
+<text x="700" y="115" font-family="Georgia, Times New Roman, serif" font-size="10.5" fill="#17140f" text-anchor="end" font-weight="600">21,2%</text>
+<text x="430" y="151" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9.6" fill="#38322a" text-anchor="start" font-weight="400">Italia (2021)</text>
+<rect x="545" y="140.5" width="108.8" height="11" fill="#4a4238"/>
+<text x="700" y="151" font-family="Georgia, Times New Roman, serif" font-size="10.5" fill="#17140f" text-anchor="end" font-weight="600">27,2%</text>
+<text x="0" y="186" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9" fill="#6d6457" text-anchor="start" font-weight="400">In rosso i valori sopra la media provinciale (17,3%).</text>
+<text x="430" y="186" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9" fill="#6d6457" text-anchor="start" font-weight="400">Fonti: ISTAT 2023; benchmark 2021 per Lombardia e Italia.</text>
+</svg>

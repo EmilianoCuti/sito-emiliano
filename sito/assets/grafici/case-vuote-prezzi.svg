@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" role="img" aria-labelledby="t d">
+<title id="t">Prezzi delle case e abitazioni non occupate nei 60 comuni del Lodigiano</title>
+<desc id="d">Grafico a dispersione: sull&#x27;asse orizzontale il prezzo OMI 2026 al metro quadro, sull&#x27;asse verticale la quota di abitazioni non occupate. Correlazione negativa r meno 0,59: dove le quotazioni sono più basse lo sfitto è più alto.</desc>
+<line x1="66" y1="344.0" x2="700" y2="344.0" stroke="rgba(23,20,15,0.18)" stroke-width="1"/>
+<text x="56" y="347.0" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9" fill="#6d6457" text-anchor="end" font-weight="400">0%</text>
+<line x1="66" y1="280.0" x2="700" y2="280.0" stroke="rgba(23,20,15,0.18)" stroke-width="1"/>
+<text x="56" y="283.0" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9" fill="#6d6457" text-anchor="end" font-weight="400">10%</text>
+<line x1="66" y1="216.0" x2="700" y2="216.0" stroke="rgba(23,20,15,0.18)" stroke-width="1"/>
+<text x="56" y="219.0" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9" fill="#6d6457" text-anchor="end" font-weight="400">20%</text>
+<line x1="66" y1="152.0" x2="700" y2="152.0" stroke="rgba(23,20,15,0.18)" stroke-width="1"/>
+<text x="56" y="155.0" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9" fill="#6d6457" text-anchor="end" font-weight="400">30%</text>
+<line x1="66" y1="88.0" x2="700" y2="88.0" stroke="rgba(23,20,15,0.18)" stroke-width="1"/>
+<text x="56" y="91.0" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9" fill="#6d6457" text-anchor="end" font-weight="400">40%</text>
+<line x1="66" y1="24.0" x2="700" y2="24.0" stroke="rgba(23,20,15,0.18)" stroke-width="1"/>
+<text x="56" y="27.0" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9" fill="#6d6457" text-anchor="end" font-weight="400">50%</text>
+<line x1="116.7" y1="24" x2="116.7" y2="344" stroke="rgba(23,20,15,0.18)" stroke-width="1" opacity="0.55"/>
+<text x="116.7" y="360" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9" fill="#6d6457" text-anchor="middle" font-weight="400">800</text>
+<line x1="218.2" y1="24" x2="218.2" y2="344" stroke="rgba(23,20,15,0.18)" stroke-width="1" opacity="0.55"/>
+<text x="218.2" y="360" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9" fill="#6d6457" text-anchor="middle" font-weight="400">1.000</text>
+<line x1="319.6" y1="24" x2="319.6" y2="344" stroke="rgba(23,20,15,0.18)" stroke-width="1" opacity="0.55"/>
+<text x="319.6" y="360" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9" fill="#6d6457" text-anchor="middle" font-weight="400">1.200</text>
+<line x1="421.0" y1="24" x2="421.0" y2="344" stroke="rgba(23,20,15,0.18)" stroke-width="1" opacity="0.55"/>
+<text x="421.0" y="360" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9" fill="#6d6457" text-anchor="middle" font-weight="400">1.400</text>
+<line x1="522.5" y1="24" x2="522.5" y2="344" stroke="rgba(23,20,15,0.18)" stroke-width="1" opacity="0.55"/>
+<text x="522.5" y="360" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9" fill="#6d6457" text-anchor="middle" font-weight="400">1.600</text>
+<line x1="623.9" y1="24" x2="623.9" y2="344" stroke="rgba(23,20,15,0.18)" stroke-width="1" opacity="0.55"/>
+<text x="623.9" y="360" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9" fill="#6d6457" text-anchor="middle" font-weight="400">1.800</text>
+<line x1="81.2" y1="178.8" x2="684.8" y2="315.6" stroke="#a23a24" stroke-width="1.6" stroke-dasharray="5 4"/>
+<circle cx="144.6" cy="43.8" r="4" fill="#17140f" opacity="0.55"><title>Maccastorna: 46,9%, 855 €/m²</title></circle>
+<circle cx="104.0" cy="93.1" r="4" fill="#17140f" opacity="0.55"><title>Cornovecchio: 39,2%, 775 €/m²</title></circle>
+<circle cx="170.0" cy="117.4" r="4" fill="#17140f" opacity="0.55"><title>Bertonico: 35,4%, 905 €/m²</title></circle>
+<circle cx="152.2" cy="132.2" r="4" fill="#17140f" opacity="0.55"><title>Meleti: 33,1%, 870 €/m²</title></circle>
+<circle cx="147.2" cy="134.7" r="4" fill="#17140f" opacity="0.55"><title>Senna Lodigiana: 32,7%, 860 €/m²</title></circle>
+<circle cx="124.3" cy="141.1" r="4" fill="#17140f" opacity="0.55"><title>Castelnuovo Bocca d&#x27;Adda: 31,7%, 815 €/m²</title></circle>
+<circle cx="131.9" cy="152.0" r="4" fill="#17140f" opacity="0.55"><title>Caselle Landi: 30,0%, 830 €/m²</title></circle>
+<circle cx="104.0" cy="172.5" r="4" fill="#17140f" opacity="0.55"><title>Corno Giovine: 26,8%, 775 €/m²</title></circle>
+<circle cx="152.2" cy="177.0" r="4" fill="#17140f" opacity="0.55"><title>Maleo: 26,1%, 870 €/m²</title></circle>
+<circle cx="239.7" cy="185.9" r="4" fill="#17140f" opacity="0.55"><title>San Rocco al Porto: 24,7%, 1.042 €/m²</title></circle>
+<circle cx="286.6" cy="185.9" r="4" fill="#17140f" opacity="0.55"><title>Cavenago d&#x27;Adda: 24,7%, 1.135 €/m²</title></circle>
+<circle cx="142.1" cy="188.5" r="4" fill="#17140f" opacity="0.55"><title>Santo Stefano Lodigiano: 24,3%, 850 €/m²</title></circle>
+<circle cx="298.0" cy="193.0" r="4" fill="#17140f" opacity="0.55"><title>Borghetto Lodigiano: 23,6%, 1.158 €/m²</title></circle>
+<circle cx="289.2" cy="194.9" r="4" fill="#17140f" opacity="0.55"><title>Mairago: 23,3%, 1.140 €/m²</title></circle>
+<circle cx="162.4" cy="203.8" r="4" fill="#17140f" opacity="0.55"><title>Livraga: 21,9%, 890 €/m²</title></circle>
+<circle cx="289.2" cy="205.1" r="4" fill="#17140f" opacity="0.55"><title>Graffignana: 21,7%, 1.140 €/m²</title></circle>
+<circle cx="213.1" cy="205.1" r="4" fill="#17140f" opacity="0.55"><title>Castelgerundo: 21,7%, 990 €/m²</title></circle>
+<circle cx="180.1" cy="206.4" r="4" fill="#17140f" opacity="0.55"><title>Turano Lodigiano: 21,5%, 925 €/m²</title></circle>
+<circle cx="144.6" cy="207.7" r="4" fill="#17140f" opacity="0.55"><title>Guardamiglio: 21,3%, 855 €/m²</title></circle>
+<circle cx="152.2" cy="207.7" r="4" fill="#17140f" opacity="0.55"><title>Orio Litta: 21,3%, 870 €/m²</title></circle>
+<circle cx="304.4" cy="213.4" r="4" fill="#17140f" opacity="0.55"><title>Sant&#x27;Angelo Lodigiano: 20,4%, 1.170 €/m²</title></circle>
+<circle cx="345.0" cy="213.4" r="4" fill="#17140f" opacity="0.55"><title>Boffalora d&#x27;Adda: 20,4%, 1.250 €/m²</title></circle>
+<circle cx="164.9" cy="216.0" r="4" fill="#17140f" opacity="0.55"><title>Ospedaletto Lodigiano: 20,0%, 895 €/m²</title></circle>
+<circle cx="170.0" cy="218.6" r="4" fill="#17140f" opacity="0.55"><title>Brembio: 19,6%, 905 €/m²</title></circle>
+<circle cx="164.9" cy="218.6" r="4" fill="#17140f" opacity="0.55"><title>San Fiorano: 19,6%, 895 €/m²</title></circle>
+<circle cx="258.7" cy="222.4" r="4" fill="#17140f" opacity="0.55"><title>Abbadia Cerreto: 19,0%, 1.080 €/m²</title></circle>
+<circle cx="280.3" cy="223.0" r="4" fill="#17140f" opacity="0.55"><title>Codogno: 18,9%, 1.122 €/m²</title></circle>
+<circle cx="152.2" cy="225.6" r="4" fill="#17140f" opacity="0.55"><title>Castiglione d&#x27;Adda: 18,5%, 870 €/m²</title></circle>
+<circle cx="332.3" cy="226.2" r="4" fill="#17140f" opacity="0.55"><title>Villanova del Sillaro: 18,4%, 1.225 €/m²</title></circle>
+<circle cx="306.9" cy="226.2" r="4" fill="#17140f" opacity="0.55"><title>Ossago Lodigiano: 18,4%, 1.175 €/m²</title></circle>
+<circle cx="180.1" cy="226.2" r="4" fill="#17140f" opacity="0.55"><title>Terranova dei Passerini: 18,4%, 925 €/m²</title></circle>
+<circle cx="128.1" cy="229.4" r="4" fill="#17140f" opacity="0.55"><title>Fombio: 17,9%, 822 €/m²</title></circle>
+<circle cx="223.2" cy="229.4" r="4" fill="#17140f" opacity="0.55"><title>Corte Palasio: 17,9%, 1.010 €/m²</title></circle>
+<circle cx="115.5" cy="231.4" r="4" fill="#17140f" opacity="0.55"><title>Somaglia: 17,6%, 798 €/m²</title></circle>
+<circle cx="306.9" cy="232.6" r="4" fill="#17140f" opacity="0.55"><title>Casalpusterlengo: 17,4%, 1.175 €/m²</title></circle>
+<circle cx="164.9" cy="237.8" r="4" fill="#17140f" opacity="0.55"><title>Secugnago: 16,6%, 895 €/m²</title></circle>
+<circle cx="471.8" cy="238.4" r="4" fill="#17140f" opacity="0.55"><title>San Martino in Strada: 16,5%, 1.500 €/m²</title></circle>
+<circle cx="655.6" cy="239.0" r="4" fill="#17140f" opacity="0.55"><title>Lodi: 16,4%, 1.862 €/m²</title></circle>
+<circle cx="332.3" cy="247.4" r="4" fill="#17140f" opacity="0.55"><title>Pieve Fissiraga: 15,1%, 1.225 €/m²</title></circle>
+<circle cx="332.3" cy="247.4" r="4" fill="#17140f" opacity="0.55"><title>Merlino: 15,1%, 1.225 €/m²</title></circle>
+<circle cx="421.0" cy="250.6" r="4" fill="#17140f" opacity="0.55"><title>Lodi Vecchio: 14,6%, 1.400 €/m²</title></circle>
+<circle cx="223.2" cy="251.2" r="4" fill="#17140f" opacity="0.55"><title>Crespiatica: 14,5%, 1.010 €/m²</title></circle>
+<circle cx="306.9" cy="251.2" r="4" fill="#17140f" opacity="0.55"><title>Valera Fratta: 14,5%, 1.175 €/m²</title></circle>
+<circle cx="662.0" cy="257.6" r="4" fill="#17140f" opacity="0.55"><title>Mulazzano: 13,5%, 1.875 €/m²</title></circle>
+<circle cx="306.9" cy="258.2" r="4" fill="#17140f" opacity="0.55"><title>Cornegliano Laudense: 13,4%, 1.175 €/m²</title></circle>
+<circle cx="319.6" cy="260.8" r="4" fill="#17140f" opacity="0.55"><title>Marudo: 13,0%, 1.200 €/m²</title></circle>
+<circle cx="319.6" cy="261.4" r="4" fill="#17140f" opacity="0.55"><title>Borgo San Giovanni: 12,9%, 1.200 €/m²</title></circle>
+<circle cx="433.7" cy="263.4" r="4" fill="#17140f" opacity="0.55"><title>Comazzo: 12,6%, 1.425 €/m²</title></circle>
+<circle cx="630.3" cy="268.5" r="4" fill="#17140f" opacity="0.55"><title>Zelo Buon Persico: 11,8%, 1.812 €/m²</title></circle>
+<circle cx="440.1" cy="274.9" r="4" fill="#17140f" opacity="0.55"><title>Tavazzano con Villavesco: 10,8%, 1.438 €/m²</title></circle>
+<circle cx="421.0" cy="276.2" r="4" fill="#17140f" opacity="0.55"><title>Montanaso Lombardo: 10,6%, 1.400 €/m²</title></circle>
+<circle cx="357.6" cy="279.4" r="4" fill="#17140f" opacity="0.55"><title>Massalengo: 10,1%, 1.275 €/m²</title></circle>
+<circle cx="370.3" cy="280.0" r="4" fill="#17140f" opacity="0.55"><title>Salerano sul Lambro: 10,0%, 1.300 €/m²</title></circle>
+<circle cx="261.3" cy="283.2" r="4" fill="#17140f" opacity="0.55"><title>Castiraga Vidardo: 9,5%, 1.085 €/m²</title></circle>
+<circle cx="294.2" cy="285.1" r="4" fill="#17140f" opacity="0.55"><title>Cervignano d&#x27;Adda: 9,2%, 1.150 €/m²</title></circle>
+<circle cx="345.0" cy="286.4" r="4" fill="#17140f" opacity="0.55"><title>Casaletto Lodigiano: 9,0%, 1.250 €/m²</title></circle>
+<circle cx="370.3" cy="289.0" r="4" fill="#17140f" opacity="0.55"><title>Casalmaiocco: 8,6%, 1.300 €/m²</title></circle>
+<circle cx="304.4" cy="292.2" r="4" fill="#17140f" opacity="0.55"><title>Caselle Lurani: 8,1%, 1.170 €/m²</title></circle>
+<circle cx="566.9" cy="303.0" r="4" fill="#17140f" opacity="0.55"><title>Sordio: 6,4%, 1.688 €/m²</title></circle>
+<circle cx="263.8" cy="310.7" r="4" fill="#17140f" opacity="0.55"><title>Galgagnano: 5,2%, 1.090 €/m²</title></circle>
+<text x="152.6" y="35.8" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="8.8" fill="#38322a" text-anchor="start" font-weight="600">Maccastorna</text>
+<text x="112.0" y="105.1" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="8.8" fill="#38322a" text-anchor="start" font-weight="600">Cornovecchio</text>
+<text x="178.0" y="111.4" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="8.8" fill="#38322a" text-anchor="start" font-weight="600">Bertonico</text>
+<text x="272.3" y="235.0" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="8.8" fill="#38322a" text-anchor="end" font-weight="600">Codogno</text>
+<text x="647.6" y="230.0" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="8.8" fill="#38322a" text-anchor="end" font-weight="600">Lodi</text>
+<text x="654.0" y="270.6" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="8.8" fill="#38322a" text-anchor="end" font-weight="600">Mulazzano</text>
+<text x="271.8" y="313.7" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="8.8" fill="#38322a" text-anchor="start" font-weight="600">Galgagnano</text>
+<text x="694" y="40" font-family="Georgia, Times New Roman, serif" font-size="12" fill="#7c2a19" text-anchor="end" font-weight="700">r = −0,59</text>
+<text x="694" y="53" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="8.6" fill="#6d6457" text-anchor="end" font-weight="400">su 60 comuni</text>
+<text x="383.0" y="375" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9.5" fill="#38322a" text-anchor="middle" font-weight="400">Prezzo medio di compravendita, quotazioni OMI 2026 (€/m²)</text>
+<text x="16" y="184.0" font-family="Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif" font-size="9.5" fill="#38322a" text-anchor="middle" font-weight="400" transform="rotate(-90 16 184.0)">Abitazioni non occupate da residenti (%)</text>
+</svg>

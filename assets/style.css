@@ -861,6 +861,39 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 40px 0; }
 .passo a:hover { color: var(--rosso); }
 .passo .dir { font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mute); display: block; margin-bottom: 5px; }
 
+/* --- grafici ------------------------------------------------------------- */
+
+.grafici { margin: 0 0 6px; }
+
+.grafico {
+  margin: 0 0 40px;
+  border-top: 1px solid var(--ink);
+  padding-top: 16px;
+}
+
+.grafico img { width: 100%; height: auto; }
+
+.grafico figcaption {
+  margin-top: 12px;
+  font-family: var(--sans);
+  font-size: 11px;
+  line-height: 1.55;
+  color: var(--mute);
+  max-width: 66ch;
+}
+
+.grafico figcaption b {
+  display: block;
+  font-size: 9.5px;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.articolo-testo .grafico { margin: 34px 0 34px; }
+
 /* --- atlante ------------------------------------------------------------- */
 
 .atlante-intro {
@@ -1377,7 +1410,7 @@ table.atlante:not(.tutti) .extra { display: none; }
 @media (max-width: 560px) {
   body { font-size: 17px; }
   .shell { padding: 0 18px; }
-  .testata-inner { flex-direction: column; align-items: flex-start; gap: 10px; padding: 16px 0 12px; }
+  .testata-inner { flex-direction: column; align-items: flex-start; gap: 10px; padding-top: 16px; padding-bottom: 12px; }
   .nav { gap: 14px; font-size: 10px; }
   .pagina-titolo { font-size: clamp(32px, 9vw, 44px); }
   .numeri { grid-template-columns: 1fr; }
@@ -1475,3 +1508,7 @@ table.atlante:not(.tutti) .extra { display: none; }
   .diretta-testa { gap: 4px 10px; }
   .diretta-fonte { white-space: normal; }
 }
+
+.sezione-hub { margin: 0 0 34px; }
+.sezione-hub h2:first-child { margin-top: 0; padding-top: 0; border-top: 0; }
+.sezione-sottotitolo { font-family: var(--sans); font-size: 10px; letter-spacing: 0.11em; text-transform: uppercase; color: var(--mute); margin: 0 0 10px; }

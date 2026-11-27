@@ -15,7 +15,7 @@
     }
   },
   "home": {
-    "introduzione": "Quindici inchieste sul Sudmilano, costruite su dati aperti, documenti e verifiche. Ogni dossier dichiara il metodo, le fonti e ciò che non è stato possibile sapere.",
+    "introduzione": "Inchieste sul Sudmilano e sul Lodigiano, costruite su dati aperti, documenti e verifiche. Ogni dossier dichiara il metodo, le fonti e ciò che non è stato possibile sapere.",
     "sezioni_ordine": [
       "inchieste",
       "atlante",
@@ -104,8 +104,15 @@
       "id": "inchieste",
       "titolo": "Cronaca",
       "url": "inchieste/",
-      "occhiello": "Sudmilano · quattordici comuni",
-      "descrizione": "Inchieste sul Sudmilano costruite su dati aperti, documenti e verifiche. Ogni dossier dichiara il metodo, le fonti e ciò che non è stato possibile sapere."
+      "occhiello": "Sudmilano e Lodigiano",
+      "descrizione": "Inchieste sul Sudmilano e sul Lodigiano costruite su dati aperti, documenti e verifiche. Ogni dossier dichiara il metodo, le fonti e ciò che non è stato possibile sapere."
+    },
+    {
+      "id": "casa-e-territorio",
+      "titolo": "Casa e territorio",
+      "url": "casa-e-territorio/",
+      "occhiello": "Abitare, prezzi, demografia",
+      "descrizione": "Case non occupate, affitti, quotazioni e popolazione: le inchieste sui dati che decidono dove e come si vive, comune per comune."
     },
     {
       "id": "finanza",
